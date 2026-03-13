@@ -18,15 +18,108 @@ warnings.filterwarnings('ignore')
 # Page config
 st.set_page_config(page_title="Diabetic Nutrition Analytics", layout="wide", initial_sidebar_state="expanded")
 
-# Custom CSS for professional look
+# ENHANCED CSS for Dark Theme Compatibility
 st.markdown("""
 <style>
-    .main-header {font-size: 2.5rem; font-weight: 700; color: #1e3a8a; margin-bottom: 0.5rem;}
-    .sub-header {font-size: 1.2rem; color: #64748b; margin-bottom: 2rem;}
-    .metric-card {background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 1.5rem; border-radius: 10px; color: white;}
-    .insight-box {background: #f1f5f9; padding: 1rem; border-left: 4px solid #3b82f6; margin: 1rem 0; border-radius: 5px;}
-    .stTabs [data-baseweb="tab-list"] {gap: 24px;}
-    .stTabs [data-baseweb="tab"] {padding: 12px 24px; font-size: 16px;}
+    /* Base dark theme optimization */
+    .stApp {
+        color: #f1f5f9;
+    }
+
+    /* Headers with high contrast */
+    .main-header {
+        font-size: 2.5rem; 
+        font-weight: 700; 
+        color: #60a5fa; 
+        margin-bottom: 0.5rem;
+    }
+
+    .sub-header {
+        font-size: 1.2rem; 
+        color: #e2e8f0; 
+        margin-bottom: 2rem;
+    }
+
+    /* Gradient metric cards (works on both themes) */
+    .metric-card {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+        padding: 1.5rem; 
+        border-radius: 10px; 
+        color: white;
+    }
+
+    /* Dark theme insight boxes */
+    .insight-box {
+        background: linear-gradient(90deg, #1e293b 0%, #334155 100%); 
+        padding: 1.2rem; 
+        border-left: 5px solid #3b82f6; 
+        margin: 1rem 0; 
+        border-radius: 8px; 
+        color: #f1f5f9;
+    }
+
+    .insight-box b {
+        color: #60a5fa;
+        font-weight: 600;
+    }
+
+    /* Tab styling for dark theme */
+    .stTabs [data-baseweb="tab-list"] {
+        gap: 24px;
+    }
+
+    .stTabs [data-baseweb="tab"] {
+        padding: 12px 24px; 
+        font-size: 16px;
+        color: #94a3b8;
+    }
+
+    .stTabs [data-baseweb="tab"][aria-selected="true"] {
+        color: #60a5fa;
+    }
+
+    /* Metric labels */
+    [data-testid="stMetricLabel"] {
+        color: #e2e8f0 !important;
+    }
+
+    [data-testid="stMetricValue"] {
+        color: #f1f5f9 !important;
+    }
+
+    [data-testid="stMetricDelta"] {
+        color: #86efac !important;
+    }
+
+    /* Sidebar dark theme */
+    section[data-testid="stSidebar"] {
+        background-color: #0f1729;
+    }
+
+    section[data-testid="stSidebar"] label {
+        color: #e2e8f0 !important;
+    }
+
+    /* Dataframe styling */
+    .dataframe {
+        color: #f1f5f9;
+    }
+
+    /* Success/warning/info boxes */
+    .stSuccess {
+        background-color: #064e3b;
+        color: #d1fae5;
+    }
+
+    .stWarning {
+        background-color: #78350f;
+        color: #fef3c7;
+    }
+
+    .stInfo {
+        background-color: #1e3a8a;
+        color: #dbeafe;
+    }
 </style>
 """, unsafe_allow_html=True)
 
@@ -99,19 +192,16 @@ with tab1:
     col_left, col_right = st.columns(2)
 
     with col_left:
-        # Sankey diagram: Segment → Interest → Churn
+        # Sankey diagram
         st.subheader("Customer Journey Flow (Sankey)")
 
-        # Prepare Sankey data
         sankey_data = filtered_df.groupby(['segment_group', 'subscription_interest', 'churn_risk']).size().reset_index(name='count')
 
-        # Create labels
         segments = filtered_df['segment_group'].unique().tolist()
         interests = ['Interest: ' + x for x in filtered_df['subscription_interest'].unique().tolist()]
         churns = ['Churn: ' + x for x in filtered_df['churn_risk'].unique().tolist()]
         all_labels = segments + interests + churns
 
-        # Create source-target-value
         sources = []
         targets = []
         values = []
@@ -133,7 +223,7 @@ with tab1:
             node=dict(
                 pad=15,
                 thickness=20,
-                line=dict(color="black", width=0.5),
+                line=dict(color="white", width=0.5),
                 label=all_labels,
                 color=["#667eea", "#764ba2", "#48bb78", "#ed8936", "#4299e1", "#9f7aea", "#f56565", "#48bb78", "#ed8936"]
             ),
@@ -144,7 +234,13 @@ with tab1:
             )
         )])
 
-        fig_sankey.update_layout(title="Segment → Interest → Churn Risk Flow", height=400)
+        fig_sankey.update_layout(
+            title="Segment → Interest → Churn Risk Flow", 
+            height=400,
+            paper_bgcolor='rgba(0,0,0,0)',
+            plot_bgcolor='rgba(0,0,0,0)',
+            font=dict(color='#f1f5f9')
+        )
         st.plotly_chart(fig_sankey, use_container_width=True)
 
         st.markdown('<div class="insight-box">💡 <b>Insight:</b> Traditional Family (85%) dominates flow but 68% reach Low Churn, capturing $213K revenue potential.</div>', unsafe_allow_html=True)
@@ -162,7 +258,13 @@ with tab1:
             color=ltv_segment.values,
             color_continuous_scale='Viridis'
         )
-        fig_ltv_seg.update_layout(showlegend=False, height=400)
+        fig_ltv_seg.update_layout(
+            showlegend=False, 
+            height=400,
+            paper_bgcolor='rgba(0,0,0,0)',
+            plot_bgcolor='rgba(0,0,0,0)',
+            font=dict(color='#f1f5f9')
+        )
         st.plotly_chart(fig_ltv_seg, use_container_width=True)
 
         st.markdown('<div class="insight-box">💡 <b>Insight:</b> Health-Conscious Pro: $564 LTV (68% above avg) despite 9% population—premium pricing opportunity.</div>', unsafe_allow_html=True)
@@ -182,7 +284,12 @@ with tab1:
             x=revenue_dist.values,
             textinfo="value+percent initial"
         ))
-        fig_pyramid.update_layout(height=350)
+        fig_pyramid.update_layout(
+            height=350,
+            paper_bgcolor='rgba(0,0,0,0)',
+            plot_bgcolor='rgba(0,0,0,0)',
+            font=dict(color='#f1f5f9')
+        )
         st.plotly_chart(fig_pyramid, use_container_width=True)
 
     with col_b:
@@ -195,7 +302,13 @@ with tab1:
 
         fig_tam = px.bar(tam_data, x='Stage', y='Count', text='Count')
         fig_tam.update_traces(texttemplate='%{text:.2s}', textposition='outside')
-        fig_tam.update_layout(height=350, yaxis_title='Potential Customers')
+        fig_tam.update_layout(
+            height=350, 
+            yaxis_title='Potential Customers',
+            paper_bgcolor='rgba(0,0,0,0)',
+            plot_bgcolor='rgba(0,0,0,0)',
+            font=dict(color='#f1f5f9')
+        )
         st.plotly_chart(fig_tam, use_container_width=True)
 
 # ============ TAB 2: DATASET EXPLORER ============
@@ -215,16 +328,22 @@ with tab2:
     col_left, col_right = st.columns(2)
 
     with col_left:
-        # Risk score distribution by gender
+        # Risk score distribution
         st.subheader("Risk Score Distribution by Gender")
         fig_risk = px.violin(filtered_df, y='risk_score', x='gender', color='gender', box=True)
-        fig_risk.update_layout(showlegend=False, height=350)
+        fig_risk.update_layout(
+            showlegend=False, 
+            height=350,
+            paper_bgcolor='rgba(0,0,0,0)',
+            plot_bgcolor='rgba(0,0,0,0)',
+            font=dict(color='#f1f5f9')
+        )
         st.plotly_chart(fig_risk, use_container_width=True)
 
         st.markdown('<div class="insight-box">💡 <b>Insight:</b> Males show 15% higher risk scores (avg 25.8 vs 22.4)—target for prevention campaigns.</div>', unsafe_allow_html=True)
 
     with col_right:
-        # HbA1c vs Adherence scatter with LTV color
+        # HbA1c vs Adherence
         st.subheader("HbA1c vs Adherence (sized by LTV)")
         fig_scatter = px.scatter(
             filtered_df, 
@@ -235,7 +354,12 @@ with tab2:
             hover_data=['segment_group', 'city'],
             labels={'hba1c_numeric': 'HbA1c Level', 'predicted_adherence_score': 'Adherence Score'}
         )
-        fig_scatter.update_layout(height=350)
+        fig_scatter.update_layout(
+            height=350,
+            paper_bgcolor='rgba(0,0,0,0)',
+            plot_bgcolor='rgba(0,0,0,0)',
+            font=dict(color='#f1f5f9')
+        )
         st.plotly_chart(fig_scatter, use_container_width=True)
 
         st.markdown('<div class="insight-box">💡 <b>Insight:</b> High adherence (>70) doubles LTV from $200→$450 regardless of HbA1c.</div>', unsafe_allow_html=True)
@@ -249,15 +373,24 @@ with tab2:
         st.subheader("Demographics Heatmap (City × Nationality)")
         demo_heat = pd.crosstab(filtered_df['city'], filtered_df['nationality'])
         fig_heat = px.imshow(demo_heat, text_auto=True, color_continuous_scale='Blues')
-        fig_heat.update_layout(height=350)
+        fig_heat.update_layout(
+            height=350,
+            paper_bgcolor='rgba(0,0,0,0)',
+            font=dict(color='#f1f5f9')
+        )
         st.plotly_chart(fig_heat, use_container_width=True)
 
     with col_b:
-        # Nutrition compliance by protein
+        # Nutrition compliance
         st.subheader("Nutrition Compliance by Protein Source")
         compliance_protein = pd.crosstab(filtered_df['preferred_protein_sources'], filtered_df['nutrition_compliance_index'], normalize='index') * 100
         fig_comp = px.bar(compliance_protein, barmode='stack', labels={'value': 'Percentage'})
-        fig_comp.update_layout(height=350)
+        fig_comp.update_layout(
+            height=350,
+            paper_bgcolor='rgba(0,0,0,0)',
+            plot_bgcolor='rgba(0,0,0,0)',
+            font=dict(color='#f1f5f9')
+        )
         st.plotly_chart(fig_comp, use_container_width=True)
 
 # ============ TAB 3: CLASSIFICATION ============
@@ -300,7 +433,11 @@ with tab3:
         fig_cm = px.imshow(cm, text_auto=True, color_continuous_scale='Blues', 
                            labels={'x': 'Predicted', 'y': 'Actual'},
                            x=le.classes_, y=le.classes_)
-        fig_cm.update_layout(height=350)
+        fig_cm.update_layout(
+            height=350,
+            paper_bgcolor='rgba(0,0,0,0)',
+            font=dict(color='#f1f5f9')
+        )
         st.plotly_chart(fig_cm, use_container_width=True)
 
         st.markdown('<div class="insight-box">💡 <b>Insight:</b> Model correctly identifies 82% high-risk (prevents $950K churn).</div>', unsafe_allow_html=True)
@@ -314,7 +451,12 @@ with tab3:
         }).sort_values('Importance', ascending=False)
 
         fig_imp = px.bar(importances, x='Importance', y='Feature', orientation='h')
-        fig_imp.update_layout(height=350)
+        fig_imp.update_layout(
+            height=350,
+            paper_bgcolor='rgba(0,0,0,0)',
+            plot_bgcolor='rgba(0,0,0,0)',
+            font=dict(color='#f1f5f9')
+        )
         st.plotly_chart(fig_imp, use_container_width=True)
 
         st.markdown('<div class="insight-box">💡 <b>Insight:</b> Risk_score predicts 38% of churn variance—focus interventions on high-risk cohort.</div>', unsafe_allow_html=True)
@@ -324,20 +466,32 @@ with tab3:
     col_a, col_b = st.columns(2)
 
     with col_a:
-        # Churn probability distribution
+        # Churn probability
         st.subheader("Churn Probability by Segment")
         churn_seg = filtered_df.groupby('segment_group')['churn_risk'].value_counts(normalize=True).unstack() * 100
         fig_churn_seg = px.bar(churn_seg, barmode='group')
-        fig_churn_seg.update_layout(height=350, yaxis_title='Percentage')
+        fig_churn_seg.update_layout(
+            height=350, 
+            yaxis_title='Percentage',
+            paper_bgcolor='rgba(0,0,0,0)',
+            plot_bgcolor='rgba(0,0,0,0)',
+            font=dict(color='#f1f5f9')
+        )
         st.plotly_chart(fig_churn_seg, use_container_width=True)
 
     with col_b:
-        # LTV impact by churn
+        # LTV impact
         st.subheader("LTV Impact by Churn Prediction")
         ltv_churn = filtered_df.groupby('churn_risk')['ltv_12mo'].mean().reset_index()
         fig_ltv_churn = px.bar(ltv_churn, x='churn_risk', y='ltv_12mo', color='ltv_12mo',
                                labels={'ltv_12mo': 'Avg LTV ($)'}, color_continuous_scale='RdYlGn_r')
-        fig_ltv_churn.update_layout(height=350, showlegend=False)
+        fig_ltv_churn.update_layout(
+            height=350, 
+            showlegend=False,
+            paper_bgcolor='rgba(0,0,0,0)',
+            plot_bgcolor='rgba(0,0,0,0)',
+            font=dict(color='#f1f5f9')
+        )
         st.plotly_chart(fig_ltv_churn, use_container_width=True)
 
         st.markdown(f'<div class="insight-box">💡 <b>Insight:</b> Low churn: ${filtered_df[filtered_df["churn_risk"]=="Low"]["ltv_12mo"].mean():.0f} vs High: ${filtered_df[filtered_df["churn_risk"]=="High"]["ltv_12mo"].mean():.0f} (5x gap).</div>', unsafe_allow_html=True)
@@ -348,7 +502,6 @@ with tab4:
 
     st.markdown("**Objective:** Identify customer personas to personalize marketing and boost LTV by 28%.")
 
-    # Prepare clustering features
     cluster_features = ['risk_score', 'predicted_adherence_score', 'monthly_spend_potential', 
                         'diet_flexibility_score', 'hba1c_numeric']
     X_cluster = filtered_df[cluster_features]
@@ -373,7 +526,7 @@ with tab4:
     col_left, col_right = st.columns(2)
 
     with col_left:
-        # 3D scatter (PCA-like using 3 features)
+        # 3D scatter
         st.subheader("Cluster Visualization (3D)")
         fig_3d = px.scatter_3d(
             filtered_df_cluster, 
@@ -384,16 +537,26 @@ with tab4:
             hover_data=['segment_group'],
             labels={'cluster': 'Cluster ID'}
         )
-        fig_3d.update_layout(height=400)
+        fig_3d.update_layout(
+            height=400,
+            paper_bgcolor='rgba(0,0,0,0)',
+            font=dict(color='#f1f5f9')
+        )
         st.plotly_chart(fig_3d, use_container_width=True)
 
         st.markdown('<div class="insight-box">💡 <b>Insight:</b> Cluster 2: High adherence + Low risk = $580 avg LTV (premium tier).</div>', unsafe_allow_html=True)
 
     with col_right:
-        # LTV violin by cluster
+        # LTV violin
         st.subheader("LTV Distribution by Cluster")
         fig_violin = px.violin(filtered_df_cluster, x='cluster', y='ltv_12mo', box=True, color='cluster')
-        fig_violin.update_layout(height=400, showlegend=False)
+        fig_violin.update_layout(
+            height=400, 
+            showlegend=False,
+            paper_bgcolor='rgba(0,0,0,0)',
+            plot_bgcolor='rgba(0,0,0,0)',
+            font=dict(color='#f1f5f9')
+        )
         st.plotly_chart(fig_violin, use_container_width=True)
 
         st.markdown('<div class="insight-box">💡 <b>Insight:</b> Cluster 0: High variance ($100-$700)—needs targeted retention.</div>', unsafe_allow_html=True)
@@ -403,20 +566,28 @@ with tab4:
     col_a, col_b = st.columns(2)
 
     with col_a:
-        # Cluster size pie
+        # Cluster pie
         st.subheader("Cluster Size Distribution")
         cluster_counts = filtered_df_cluster['cluster'].value_counts()
         fig_pie = px.pie(values=cluster_counts.values, names=cluster_counts.index, 
                          title="Cluster Membership")
-        fig_pie.update_layout(height=350)
+        fig_pie.update_layout(
+            height=350,
+            paper_bgcolor='rgba(0,0,0,0)',
+            font=dict(color='#f1f5f9')
+        )
         st.plotly_chart(fig_pie, use_container_width=True)
 
     with col_b:
-        # Segment overlap with clusters
+        # Segment overlap
         st.subheader("Cluster vs Segment Overlap")
         overlap = pd.crosstab(filtered_df_cluster['cluster'], filtered_df_cluster['segment_group'])
         fig_overlap = px.imshow(overlap, text_auto=True, color_continuous_scale='Purples')
-        fig_overlap.update_layout(height=350)
+        fig_overlap.update_layout(
+            height=350,
+            paper_bgcolor='rgba(0,0,0,0)',
+            font=dict(color='#f1f5f9')
+        )
         st.plotly_chart(fig_overlap, use_container_width=True)
 
 # ============ TAB 5: ASSOCIATION RULES ============
@@ -425,14 +596,11 @@ with tab5:
 
     st.markdown("**Objective:** Discover nutrition patterns that drive compliance (and LTV uplift).")
 
-    # Create basket for association rules
     basket_df = filtered_df[['carb_intake_per_meal', 'preferred_protein_sources', 
                               'sugar_substitute_usage', 'vegetable_portion_size', 'nutrition_compliance_index']]
 
-    # Convert to binary format
     basket_encoded = pd.get_dummies(basket_df)
 
-    # Apply Apriori
     frequent_itemsets = apriori(basket_encoded, min_support=0.1, use_colnames=True)
 
     if len(frequent_itemsets) > 0:
@@ -452,7 +620,7 @@ with tab5:
         col_left, col_right = st.columns(2)
 
         with col_left:
-            # Top rules table
+            # Top rules
             st.subheader("Top 10 Association Rules")
             rules_display = rules[['antecedents', 'consequents', 'support', 'confidence', 'lift']].copy()
             rules_display['antecedents'] = rules_display['antecedents'].apply(lambda x: ', '.join(list(x)))
@@ -460,7 +628,7 @@ with tab5:
             st.dataframe(rules_display, height=350)
 
         with col_right:
-            # Lift-Confidence bubble chart
+            # Lift-Confidence bubble
             st.subheader("Rule Strength (Lift vs Confidence)")
             fig_bubble = px.scatter(
                 rules, 
@@ -470,7 +638,12 @@ with tab5:
                 hover_data=['antecedents', 'consequents'],
                 labels={'confidence': 'Confidence', 'lift': 'Lift'}
             )
-            fig_bubble.update_layout(height=350)
+            fig_bubble.update_layout(
+                height=350,
+                paper_bgcolor='rgba(0,0,0,0)',
+                plot_bgcolor='rgba(0,0,0,0)',
+                font=dict(color='#f1f5f9')
+            )
             st.plotly_chart(fig_bubble, use_container_width=True)
 
             st.markdown('<div class="insight-box">💡 <b>Insight:</b> Sugar Always + Veg Large → High Compliance (lift 2.4x) drives +$65 LTV.</div>', unsafe_allow_html=True)
@@ -482,7 +655,11 @@ with tab5:
         rule_matrix = rules[['support', 'confidence', 'lift']].head(10).T
         fig_heat_rules = px.imshow(rule_matrix, text_auto='.2f', color_continuous_scale='Viridis',
                                     labels={'x': 'Rule Index', 'y': 'Metric'})
-        fig_heat_rules.update_layout(height=300)
+        fig_heat_rules.update_layout(
+            height=300,
+            paper_bgcolor='rgba(0,0,0,0)',
+            font=dict(color='#f1f5f9')
+        )
         st.plotly_chart(fig_heat_rules, use_container_width=True)
     else:
         st.warning("No significant association rules found with current filters. Adjust parameters.")
@@ -493,13 +670,11 @@ with tab6:
 
     st.markdown("**Objective:** Predict monthly spend potential (LTV driver) using 4 algorithms with comparative analysis.")
 
-    # Prepare regression data
     X_reg = filtered_df[['risk_score', 'predicted_adherence_score', 'diet_flexibility_score', 'hba1c_numeric']]
     y_reg = filtered_df['monthly_spend_potential']
 
     X_train_reg, X_test_reg, y_train_reg, y_test_reg = train_test_split(X_reg, y_reg, test_size=0.3, random_state=42)
 
-    # Train 4 models
     models = {
         'Linear Regression': LinearRegression(),
         'Random Forest': RandomForestRegressor(n_estimators=100, random_state=42),
@@ -518,7 +693,6 @@ with tab6:
         results[name] = {'R2': r2, 'MAE': mae}
         predictions[name] = y_pred_model
 
-    # Display metrics
     st.subheader("Model Performance Comparison")
     results_df = pd.DataFrame(results).T
     st.dataframe(results_df.style.highlight_max(axis=0, color='lightgreen'))
@@ -531,7 +705,7 @@ with tab6:
     col_left, col_right = st.columns(2)
 
     with col_left:
-        # Predicted vs Actual (best model)
+        # Predicted vs Actual
         st.subheader(f"Predicted vs Actual ({best_model})")
         fig_pred = px.scatter(
             x=y_test_reg, 
@@ -539,17 +713,21 @@ with tab6:
             labels={'x': 'Actual Spend', 'y': 'Predicted Spend'},
             opacity=0.6
         )
-        # Add diagonal line
         fig_pred.add_trace(go.Scatter(x=[y_test_reg.min(), y_test_reg.max()], 
                                        y=[y_test_reg.min(), y_test_reg.max()],
                                        mode='lines', name='Perfect Fit', line=dict(dash='dash', color='red')))
-        fig_pred.update_layout(height=350)
+        fig_pred.update_layout(
+            height=350,
+            paper_bgcolor='rgba(0,0,0,0)',
+            plot_bgcolor='rgba(0,0,0,0)',
+            font=dict(color='#f1f5f9')
+        )
         st.plotly_chart(fig_pred, use_container_width=True)
 
         st.markdown(f'<div class="insight-box">💡 <b>Insight:</b> {best_model}: R² {results_df.loc[best_model, "R2"]:.2f} forecasts spend ±${results_df.loc[best_model, "MAE"]:.0f}—enables $950 max LTV targeting.</div>', unsafe_allow_html=True)
 
     with col_right:
-        # Feature importance (GB)
+        # Feature importance
         st.subheader("Feature Importance (Gradient Boosting)")
         gb_model = models['Gradient Boosting']
         feat_imp = pd.DataFrame({
@@ -559,7 +737,13 @@ with tab6:
 
         fig_feat = px.bar(feat_imp, x='Importance', y='Feature', orientation='h', color='Importance',
                           color_continuous_scale='Teal')
-        fig_feat.update_layout(height=350, showlegend=False)
+        fig_feat.update_layout(
+            height=350, 
+            showlegend=False,
+            paper_bgcolor='rgba(0,0,0,0)',
+            plot_bgcolor='rgba(0,0,0,0)',
+            font=dict(color='#f1f5f9')
+        )
         st.plotly_chart(fig_feat, use_container_width=True)
 
         st.markdown('<div class="insight-box">💡 <b>Insight:</b> Adherence drives 52% of spend variance—boost via app engagement.</div>', unsafe_allow_html=True)
@@ -569,20 +753,30 @@ with tab6:
     col_a, col_b = st.columns(2)
 
     with col_a:
-        # Residuals distribution
+        # Residuals
         st.subheader("Residuals Distribution (Best Model)")
         residuals = y_test_reg - predictions[best_model]
         fig_resid = px.histogram(residuals, nbins=30, labels={'value': 'Residuals'})
-        fig_resid.update_layout(height=300)
+        fig_resid.update_layout(
+            height=300,
+            paper_bgcolor='rgba(0,0,0,0)',
+            plot_bgcolor='rgba(0,0,0,0)',
+            font=dict(color='#f1f5f9')
+        )
         st.plotly_chart(fig_resid, use_container_width=True)
 
     with col_b:
-        # LTV forecast by risk score
+        # LTV trend
         st.subheader("LTV Trend by Risk Score")
         ltv_risk_trend = filtered_df.groupby('risk_score')['ltv_12mo'].mean().reset_index()
         fig_trend = px.line(ltv_risk_trend, x='risk_score', y='ltv_12mo', markers=True,
                             labels={'ltv_12mo': 'Avg LTV ($)'})
-        fig_trend.update_layout(height=300)
+        fig_trend.update_layout(
+            height=300,
+            paper_bgcolor='rgba(0,0,0,0)',
+            plot_bgcolor='rgba(0,0,0,0)',
+            font=dict(color='#f1f5f9')
+        )
         st.plotly_chart(fig_trend, use_container_width=True)
 
 # ============ TAB 7: IMPACT SIMULATOR ============
@@ -602,10 +796,9 @@ with tab7:
     with col_slider3:
         cac = st.slider("Customer Acquisition Cost ($)", 20, 100, 50, 10)
 
-    # Calculate projections
     base_ltv = filtered_df['ltv_12mo'].mean()
     projected_ltv = base_ltv * (1 + retention_lift/100)
-    total_leads = 10000  # Assumption
+    total_leads = 10000
     customers = int(total_leads * conversion_pct / 100)
     revenue_y1 = customers * projected_ltv
     total_cac = customers * cac
@@ -629,9 +822,9 @@ with tab7:
     col_left, col_right = st.columns(2)
 
     with col_left:
-        # Break-even analysis
+        # Break-even
         st.subheader("Break-Even Analysis")
-        breakeven_customers = int(np.ceil(100000 / projected_ltv))  # $100K fixed cost assumption
+        breakeven_customers = int(np.ceil(100000 / projected_ltv))
         customer_range = range(0, customers + 500, 100)
         revenues = [c * projected_ltv for c in customer_range]
         costs = [100000 + c * cac for c in customer_range]
@@ -640,13 +833,20 @@ with tab7:
         fig_breakeven.add_trace(go.Scatter(x=list(customer_range), y=revenues, mode='lines', name='Revenue', line=dict(color='green')))
         fig_breakeven.add_trace(go.Scatter(x=list(customer_range), y=costs, mode='lines', name='Total Cost', line=dict(color='red')))
         fig_breakeven.add_vline(x=breakeven_customers, line_dash="dash", annotation_text=f"Break-even: {breakeven_customers} customers")
-        fig_breakeven.update_layout(xaxis_title="Customers", yaxis_title="Amount ($)", height=350)
+        fig_breakeven.update_layout(
+            xaxis_title="Customers", 
+            yaxis_title="Amount ($)", 
+            height=350,
+            paper_bgcolor='rgba(0,0,0,0)',
+            plot_bgcolor='rgba(0,0,0,0)',
+            font=dict(color='#f1f5f9')
+        )
         st.plotly_chart(fig_breakeven, use_container_width=True)
 
         st.markdown(f'<div class="insight-box">💡 <b>Insight:</b> Break-even at {breakeven_customers} customers; {customers-breakeven_customers} margin above target.</div>', unsafe_allow_html=True)
 
     with col_right:
-        # Cohort retention simulation
+        # Cohort retention
         st.subheader("12-Month Cohort Retention Simulation")
         months = list(range(1, 13))
         base_retention = 0.85
@@ -654,14 +854,19 @@ with tab7:
 
         fig_cohort = px.line(x=months, y=retention_curve, markers=True,
                              labels={'x': 'Month', 'y': 'Retention %'})
-        fig_cohort.update_layout(height=350)
+        fig_cohort.update_layout(
+            height=350,
+            paper_bgcolor='rgba(0,0,0,0)',
+            plot_bgcolor='rgba(0,0,0,0)',
+            font=dict(color='#f1f5f9')
+        )
         st.plotly_chart(fig_cohort, use_container_width=True)
 
         st.markdown(f'<div class="insight-box">💡 <b>Insight:</b> {retention_lift}% lift retains {retention_curve[-1]:.0f}% at M12 vs {100*(base_retention**11):.0f}% baseline.</div>', unsafe_allow_html=True)
 
     st.markdown("---")
 
-    # Market TAM funnel
+    # TAM funnel
     st.subheader("GCC Market Opportunity Funnel")
     tam_funnel = pd.DataFrame({
         'Stage': ['Total GCC Diabetics (4M)', 'Digital-Ready (35%)', 'Target Segment (8%)', 
@@ -674,7 +879,11 @@ with tab7:
         x=tam_funnel['Count'],
         textinfo="value+percent initial"
     ))
-    fig_tam_funnel.update_layout(height=400)
+    fig_tam_funnel.update_layout(
+        height=400,
+        paper_bgcolor='rgba(0,0,0,0)',
+        font=dict(color='#f1f5f9')
+    )
     st.plotly_chart(fig_tam_funnel, use_container_width=True)
 
     st.success(f"🎯 **Sustainability Validation:** ${revenue_y1/1e6:.2f}M Y1 revenue at {conversion_pct}% conversion proves scalable business with {roi:.0f}% ROI.")
