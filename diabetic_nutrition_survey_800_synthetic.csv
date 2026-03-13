@@ -1,0 +1,801 @@
+age,gender,nationality,income_level,city,family_size,diabetes_duration_years,hba1c_level,bmi_category,current_medication,daily_calories_target,carb_intake_per_meal,preferred_protein_sources,sugar_substitute_usage,vegetable_portion_size,subscription_interest,willingness_to_pay,app_usage_frequency,past_diet_app_trial,adherence_challenges,predicted_adherence_score,health_improvement_expectation,churn_risk,hba1c_numeric,risk_score,nutrition_compliance_index,monthly_spend_potential,diet_flexibility_score,segment_group
+35-44,Female,Saudi,Mid,Abu Dhabi,3-4,<1,6.5-7.5,Overweight,Oral,1801-2200,High,Chicken,Never,Small,Maybe,50-100,Daily,Yes,Time,95,High,Med,7.0,23,Low,71,9,Traditional Family
+55-65,Male,Saudi,Low,Abu Dhabi,5+,<1,6.5-7.5,Obese,Insulin,1801-2200,Low,Plant,Sometimes,Medium,Yes,<50,Daily,Yes,Time,49,Low,Low,7.0,20,High,20,7,Traditional Family
+45-54,Female,Saudi,Mid,Dubai,3-4,10+,<6.5,Normal,Oral,1500-1800,Med,Chicken,Never,Medium,Yes,50-100,Weekly,Yes,Time,91,High,Low,6.0,15,Low,68,9,Traditional Family
+45-54,Female,Qatari,Mid,Doha,1-2,1-5,7.5-9,Obese,Insulin,>2200,High,Chicken,Never,Medium,No,<50,Weekly,No,Motivation,26,Low,High,8.2,33,Low,10,4,Traditional Family
+25-34,Male,UAE,Mid,Riyadh,1-2,10+,<6.5,Normal,None,1801-2200,Med,Plant,Always,Large,Maybe,>100,Daily,Yes,Time,85,High,Low,6.0,15,High,106,5,Health-Conscious Pro
+25-34,Female,Expat,Mid,Riyadh,1-2,5-10,7.5-9,Obese,Insulin,1801-2200,High,Plant,Never,Large,No,>100,Daily,Yes,Time,48,Low,High,8.2,34,Med,60,5,Traditional Family
+25-34,Female,UAE,Mid,Doha,3-4,<1,>9,Overweight,Oral,1801-2200,Med,Red Meat,Sometimes,Medium,Maybe,<50,Weekly,Yes,Taste,48,Low,Med,9.5,30,Low,19,5,Traditional Family
+55-65,Female,Expat,Low,Riyadh,3-4,10+,>9,Overweight,Oral,1500-1800,High,Fish,Sometimes,Small,No,<50,Weekly,No,Taste,61,Med,High,9.5,38,Med,24,3,Traditional Family
+45-54,Male,Saudi,High,Abu Dhabi,3-4,1-5,6.5-7.5,Overweight,Oral,1801-2200,Low,Chicken,Sometimes,Small,Maybe,50-100,Daily,No,Motivation,63,Med,Med,7.0,20,Low,47,6,Traditional Family
+45-54,Male,Expat,Mid,Riyadh,1-2,10+,6.5-7.5,Obese,Both,1500-1800,Low,Plant,Never,Medium,No,50-100,Weekly,Yes,Motivation,85,High,High,7.0,25,Med,64,7,Traditional Family
+25-34,Prefer not to say,Expat,Mid,Dubai,1-2,1-5,<6.5,Underweight,Oral,>2200,Low,Plant,Always,Small,No,<50,Weekly,No,Cost,44,Low,High,6.0,8,High,18,5,Traditional Family
+55-65,Female,Expat,Low,Riyadh,3-4,10+,7.5-9,Overweight,Insulin,1801-2200,Med,Chicken,Always,Medium,Yes,50-100,Rarely,No,Time,60,Med,Med,8.2,30,Med,45,4,Traditional Family
+45-54,Male,Expat,Mid,Dubai,3-4,<1,7.5-9,Obese,Oral,1801-2200,High,Red Meat,Never,Medium,No,<50,Weekly,No,Cost,81,High,High,8.2,32,Low,32,4,Traditional Family
+25-34,Female,Saudi,Low,Riyadh,1-2,5-10,6.5-7.5,Overweight,Oral,1500-1800,Med,Chicken,Sometimes,Small,No,<50,Daily,Yes,Motivation,85,High,High,7.0,23,Low,34,5,Traditional Family
+25-34,Female,Saudi,Mid,Dubai,3-4,5-10,6.5-7.5,Normal,Insulin,1801-2200,Med,Red Meat,Always,Large,Yes,<50,Weekly,No,Time,56,Med,Med,7.0,19,Med,22,3,Traditional Family
+25-34,Female,Expat,High,Dubai,1-2,10+,7.5-9,Overweight,Oral,1801-2200,Med,Red Meat,Always,Small,Maybe,<50,Weekly,No,Time,44,Low,Low,8.2,30,Low,18,7,Traditional Family
+35-44,Female,Expat,Mid,Dubai,5+,10+,>9,Overweight,Oral,1801-2200,Med,Plant,Sometimes,Medium,Yes,50-100,Daily,No,Cost,86,High,Low,9.5,34,Med,64,3,Traditional Family
+35-44,Male,Expat,Low,Dubai,5+,10+,6.5-7.5,Obese,Both,1801-2200,Med,Red Meat,Never,Medium,No,>100,Weekly,No,Motivation,52,Med,High,7.0,27,Low,65,3,Traditional Family
+35-44,Male,Expat,Low,Riyadh,1-2,10+,7.5-9,Obese,None,1801-2200,Med,Plant,Sometimes,Medium,Yes,50-100,Daily,No,Motivation,65,Med,High,8.2,33,Med,49,4,Traditional Family
+35-44,Male,Expat,Mid,Riyadh,1-2,1-5,<6.5,Overweight,None,>2200,Med,Chicken,Sometimes,Medium,Yes,50-100,Daily,Yes,Time,65,Med,High,6.0,16,Low,49,6,Traditional Family
+45-54,Female,Expat,Low,Abu Dhabi,3-4,1-5,<6.5,Obese,None,1801-2200,Low,Fish,Never,Small,Maybe,<50,Weekly,No,Cost,80,High,Med,6.0,16,Med,32,5,Traditional Family
+25-34,Male,UAE,Low,Dubai,1-2,1-5,>9,Overweight,Insulin,>2200,High,Chicken,Sometimes,Medium,Maybe,50-100,Daily,Yes,Cost,69,Med,High,9.5,34,Low,52,9,Traditional Family
+35-44,Male,Expat,High,Dubai,3-4,1-5,7.5-9,Normal,Insulin,>2200,Low,Fish,Sometimes,Medium,No,<50,Rarely,No,Cost,87,High,High,8.2,22,High,35,6,Health-Conscious Pro
+35-44,Male,Expat,Mid,Dubai,5+,1-5,7.5-9,Normal,Oral,1801-2200,Low,Plant,Sometimes,Large,No,50-100,Weekly,Yes,Cost,99,High,High,8.2,22,High,74,7,Health-Conscious Pro
+35-44,Female,Saudi,Mid,Dubai,3-4,5-10,<6.5,Overweight,Both,1500-1800,High,Fish,Always,Medium,Maybe,>100,Weekly,Yes,Motivation,94,High,High,6.0,20,High,118,4,Health-Conscious Pro
+45-54,Female,Expat,High,Doha,5+,1-5,7.5-9,Normal,None,1801-2200,Med,Chicken,Always,Medium,Yes,<50,Weekly,No,Motivation,76,High,Low,8.2,24,Med,30,3,Traditional Family
+25-34,Male,Saudi,Low,Dubai,3-4,5-10,6.5-7.5,Obese,Both,>2200,Med,Fish,Sometimes,Medium,Maybe,50-100,Weekly,No,Motivation,23,Low,High,7.0,26,Med,17,3,Traditional Family
+35-44,Male,Expat,High,Dubai,1-2,1-5,6.5-7.5,Obese,Insulin,1500-1800,Med,Red Meat,Always,Large,Maybe,<50,Daily,Yes,Motivation,82,High,Med,7.0,24,Med,33,5,Tech-Savvy Young
+45-54,Female,UAE,Mid,Dubai,3-4,1-5,6.5-7.5,Normal,None,1801-2200,Med,Chicken,Never,Small,Maybe,50-100,Rarely,Yes,Taste,64,Med,High,7.0,18,Low,48,5,Traditional Family
+25-34,Male,Expat,High,Dubai,3-4,5-10,<6.5,Overweight,Oral,>2200,Low,Fish,Always,Medium,Yes,<50,Rarely,Yes,Cost,88,High,Low,6.0,15,High,35,9,Health-Conscious Pro
+45-54,Male,Expat,Mid,Abu Dhabi,3-4,5-10,7.5-9,Obese,Insulin,1801-2200,Med,Chicken,Never,Medium,Maybe,50-100,Daily,No,Motivation,49,Low,Med,8.2,32,Low,37,4,Traditional Family
+25-34,Male,Saudi,High,Riyadh,1-2,5-10,7.5-9,Obese,Oral,1801-2200,Med,Plant,Never,Medium,Yes,<50,Daily,No,Time,50,Med,Low,8.2,32,Med,20,3,Tech-Savvy Young
+25-34,Male,Expat,High,Dubai,1-2,5-10,<6.5,Obese,Insulin,1500-1800,Med,Chicken,Sometimes,Small,No,50-100,Daily,Yes,Cost,99,High,High,6.0,20,Low,74,6,Tech-Savvy Young
+55-65,Male,Expat,Mid,Dubai,5+,1-5,<6.5,Overweight,Oral,1500-1800,Med,Plant,Sometimes,Medium,Maybe,50-100,Weekly,No,Time,39,Low,High,6.0,16,Med,29,5,Traditional Family
+55-65,Female,Expat,High,Dubai,1-2,5-10,<6.5,Obese,Oral,1801-2200,High,Chicken,Always,Small,No,<50,Weekly,No,Motivation,68,Med,High,6.0,22,Low,27,3,Traditional Family
+45-54,Male,Saudi,Mid,Dubai,5+,<1,<6.5,Overweight,Oral,1500-1800,Low,Chicken,Sometimes,Medium,Maybe,50-100,Rarely,Yes,Time,70,Med,Low,6.0,12,Med,52,5,Traditional Family
+35-44,Female,Qatari,Mid,Dubai,5+,1-5,7.5-9,Overweight,Oral,1500-1800,Med,Red Meat,Sometimes,Medium,Yes,>100,Rarely,No,Time,23,Low,High,8.2,28,Low,29,6,Traditional Family
+25-34,Male,Saudi,Mid,Doha,3-4,1-5,7.5-9,Normal,Both,>2200,Med,Chicken,Sometimes,Large,No,50-100,Weekly,Yes,Time,68,Med,High,8.2,24,Med,51,8,Traditional Family
+45-54,Female,Expat,Mid,Riyadh,3-4,<1,<6.5,Normal,Both,1500-1800,High,Fish,Sometimes,Medium,Maybe,<50,Weekly,No,Time,58,Med,Low,6.0,13,Med,23,6,Traditional Family
+35-44,Female,Expat,Low,Abu Dhabi,3-4,1-5,<6.5,Overweight,Oral,>2200,Low,Chicken,Sometimes,Small,Yes,<50,Weekly,Yes,Motivation,90,High,Low,6.0,14,Low,36,5,Traditional Family
+25-34,Male,Expat,Mid,Abu Dhabi,5+,10+,7.5-9,Normal,Both,>2200,Med,Fish,Sometimes,Small,Maybe,>100,Weekly,Yes,Cost,84,High,Low,8.2,27,Med,105,7,Traditional Family
+35-44,Female,Expat,Mid,Abu Dhabi,1-2,10+,7.5-9,Underweight,None,1500-1800,High,Fish,Always,Large,Yes,50-100,Weekly,Yes,Time,100,High,Low,8.2,28,High,75,6,Health-Conscious Pro
+25-34,Male,Expat,High,Abu Dhabi,3-4,1-5,6.5-7.5,Obese,Insulin,1500-1800,Low,Chicken,Always,Small,No,50-100,Weekly,Yes,Time,50,Med,High,7.0,22,Med,38,9,Traditional Family
+55-65,Prefer not to say,Expat,High,Riyadh,3-4,<1,6.5-7.5,Underweight,Oral,1801-2200,High,Chicken,Always,Medium,Maybe,<50,Weekly,No,Cost,67,Med,Low,7.0,18,Med,27,5,Traditional Family
+35-44,Male,UAE,Mid,Riyadh,3-4,1-5,7.5-9,Overweight,Oral,1801-2200,Low,Fish,Sometimes,Small,Maybe,50-100,Weekly,Yes,Motivation,35,Low,High,8.2,26,Med,26,4,Traditional Family
+45-54,Male,Expat,Mid,Dubai,3-4,1-5,6.5-7.5,Overweight,Insulin,1500-1800,Med,Plant,Sometimes,Medium,Yes,<50,Weekly,Yes,Motivation,50,Med,High,7.0,22,Med,20,7,Traditional Family
+35-44,Male,UAE,Mid,Abu Dhabi,3-4,10+,<6.5,Obese,Both,1801-2200,High,Plant,Sometimes,Medium,Yes,>100,Weekly,No,Taste,84,High,Low,6.0,24,Med,105,3,Traditional Family
+35-44,Prefer not to say,Expat,Low,Abu Dhabi,3-4,<1,7.5-9,Overweight,Both,1500-1800,Med,Fish,Sometimes,Medium,No,>100,Weekly,Yes,Motivation,86,High,High,8.2,26,Med,108,6,Traditional Family
+35-44,Female,Expat,Low,Doha,5+,5-10,7.5-9,Normal,Insulin,>2200,Med,Fish,Sometimes,Medium,No,<50,Weekly,Yes,Taste,99,High,High,8.2,25,Med,40,6,Traditional Family
+25-34,Female,Expat,Mid,Riyadh,1-2,<1,7.5-9,Overweight,Both,1500-1800,Low,Chicken,Always,Large,Yes,50-100,Weekly,No,Motivation,68,Med,Med,8.2,24,High,51,2,Traditional Family
+55-65,Male,UAE,Mid,Abu Dhabi,5+,10+,7.5-9,Obese,Both,1500-1800,High,Chicken,Sometimes,Medium,Yes,<50,Weekly,No,Motivation,65,Med,Med,8.2,36,Low,26,3,Traditional Family
+45-54,Female,Saudi,High,Dubai,3-4,1-5,7.5-9,Obese,None,1500-1800,Med,Chicken,Always,Medium,Yes,50-100,Daily,Yes,Time,57,Med,Med,8.2,30,Med,43,6,Traditional Family
+55-65,Male,Saudi,Mid,Riyadh,5+,5-10,6.5-7.5,Overweight,Oral,>2200,Low,Chicken,Always,Large,Maybe,>100,Daily,Yes,Motivation,98,High,High,7.0,21,High,122,6,Health-Conscious Pro
+55-65,Female,Qatari,Mid,Dubai,3-4,1-5,6.5-7.5,Overweight,None,1801-2200,Med,Chicken,Always,Large,No,50-100,Weekly,No,Taste,47,Low,High,7.0,22,Med,35,4,Traditional Family
+45-54,Male,UAE,Mid,Dubai,3-4,5-10,<6.5,Obese,Oral,>2200,Med,Fish,Always,Medium,Maybe,<50,Weekly,Yes,Time,68,Med,Med,6.0,20,High,27,9,Traditional Family
+55-65,Male,Expat,Low,Dubai,1-2,1-5,<6.5,Normal,Oral,1801-2200,Low,Fish,Sometimes,Large,Maybe,<50,Rarely,Yes,Cost,93,High,Med,6.0,10,High,37,5,Health-Conscious Pro
+25-34,Male,Expat,Mid,Riyadh,5+,<1,7.5-9,Overweight,Insulin,1500-1800,Low,Red Meat,Sometimes,Small,No,>100,Weekly,Yes,Taste,78,High,High,8.2,24,Low,98,4,Traditional Family
+25-34,Male,Saudi,Mid,Dubai,1-2,10+,>9,Overweight,Insulin,1500-1800,Low,Chicken,Sometimes,Medium,Maybe,50-100,Weekly,Yes,Motivation,69,Med,High,9.5,32,Med,52,4,Traditional Family
+25-34,Female,Qatari,Mid,Dubai,5+,10+,>9,Underweight,Both,1801-2200,Med,Plant,Never,Large,Yes,50-100,Daily,No,Taste,82,High,Low,9.5,30,Med,62,1,Traditional Family
+35-44,Male,Qatari,Mid,Doha,5+,10+,7.5-9,Overweight,Oral,1801-2200,Med,Red Meat,Sometimes,Small,Maybe,<50,Daily,No,Time,75,High,High,8.2,30,Low,30,3,Traditional Family
+35-44,Female,Expat,High,Dubai,1-2,5-10,<6.5,Normal,Oral,1801-2200,Med,Fish,Sometimes,Small,No,<50,Rarely,No,Taste,77,High,High,6.0,13,Med,31,4,Traditional Family
+35-44,Male,Expat,High,Abu Dhabi,1-2,10+,<6.5,Overweight,Insulin,1500-1800,High,Chicken,Sometimes,Medium,No,>100,Daily,No,Taste,68,Med,High,6.0,22,Low,85,4,Tech-Savvy Young
+45-54,Female,Expat,Mid,Abu Dhabi,3-4,<1,7.5-9,Obese,Both,>2200,High,Chicken,Always,Medium,Maybe,50-100,Weekly,Yes,Time,80,High,Low,8.2,32,Med,60,8,Traditional Family
+35-44,Male,Expat,Mid,Dubai,1-2,1-5,7.5-9,Normal,Insulin,1500-1800,Med,Chicken,Always,Medium,Maybe,50-100,Weekly,Yes,Time,72,Med,Med,8.2,24,Med,54,7,Traditional Family
+35-44,Male,Expat,Mid,Riyadh,5+,1-5,7.5-9,Obese,Both,>2200,Low,Chicken,Never,Medium,No,50-100,Weekly,No,Time,74,Med,High,8.2,28,Low,56,6,Traditional Family
+35-44,Female,Expat,Low,Dubai,1-2,5-10,7.5-9,Normal,Insulin,1500-1800,Med,Plant,Sometimes,Large,Maybe,50-100,Rarely,Yes,Motivation,76,High,Low,8.2,25,High,57,6,Health-Conscious Pro
+25-34,Male,Saudi,Mid,Abu Dhabi,1-2,1-5,7.5-9,Overweight,Insulin,1801-2200,Med,Chicken,Sometimes,Medium,Yes,<50,Weekly,Yes,Motivation,66,Med,Med,8.2,28,Low,26,5,Traditional Family
+45-54,Male,Expat,Low,Abu Dhabi,5+,<1,7.5-9,Normal,Oral,1500-1800,Med,Chicken,Sometimes,Small,No,<50,Daily,No,Time,52,Med,High,8.2,22,Low,21,4,Traditional Family
+25-34,Female,UAE,Mid,Riyadh,3-4,5-10,<6.5,Obese,Oral,1801-2200,Med,Plant,Always,Large,No,50-100,Rarely,No,Motivation,61,Med,High,6.0,20,High,46,3,Traditional Family
+55-65,Female,Expat,Mid,Riyadh,5+,10+,7.5-9,Obese,Oral,1801-2200,Med,Plant,Sometimes,Small,Yes,50-100,Rarely,Yes,Motivation,34,Low,High,8.2,33,Med,26,5,Traditional Family
+45-54,Male,Qatari,Low,Dubai,3-4,1-5,>9,Overweight,Oral,1801-2200,High,Fish,Sometimes,Small,Maybe,50-100,Daily,No,Motivation,40,Low,High,9.5,34,Med,30,3,Traditional Family
+25-34,Male,Expat,High,Dubai,3-4,<1,6.5-7.5,Obese,None,1801-2200,Low,Plant,Always,Small,Maybe,>100,Daily,No,Time,50,Med,Low,7.0,20,High,62,6,Tech-Savvy Young
+25-34,Female,Expat,High,Riyadh,3-4,1-5,7.5-9,Overweight,Oral,1801-2200,Med,Fish,Always,Medium,Yes,50-100,Daily,Yes,Time,100,High,Low,8.2,28,High,75,9,Health-Conscious Pro
+45-54,Male,Expat,Mid,Abu Dhabi,3-4,1-5,6.5-7.5,Obese,Insulin,1801-2200,Low,Chicken,Never,Small,No,<50,Daily,No,Taste,72,Med,High,7.0,22,Low,29,4,Traditional Family
+45-54,Male,Expat,Mid,Riyadh,3-4,1-5,>9,Obese,Oral,>2200,High,Fish,Sometimes,Small,Maybe,>100,Rarely,Yes,Time,60,Med,Med,9.5,37,Med,75,9,Traditional Family
+45-54,Male,Saudi,High,Riyadh,3-4,5-10,<6.5,Obese,Both,1500-1800,Low,Fish,Sometimes,Medium,No,50-100,Weekly,Yes,Time,70,Med,High,6.0,18,High,52,8,Health-Conscious Pro
+45-54,Female,UAE,Low,Riyadh,3-4,5-10,7.5-9,Overweight,Oral,1801-2200,Low,Red Meat,Sometimes,Small,Yes,50-100,Weekly,No,Time,77,High,Low,8.2,27,Low,58,4,Traditional Family
+25-34,Female,Qatari,High,Abu Dhabi,1-2,5-10,<6.5,Normal,Insulin,1801-2200,Med,Chicken,Never,Medium,Maybe,50-100,Rarely,No,Taste,70,Med,Med,6.0,13,Low,52,1,Traditional Family
+35-44,Male,Saudi,Low,Dubai,3-4,1-5,7.5-9,Overweight,Both,1801-2200,Med,Fish,Sometimes,Large,Yes,50-100,Weekly,Yes,Time,65,Med,Med,8.2,28,High,49,9,Traditional Family
+25-34,Male,Expat,High,Riyadh,1-2,10+,<6.5,Normal,Oral,1801-2200,Low,Chicken,Sometimes,Medium,No,<50,Weekly,Yes,Cost,48,Low,High,6.0,13,Med,19,5,Traditional Family
+55-65,Male,Saudi,Mid,Abu Dhabi,3-4,1-5,6.5-7.5,Overweight,Oral,1500-1800,Med,Fish,Sometimes,Small,Maybe,50-100,Rarely,Yes,Cost,53,Med,Low,7.0,22,Med,40,6,Traditional Family
+45-54,Female,Expat,High,Dubai,1-2,1-5,6.5-7.5,Overweight,Insulin,1500-1800,Med,Chicken,Sometimes,Small,Maybe,>100,Rarely,No,Taste,34,Low,High,7.0,22,Low,42,5,Traditional Family
+35-44,Male,Expat,High,Doha,3-4,10+,>9,Overweight,Insulin,1500-1800,Low,Chicken,Always,Large,Yes,50-100,Rarely,Yes,Cost,62,Med,Med,9.5,32,High,46,5,Traditional Family
+25-34,Male,Expat,Low,Doha,3-4,1-5,6.5-7.5,Underweight,Oral,1500-1800,Med,Red Meat,Never,Small,Yes,50-100,Weekly,Yes,Time,75,High,Low,7.0,16,Low,56,8,Traditional Family
+35-44,Female,UAE,Mid,Abu Dhabi,1-2,<1,<6.5,Normal,Insulin,1801-2200,High,Fish,Never,Large,Yes,<50,Rarely,Yes,Time,39,Low,High,6.0,13,Med,16,6,Traditional Family
+35-44,Male,Expat,High,Dubai,1-2,10+,7.5-9,Overweight,Oral,1801-2200,Med,Fish,Always,Small,Yes,<50,Daily,Yes,Taste,77,High,Low,8.2,30,Med,31,6,Tech-Savvy Young
+45-54,Female,Expat,Mid,Dubai,1-2,1-5,6.5-7.5,Obese,Oral,>2200,Med,Chicken,Never,Large,Maybe,<50,Weekly,Yes,Taste,100,High,Med,7.0,24,Low,40,6,Traditional Family
+45-54,Male,Expat,High,Riyadh,3-4,5-10,>9,Overweight,Oral,1801-2200,Med,Chicken,Always,Medium,Maybe,<50,Rarely,No,Cost,46,Low,Med,9.5,33,Med,18,4,Traditional Family
+55-65,Male,Expat,Mid,Doha,5+,<1,<6.5,Overweight,None,1500-1800,Med,Fish,Sometimes,Medium,Maybe,>100,Daily,Yes,Taste,100,High,High,6.0,14,Med,125,7,Traditional Family
+35-44,Male,Expat,Mid,Dubai,1-2,5-10,7.5-9,Obese,Both,>2200,Low,Red Meat,Sometimes,Medium,Maybe,50-100,Rarely,Yes,Cost,50,Med,Med,8.2,30,Med,38,7,Traditional Family
+25-34,Female,Saudi,Mid,Dubai,3-4,1-5,6.5-7.5,Overweight,Both,>2200,Low,Red Meat,Never,Medium,Yes,50-100,Weekly,No,Motivation,42,Low,Low,7.0,20,Low,32,4,Traditional Family
+45-54,Female,Expat,Low,Doha,3-4,<1,<6.5,Normal,Insulin,1801-2200,High,Fish,Never,Medium,Yes,50-100,Daily,No,Taste,99,High,Low,6.0,13,Med,74,2,Traditional Family
+45-54,Female,Qatari,High,Dubai,3-4,5-10,7.5-9,Overweight,Insulin,1801-2200,High,Fish,Never,Medium,Yes,<50,Rarely,Yes,Taste,75,High,Low,8.2,32,Med,30,5,Traditional Family
+45-54,Male,UAE,Mid,Abu Dhabi,5+,1-5,7.5-9,Normal,Oral,>2200,Med,Red Meat,Never,Medium,No,>100,Daily,Yes,Taste,72,Med,High,8.2,24,Low,90,3,Traditional Family
+45-54,Female,Qatari,Mid,Doha,3-4,1-5,7.5-9,Obese,Insulin,1801-2200,Low,Fish,Sometimes,Small,Maybe,50-100,Weekly,No,Motivation,36,Low,High,8.2,28,Med,27,6,Traditional Family
+35-44,Male,UAE,Mid,Dubai,3-4,<1,6.5-7.5,Normal,None,>2200,Low,Fish,Never,Small,Yes,<50,Daily,Yes,Taste,100,High,Low,7.0,14,Med,40,6,Traditional Family
+35-44,Male,UAE,Mid,Riyadh,1-2,<1,6.5-7.5,Overweight,Insulin,1500-1800,Med,Chicken,Sometimes,Medium,Yes,50-100,Rarely,No,Cost,67,Med,Med,7.0,20,Low,50,6,Traditional Family
+35-44,Female,UAE,High,Dubai,1-2,1-5,6.5-7.5,Underweight,Oral,1500-1800,Med,Plant,Sometimes,Small,No,>100,Daily,Yes,Motivation,67,Med,High,7.0,16,Med,84,5,Tech-Savvy Young
+25-34,Male,Expat,High,Dubai,1-2,<1,>9,Normal,Oral,1801-2200,Low,Fish,Sometimes,Medium,Maybe,>100,Daily,Yes,Time,52,Med,Med,9.5,24,High,65,8,Tech-Savvy Young
+25-34,Male,Expat,Mid,Riyadh,1-2,10+,6.5-7.5,Obese,Oral,1801-2200,High,Red Meat,Never,Small,Maybe,<50,Daily,Yes,Time,64,Med,Low,7.0,30,Low,26,5,Traditional Family
+25-34,Male,Expat,High,Abu Dhabi,3-4,<1,6.5-7.5,Normal,Insulin,>2200,Med,Plant,Never,Medium,Maybe,>100,Rarely,No,Cost,30,Low,High,7.0,16,Med,38,3,Traditional Family
+45-54,Male,Qatari,High,Doha,3-4,1-5,6.5-7.5,Normal,Oral,>2200,High,Chicken,Never,Small,Yes,<50,Weekly,No,Time,66,Med,High,7.0,21,Low,26,4,Traditional Family
+35-44,Male,Saudi,Mid,Abu Dhabi,3-4,<1,7.5-9,Overweight,Oral,1801-2200,High,Plant,Sometimes,Medium,No,<50,Weekly,Yes,Motivation,33,Low,High,8.2,29,Med,13,7,Traditional Family
+35-44,Female,Expat,High,Dubai,1-2,1-5,6.5-7.5,Underweight,Both,1500-1800,High,Red Meat,Sometimes,Small,No,>100,Weekly,Yes,Time,37,Low,High,7.0,20,Low,46,7,Traditional Family
+55-65,Male,Qatari,Low,Dubai,1-2,10+,>9,Normal,Insulin,>2200,Med,Chicken,Always,Small,Yes,>100,Weekly,Yes,Taste,93,High,Low,9.5,31,Low,116,5,Traditional Family
+25-34,Female,UAE,Low,Dubai,3-4,1-5,6.5-7.5,Obese,None,1801-2200,Med,Chicken,Sometimes,Small,No,50-100,Daily,Yes,Motivation,63,Med,High,7.0,24,Low,47,8,Traditional Family
+35-44,Female,Expat,High,Dubai,5+,10+,>9,Obese,Both,1500-1800,Med,Chicken,Sometimes,Large,No,50-100,Weekly,No,Time,76,High,High,9.5,37,Med,57,4,Traditional Family
+45-54,Male,Saudi,Mid,Dubai,1-2,1-5,<6.5,Obese,Oral,1801-2200,Med,Fish,Sometimes,Small,Yes,>100,Daily,Yes,Cost,79,High,Low,6.0,18,Med,99,9,Traditional Family
+25-34,Male,Expat,High,Dubai,5+,5-10,7.5-9,Obese,Both,1801-2200,Med,Fish,Sometimes,Medium,Maybe,50-100,Rarely,No,Cost,56,Med,Med,8.2,32,Med,42,5,Traditional Family
+25-34,Male,Expat,High,Abu Dhabi,3-4,5-10,>9,Overweight,Insulin,1801-2200,High,Fish,Sometimes,Small,Yes,>100,Rarely,No,Motivation,17,Low,High,9.5,36,Med,21,4,Traditional Family
+35-44,Female,Saudi,Low,Riyadh,3-4,10+,<6.5,Normal,None,1801-2200,Med,Chicken,Never,Small,Yes,50-100,Weekly,No,Cost,84,High,Low,6.0,15,Low,63,5,Traditional Family
+25-34,Male,UAE,High,Riyadh,3-4,5-10,>9,Obese,Oral,1500-1800,High,Red Meat,Sometimes,Medium,Maybe,>100,Daily,No,Taste,46,Low,Low,9.5,38,Low,58,5,Tech-Savvy Young
+55-65,Female,Expat,Mid,Riyadh,1-2,5-10,6.5-7.5,Obese,Oral,>2200,High,Chicken,Sometimes,Medium,Yes,>100,Rarely,Yes,Motivation,55,Med,Med,7.0,28,Low,69,5,Traditional Family
+45-54,Male,Expat,Mid,Dubai,1-2,1-5,>9,Obese,Oral,1801-2200,Low,Chicken,Sometimes,Large,No,<50,Daily,Yes,Motivation,81,High,High,9.5,32,Med,32,4,Traditional Family
+45-54,Female,UAE,Mid,Dubai,3-4,1-5,7.5-9,Overweight,Insulin,1801-2200,Low,Fish,Sometimes,Large,No,>100,Daily,Yes,Motivation,74,Med,High,8.2,26,High,92,4,Health-Conscious Pro
+55-65,Male,Expat,High,Riyadh,3-4,10+,6.5-7.5,Normal,None,1500-1800,Med,Fish,Sometimes,Medium,Yes,50-100,Daily,Yes,Taste,87,High,Low,7.0,21,Med,65,5,Traditional Family
+45-54,Male,UAE,Low,Abu Dhabi,5+,1-5,<6.5,Obese,Insulin,1801-2200,Med,Chicken,Sometimes,Medium,Maybe,50-100,Weekly,Yes,Motivation,40,Low,Med,6.0,18,Low,30,5,Traditional Family
+25-34,Female,Expat,Mid,Dubai,3-4,1-5,6.5-7.5,Obese,Both,1500-1800,High,Chicken,Sometimes,Medium,No,50-100,Rarely,Yes,Motivation,69,Med,High,7.0,27,Low,52,5,Traditional Family
+55-65,Female,Expat,Mid,Riyadh,1-2,5-10,<6.5,Obese,Oral,1500-1800,Med,Chicken,Sometimes,Medium,No,<50,Weekly,No,Taste,60,Med,High,6.0,20,Low,24,4,Traditional Family
+35-44,Male,Saudi,Mid,Riyadh,3-4,1-5,<6.5,Normal,None,1801-2200,Med,Plant,Sometimes,Large,No,50-100,Daily,Yes,Time,88,High,High,6.0,12,High,66,8,Health-Conscious Pro
+45-54,Female,UAE,Mid,Abu Dhabi,1-2,10+,<6.5,Normal,Insulin,1500-1800,Med,Plant,Sometimes,Medium,Yes,>100,Weekly,No,Taste,84,High,Low,6.0,15,Med,105,5,Traditional Family
+55-65,Female,UAE,Low,Dubai,3-4,5-10,6.5-7.5,Normal,Oral,1801-2200,Low,Fish,Sometimes,Medium,Maybe,<50,Weekly,No,Taste,75,High,Low,7.0,17,High,30,4,Health-Conscious Pro
+35-44,Female,Saudi,Mid,Riyadh,3-4,5-10,7.5-9,Obese,Oral,1500-1800,Med,Plant,Always,Small,Maybe,50-100,Daily,No,Motivation,97,High,Med,8.2,32,Med,73,6,Traditional Family
+25-34,Female,UAE,Mid,Abu Dhabi,5+,10+,<6.5,Normal,Both,1801-2200,High,Plant,Sometimes,Small,No,>100,Daily,Yes,Cost,56,Med,High,6.0,18,Med,70,5,Traditional Family
+25-34,Male,Expat,High,Riyadh,3-4,<1,<6.5,Normal,Insulin,1500-1800,Low,Chicken,Sometimes,Large,Yes,50-100,Rarely,Yes,Motivation,62,Med,High,6.0,8,Med,46,6,Traditional Family
+35-44,Male,UAE,Mid,Riyadh,3-4,1-5,7.5-9,Obese,Insulin,1500-1800,Med,Red Meat,Always,Medium,No,50-100,Rarely,Yes,Time,73,Med,High,8.2,30,Med,55,6,Traditional Family
+45-54,Male,Expat,Low,Riyadh,3-4,1-5,<6.5,Underweight,Insulin,1500-1800,Med,Red Meat,Sometimes,Medium,Yes,50-100,Rarely,Yes,Time,37,Low,High,6.0,10,Low,28,5,Traditional Family
+55-65,Female,Expat,High,Abu Dhabi,5+,1-5,<6.5,Obese,Both,>2200,Low,Chicken,Never,Small,No,50-100,Rarely,Yes,Motivation,58,Med,High,6.0,16,Low,44,4,Traditional Family
+25-34,Female,Expat,Low,Dubai,1-2,5-10,<6.5,Overweight,Insulin,>2200,Low,Chicken,Always,Large,Maybe,50-100,Daily,No,Cost,75,High,Med,6.0,15,High,56,7,Health-Conscious Pro
+35-44,Male,Expat,High,Riyadh,1-2,10+,>9,Obese,Oral,1500-1800,High,Chicken,Never,Small,Maybe,>100,Daily,Yes,Time,48,Low,High,9.5,40,Low,60,7,Tech-Savvy Young
+35-44,Male,Saudi,Mid,Riyadh,1-2,1-5,7.5-9,Overweight,Insulin,1801-2200,Med,Chicken,Sometimes,Large,Maybe,50-100,Weekly,Yes,Motivation,86,High,Med,8.2,28,Med,64,8,Traditional Family
+25-34,Female,Expat,High,Riyadh,1-2,1-5,6.5-7.5,Obese,Both,1801-2200,Low,Plant,Always,Small,Yes,>100,Weekly,No,Cost,93,High,Low,7.0,22,High,116,3,Health-Conscious Pro
+25-34,Prefer not to say,Expat,Mid,Dubai,3-4,10+,7.5-9,Obese,None,>2200,Low,Fish,Always,Large,Yes,50-100,Rarely,Yes,Time,67,Med,High,8.2,31,High,50,6,Traditional Family
+35-44,Female,Qatari,Low,Dubai,3-4,1-5,6.5-7.5,Underweight,Oral,1801-2200,Med,Plant,Never,Medium,Yes,<50,Rarely,Yes,Taste,54,Med,Med,7.0,16,Med,22,6,Traditional Family
+55-65,Male,UAE,Mid,Doha,3-4,1-5,7.5-9,Normal,Oral,1801-2200,Med,Plant,Sometimes,Small,Yes,50-100,Weekly,No,Time,45,Low,Med,8.2,24,Med,34,7,Traditional Family
+35-44,Male,Expat,High,Riyadh,1-2,1-5,7.5-9,Normal,Insulin,1500-1800,Med,Plant,Sometimes,Medium,Yes,50-100,Daily,Yes,Taste,66,Med,High,8.2,24,Med,50,3,Tech-Savvy Young
+35-44,Male,Qatari,Mid,Doha,3-4,10+,7.5-9,Overweight,Insulin,1801-2200,Low,Plant,Sometimes,Medium,No,50-100,Rarely,No,Motivation,67,Med,High,8.2,28,High,50,5,Traditional Family
+45-54,Female,Saudi,Low,Riyadh,3-4,5-10,6.5-7.5,Obese,Oral,>2200,High,Chicken,Never,Small,Maybe,<50,Rarely,Yes,Motivation,75,High,Med,7.0,28,Low,30,7,Traditional Family
+35-44,Male,Qatari,High,Abu Dhabi,3-4,5-10,<6.5,Overweight,Both,1801-2200,Med,Chicken,Sometimes,Large,Yes,<50,Daily,No,Time,38,Low,High,6.0,17,Med,15,3,Tech-Savvy Young
+55-65,Female,Qatari,High,Riyadh,3-4,10+,6.5-7.5,Overweight,Oral,1500-1800,Med,Plant,Sometimes,Medium,No,<50,Rarely,Yes,Motivation,38,Low,High,7.0,24,Med,15,6,Traditional Family
+55-65,Male,Expat,Mid,Doha,3-4,1-5,>9,Normal,None,1500-1800,Med,Chicken,Never,Medium,Maybe,<50,Daily,Yes,Taste,88,High,Low,9.5,28,Low,35,3,Traditional Family
+35-44,Female,Expat,High,Abu Dhabi,1-2,1-5,7.5-9,Obese,Oral,1801-2200,Med,Chicken,Sometimes,Small,No,50-100,Daily,No,Time,73,Med,High,8.2,30,Low,55,4,Tech-Savvy Young
+35-44,Female,Expat,High,Riyadh,1-2,10+,7.5-9,Obese,Both,1801-2200,High,Red Meat,Sometimes,Medium,Maybe,<50,Weekly,Yes,Motivation,91,High,Low,8.2,36,Low,36,7,Traditional Family
+35-44,Female,UAE,Mid,Dubai,5+,1-5,>9,Normal,Oral,1801-2200,High,Plant,Always,Large,Yes,50-100,Weekly,Yes,Motivation,89,High,Low,9.5,31,High,67,5,Health-Conscious Pro
+35-44,Male,Qatari,Low,Abu Dhabi,5+,5-10,<6.5,Overweight,Oral,>2200,Med,Chicken,Always,Medium,Maybe,<50,Daily,Yes,Taste,100,High,Med,6.0,17,Med,40,7,Traditional Family
+25-34,Male,Expat,Mid,Riyadh,3-4,10+,7.5-9,Normal,Oral,1500-1800,High,Plant,Sometimes,Large,Maybe,<50,Weekly,Yes,Taste,82,High,Low,8.2,30,High,33,6,Health-Conscious Pro
+45-54,Male,UAE,Low,Dubai,1-2,5-10,7.5-9,Overweight,Oral,1500-1800,High,Plant,Always,Large,Yes,50-100,Rarely,Yes,Time,64,Med,High,8.2,32,High,48,7,Traditional Family
+35-44,Female,Saudi,Mid,Dubai,3-4,5-10,>9,Overweight,Oral,>2200,High,Chicken,Always,Small,Yes,<50,Weekly,No,Time,67,Med,Med,9.5,36,Low,27,3,Traditional Family
+25-34,Female,Expat,Mid,Dubai,3-4,10+,>9,Normal,Both,1500-1800,Low,Chicken,Sometimes,Small,Yes,>100,Weekly,No,Motivation,33,Low,High,9.5,29,Low,41,6,Traditional Family
+35-44,Female,UAE,Low,Dubai,3-4,10+,7.5-9,Overweight,None,1500-1800,Med,Red Meat,Never,Large,Yes,<50,Daily,No,Time,78,High,Low,8.2,30,Low,31,4,Traditional Family
+55-65,Female,Expat,Mid,Dubai,1-2,1-5,6.5-7.5,Overweight,Oral,1801-2200,Low,Chicken,Sometimes,Medium,Maybe,50-100,Daily,Yes,Motivation,78,High,Med,7.0,20,Med,58,8,Traditional Family
+25-34,Female,Saudi,Low,Abu Dhabi,1-2,<1,7.5-9,Overweight,Insulin,>2200,High,Chicken,Sometimes,Small,Maybe,>100,Daily,Yes,Time,55,Med,Med,8.2,29,Low,69,7,Traditional Family
+25-34,Male,UAE,High,Doha,3-4,1-5,<6.5,Overweight,Oral,1500-1800,Low,Fish,Sometimes,Small,Yes,50-100,Daily,No,Time,48,Low,Med,6.0,14,Med,36,3,Tech-Savvy Young
+35-44,Female,Saudi,High,Abu Dhabi,3-4,5-10,7.5-9,Underweight,Oral,>2200,Med,Plant,Sometimes,Medium,Maybe,<50,Daily,No,Cost,54,Med,Med,8.2,24,Med,22,7,Tech-Savvy Young
+55-65,Male,Expat,Low,Dubai,1-2,1-5,>9,Obese,Insulin,1801-2200,Med,Chicken,Sometimes,Medium,Maybe,50-100,Daily,Yes,Time,95,High,High,9.5,34,Low,71,6,Traditional Family
+25-34,Male,Expat,High,Dubai,1-2,5-10,6.5-7.5,Obese,Both,1500-1800,Med,Chicken,Sometimes,Small,Yes,50-100,Weekly,Yes,Taste,90,High,Low,7.0,26,Low,68,7,Traditional Family
+45-54,Female,Expat,Mid,Riyadh,3-4,1-5,7.5-9,Overweight,None,1801-2200,Med,Chicken,Never,Small,Yes,>100,Weekly,Yes,Time,41,Low,High,8.2,28,Low,51,5,Traditional Family
+45-54,Male,Expat,Mid,Dubai,5+,5-10,6.5-7.5,Normal,None,1801-2200,High,Red Meat,Always,Large,Yes,>100,Rarely,Yes,Cost,80,High,Low,7.0,22,Med,100,9,Traditional Family
+25-34,Male,UAE,Low,Riyadh,5+,1-5,6.5-7.5,Obese,Insulin,1801-2200,Med,Chicken,Sometimes,Medium,Yes,<50,Daily,No,Time,41,Low,Low,7.0,24,Low,16,4,Traditional Family
+45-54,Female,Expat,Mid,Riyadh,3-4,5-10,6.5-7.5,Obese,Both,1801-2200,High,Fish,Always,Medium,Yes,>100,Weekly,Yes,Motivation,56,Med,Low,7.0,28,High,70,4,Traditional Family
+35-44,Male,Expat,High,Riyadh,3-4,5-10,7.5-9,Normal,Both,>2200,Low,Red Meat,Never,Medium,Yes,<50,Daily,No,Cost,81,High,Low,8.2,23,Low,32,5,Tech-Savvy Young
+45-54,Female,Expat,Mid,Dubai,1-2,1-5,>9,Overweight,Oral,1500-1800,Med,Chicken,Always,Medium,Maybe,<50,Weekly,Yes,Motivation,67,Med,Med,9.5,32,Med,27,6,Traditional Family
+45-54,Male,UAE,Low,Riyadh,3-4,1-5,>9,Normal,Oral,1801-2200,Med,Red Meat,Never,Medium,Maybe,>100,Daily,Yes,Motivation,61,Med,High,9.5,28,Low,76,7,Traditional Family
+35-44,Male,Expat,Low,Dubai,3-4,5-10,<6.5,Overweight,Both,1801-2200,Low,Red Meat,Never,Medium,Yes,<50,Rarely,No,Motivation,35,Low,High,6.0,15,Low,14,6,Traditional Family
+25-34,Male,Saudi,Mid,Doha,3-4,1-5,>9,Normal,Oral,1801-2200,Med,Red Meat,Never,Small,Yes,<50,Rarely,Yes,Taste,58,Med,Med,9.5,28,Low,23,4,Traditional Family
+45-54,Male,Saudi,Mid,Riyadh,3-4,1-5,7.5-9,Overweight,Oral,1801-2200,Med,Chicken,Sometimes,Medium,Maybe,<50,Weekly,Yes,Motivation,38,Low,High,8.2,28,Low,15,8,Traditional Family
+35-44,Female,Expat,Low,Dubai,1-2,10+,6.5-7.5,Overweight,Oral,1500-1800,Med,Plant,Always,Medium,No,50-100,Daily,No,Cost,100,High,High,7.0,24,High,75,3,Health-Conscious Pro
+25-34,Male,Expat,Mid,Dubai,1-2,5-10,<6.5,Overweight,Oral,1801-2200,Med,Plant,Sometimes,Large,No,50-100,Weekly,No,Time,44,Low,High,6.0,17,High,33,6,Traditional Family
+25-34,Female,Qatari,High,Dubai,3-4,10+,6.5-7.5,Overweight,Insulin,1801-2200,Med,Red Meat,Always,Medium,Maybe,50-100,Rarely,No,Motivation,57,Med,Med,7.0,24,Med,43,3,Traditional Family
+45-54,Male,Qatari,High,Riyadh,1-2,1-5,>9,Overweight,None,1500-1800,Low,Chicken,Sometimes,Large,Yes,<50,Daily,Yes,Time,96,High,Low,9.5,30,Med,38,9,Traditional Family
+45-54,Female,Expat,Mid,Dubai,1-2,1-5,7.5-9,Overweight,Both,>2200,Low,Plant,Sometimes,Large,Yes,50-100,Weekly,Yes,Motivation,74,Med,Low,8.2,26,High,56,5,Health-Conscious Pro
+25-34,Female,Expat,High,Abu Dhabi,5+,10+,7.5-9,Underweight,Oral,>2200,Med,Chicken,Always,Small,No,>100,Rarely,No,Time,76,High,High,8.2,26,Low,95,3,Traditional Family
+35-44,Female,Expat,Mid,Dubai,3-4,5-10,6.5-7.5,Normal,Insulin,1801-2200,Low,Chicken,Sometimes,Medium,Yes,>100,Rarely,Yes,Taste,70,Med,Low,7.0,17,Med,88,6,Traditional Family
+25-34,Male,Expat,Mid,Riyadh,3-4,5-10,7.5-9,Obese,Oral,1500-1800,Low,Fish,Sometimes,Medium,No,<50,Rarely,No,Time,77,High,High,8.2,30,High,31,4,Health-Conscious Pro
+45-54,Male,Expat,Low,Riyadh,5+,1-5,<6.5,Normal,Insulin,1801-2200,Med,Plant,Always,Large,Maybe,>100,Rarely,Yes,Motivation,89,High,High,6.0,12,High,111,4,Health-Conscious Pro
+25-34,Male,Saudi,Mid,Riyadh,5+,1-5,6.5-7.5,Obese,Insulin,1500-1800,Med,Fish,Always,Medium,Maybe,50-100,Rarely,Yes,Taste,58,Med,Low,7.0,24,High,44,5,Traditional Family
+45-54,Female,Expat,High,Riyadh,3-4,<1,7.5-9,Obese,Oral,1500-1800,Med,Fish,Always,Medium,Yes,<50,Weekly,No,Taste,68,Med,Med,8.2,28,High,27,2,Traditional Family
+35-44,Male,Qatari,Mid,Dubai,5+,1-5,<6.5,Normal,Oral,1801-2200,Med,Red Meat,Always,Medium,Maybe,<50,Weekly,Yes,Taste,80,High,Med,6.0,12,Med,32,6,Traditional Family
+55-65,Female,Saudi,Mid,Dubai,3-4,<1,7.5-9,Overweight,Oral,1500-1800,Med,Fish,Never,Small,Maybe,<50,Rarely,Yes,Taste,66,Med,High,8.2,26,Low,26,4,Traditional Family
+25-34,Female,Expat,Mid,Riyadh,3-4,<1,6.5-7.5,Overweight,Insulin,1500-1800,Med,Plant,Always,Small,Yes,50-100,Weekly,Yes,Motivation,59,Med,Low,7.0,20,Med,44,5,Traditional Family
+35-44,Male,UAE,Low,Dubai,3-4,10+,7.5-9,Obese,Oral,1500-1800,High,Fish,Sometimes,Medium,Yes,<50,Rarely,Yes,Cost,96,High,Low,8.2,36,Med,38,5,Traditional Family
+25-34,Female,Expat,High,Abu Dhabi,3-4,1-5,6.5-7.5,Obese,Insulin,1500-1800,Med,Fish,Always,Medium,No,50-100,Daily,Yes,Motivation,95,High,High,7.0,24,High,71,8,Health-Conscious Pro
+55-65,Male,Expat,Mid,Dubai,3-4,5-10,7.5-9,Obese,None,1500-1800,Med,Plant,Sometimes,Medium,Maybe,<50,Weekly,Yes,Motivation,59,Med,Med,8.2,32,Med,24,8,Traditional Family
+55-65,Male,Expat,Mid,Dubai,3-4,10+,<6.5,Normal,Oral,>2200,Med,Red Meat,Sometimes,Medium,Maybe,>100,Daily,Yes,Taste,100,High,Low,6.0,15,Low,125,4,Traditional Family
+35-44,Female,Expat,Mid,Dubai,1-2,5-10,<6.5,Overweight,Both,1500-1800,Low,Fish,Sometimes,Small,Yes,<50,Daily,No,Cost,64,Med,Low,6.0,15,Med,26,6,Traditional Family
+45-54,Female,Expat,Mid,Doha,3-4,1-5,>9,Overweight,Oral,1500-1800,Med,Plant,Sometimes,Medium,Maybe,>100,Daily,Yes,Taste,47,Low,Med,9.5,32,Med,59,6,Traditional Family
+45-54,Female,Expat,Low,Dubai,1-2,5-10,6.5-7.5,Overweight,Insulin,1500-1800,Med,Chicken,Never,Small,Maybe,>100,Weekly,No,Motivation,38,Low,High,7.0,23,Low,48,2,Traditional Family
+45-54,Male,Expat,Mid,Abu Dhabi,3-4,5-10,7.5-9,Underweight,None,>2200,High,Chicken,Always,Large,Maybe,<50,Daily,Yes,Motivation,89,High,Low,8.2,27,Med,36,5,Traditional Family
+35-44,Male,UAE,Low,Dubai,3-4,5-10,>9,Normal,Oral,1801-2200,High,Fish,Always,Large,Maybe,50-100,Weekly,No,Time,68,Med,Low,9.5,32,High,51,4,Traditional Family
+25-34,Female,Expat,Mid,Riyadh,3-4,5-10,6.5-7.5,Obese,Oral,1801-2200,Med,Chicken,Never,Medium,Maybe,<50,Weekly,Yes,Cost,73,Med,Low,7.0,26,Low,29,9,Traditional Family
+25-34,Female,Saudi,High,Dubai,3-4,10+,6.5-7.5,Overweight,Oral,>2200,Low,Chicken,Always,Small,Maybe,>100,Daily,No,Motivation,55,Med,High,7.0,22,Med,69,2,Tech-Savvy Young
+55-65,Female,Expat,High,Doha,5+,5-10,7.5-9,Overweight,Insulin,1801-2200,Low,Fish,Sometimes,Small,Yes,50-100,Daily,No,Taste,74,Med,Low,8.2,27,Med,56,3,Traditional Family
+55-65,Male,Expat,Mid,Doha,3-4,1-5,>9,Overweight,Both,1500-1800,Med,Chicken,Sometimes,Medium,No,<50,Weekly,No,Motivation,52,Med,High,9.5,32,Low,21,5,Traditional Family
+45-54,Female,Expat,Mid,Dubai,3-4,5-10,>9,Obese,Oral,1500-1800,Med,Chicken,Sometimes,Medium,Maybe,<50,Rarely,No,Taste,74,Med,Med,9.5,36,Low,30,4,Traditional Family
+35-44,Male,UAE,Low,Doha,3-4,<1,6.5-7.5,Obese,Oral,1801-2200,Low,Fish,Always,Medium,Yes,50-100,Rarely,Yes,Cost,96,High,Low,7.0,20,High,72,6,Health-Conscious Pro
+35-44,Male,UAE,High,Doha,1-2,10+,7.5-9,Normal,Insulin,1500-1800,Med,Fish,Sometimes,Small,Maybe,>100,Rarely,No,Time,22,Low,High,8.2,27,Med,28,3,Traditional Family
+45-54,Female,Expat,Mid,Riyadh,1-2,<1,<6.5,Normal,Insulin,1801-2200,Low,Red Meat,Sometimes,Medium,No,50-100,Rarely,No,Time,50,Med,High,6.0,8,Med,38,5,Traditional Family
+55-65,Male,UAE,Mid,Riyadh,1-2,1-5,>9,Normal,Both,1500-1800,High,Plant,Sometimes,Medium,Yes,>100,Weekly,No,Taste,77,High,Low,9.5,31,Med,96,4,Traditional Family
+55-65,Female,UAE,Mid,Dubai,3-4,10+,>9,Obese,Both,1801-2200,Low,Fish,Never,Medium,Yes,50-100,Rarely,Yes,Time,51,Med,Med,9.5,35,Med,38,5,Traditional Family
+45-54,Male,UAE,Low,Abu Dhabi,3-4,5-10,<6.5,Overweight,Insulin,1500-1800,High,Red Meat,Sometimes,Medium,Maybe,<50,Rarely,No,Taste,69,Med,Med,6.0,20,Low,28,3,Traditional Family
+45-54,Male,Expat,Mid,Dubai,5+,1-5,6.5-7.5,Overweight,Insulin,1500-1800,High,Plant,Never,Small,Yes,>100,Rarely,Yes,Time,77,High,Low,7.0,24,Low,96,6,Traditional Family
+25-34,Female,Expat,Low,Dubai,1-2,1-5,<6.5,Overweight,Both,1801-2200,Med,Chicken,Never,Medium,No,<50,Daily,Yes,Motivation,74,Med,High,6.0,16,Low,30,8,Traditional Family
+25-34,Female,Qatari,Mid,Doha,1-2,10+,6.5-7.5,Overweight,Oral,>2200,Med,Chicken,Sometimes,Large,Yes,>100,Rarely,Yes,Taste,49,Low,Med,7.0,24,Med,61,6,Traditional Family
+55-65,Female,Saudi,Mid,Dubai,5+,1-5,7.5-9,Obese,Oral,1801-2200,Med,Plant,Always,Medium,No,50-100,Weekly,Yes,Motivation,67,Med,High,8.2,30,High,50,7,Traditional Family
+45-54,Female,Saudi,Low,Riyadh,1-2,10+,6.5-7.5,Overweight,Oral,1801-2200,Med,Fish,Sometimes,Large,Yes,<50,Rarely,No,Cost,80,High,Low,7.0,24,High,32,5,Health-Conscious Pro
+25-34,Female,Expat,Mid,Riyadh,3-4,<1,<6.5,Normal,Insulin,1500-1800,Med,Plant,Never,Medium,Yes,50-100,Daily,No,Motivation,40,Low,Med,6.0,10,Med,30,6,Traditional Family
+25-34,Female,Expat,Low,Doha,3-4,5-10,6.5-7.5,Normal,Both,1500-1800,Med,Plant,Sometimes,Small,No,>100,Weekly,No,Taste,85,High,High,7.0,19,Med,106,1,Traditional Family
+45-54,Female,Saudi,Mid,Doha,3-4,10+,>9,Overweight,None,1500-1800,Med,Plant,Always,Medium,Maybe,>100,Daily,No,Motivation,66,Med,High,9.5,34,High,82,3,Traditional Family
+25-34,Male,Saudi,Mid,Dubai,1-2,1-5,7.5-9,Obese,Insulin,1500-1800,Med,Red Meat,Sometimes,Medium,Yes,<50,Daily,Yes,Motivation,84,High,Low,8.2,30,Low,34,4,Traditional Family
+25-34,Female,UAE,Low,Dubai,1-2,1-5,6.5-7.5,Overweight,Oral,1500-1800,Med,Fish,Always,Medium,Yes,<50,Daily,No,Motivation,95,High,Low,7.0,22,High,38,4,Health-Conscious Pro
+35-44,Male,Expat,High,Abu Dhabi,1-2,1-5,<6.5,Obese,Oral,1500-1800,Low,Chicken,Sometimes,Small,Maybe,50-100,Rarely,Yes,Taste,74,Med,High,6.0,16,Low,56,6,Traditional Family
+45-54,Prefer not to say,Expat,Low,Dubai,3-4,5-10,>9,Obese,Oral,1801-2200,Med,Red Meat,Always,Medium,Maybe,50-100,Daily,No,Time,70,Med,Med,9.5,36,Med,52,6,Traditional Family
+45-54,Female,Saudi,Low,Dubai,3-4,5-10,7.5-9,Normal,Oral,1500-1800,Low,Chicken,Never,Small,No,50-100,Weekly,No,Cost,82,High,High,8.2,23,Low,62,3,Traditional Family
+25-34,Male,UAE,Mid,Dubai,1-2,5-10,6.5-7.5,Underweight,Both,1801-2200,Low,Plant,Sometimes,Small,No,<50,Daily,No,Motivation,88,High,High,7.0,16,Med,35,3,Traditional Family
+45-54,Female,UAE,Mid,Riyadh,3-4,1-5,<6.5,Normal,Oral,1801-2200,Low,Red Meat,Sometimes,Medium,Maybe,>100,Weekly,Yes,Taste,80,High,Med,6.0,10,Med,100,5,Traditional Family
+25-34,Female,Expat,Low,Abu Dhabi,5+,1-5,<6.5,Obese,Oral,1801-2200,Low,Plant,Sometimes,Medium,Maybe,50-100,Daily,No,Taste,69,Med,Med,6.0,16,High,52,2,Traditional Family
+35-44,Male,Saudi,Mid,Dubai,1-2,<1,<6.5,Normal,Oral,1801-2200,Low,Fish,Always,Large,Maybe,>100,Daily,Yes,Motivation,70,Med,High,6.0,8,High,88,6,Health-Conscious Pro
+45-54,Female,Expat,Mid,Riyadh,3-4,1-5,7.5-9,Overweight,Insulin,1500-1800,High,Fish,Always,Medium,Maybe,50-100,Weekly,Yes,Time,96,High,High,8.2,30,High,72,6,Health-Conscious Pro
+45-54,Female,Expat,High,Dubai,3-4,5-10,>9,Overweight,Insulin,1500-1800,Low,Fish,Never,Medium,Yes,50-100,Weekly,No,Time,61,Med,Med,9.5,31,Med,46,3,Traditional Family
+45-54,Male,Qatari,Mid,Dubai,1-2,10+,6.5-7.5,Obese,Both,1801-2200,Med,Fish,Never,Medium,Yes,>100,Daily,Yes,Time,99,High,Low,7.0,27,Med,124,9,Traditional Family
+45-54,Female,Saudi,High,Riyadh,3-4,5-10,7.5-9,Normal,Insulin,>2200,Low,Plant,Sometimes,Medium,Yes,50-100,Daily,No,Motivation,49,Low,Low,8.2,23,High,37,4,Traditional Family
+45-54,Male,UAE,High,Riyadh,3-4,1-5,6.5-7.5,Overweight,Both,1500-1800,High,Plant,Sometimes,Small,Yes,>100,Daily,Yes,Taste,77,High,Low,7.0,24,Med,96,3,Traditional Family
+25-34,Female,Expat,Mid,Riyadh,5+,10+,7.5-9,Overweight,Oral,1500-1800,Med,Plant,Sometimes,Large,Yes,>100,Rarely,Yes,Motivation,52,Med,Low,8.2,30,High,65,7,Traditional Family
+35-44,Prefer not to say,Expat,High,Dubai,5+,5-10,7.5-9,Overweight,Oral,>2200,Med,Chicken,Always,Medium,Maybe,50-100,Weekly,No,Taste,90,High,Med,8.2,29,Med,68,4,Traditional Family
+35-44,Female,Expat,Mid,Riyadh,3-4,10+,<6.5,Obese,Oral,1500-1800,Med,Fish,Always,Large,No,50-100,Weekly,Yes,Cost,100,High,High,6.0,21,High,75,6,Health-Conscious Pro
+25-34,Male,Expat,High,Riyadh,3-4,5-10,6.5-7.5,Normal,Oral,1801-2200,Med,Plant,Sometimes,Medium,Maybe,<50,Daily,Yes,Time,100,High,High,7.0,19,Med,40,8,Tech-Savvy Young
+55-65,Female,UAE,Low,Abu Dhabi,3-4,1-5,7.5-9,Obese,Insulin,1801-2200,Med,Fish,Always,Small,Yes,<50,Weekly,Yes,Time,93,High,Low,8.2,30,Med,37,9,Traditional Family
+35-44,Female,Expat,Mid,Riyadh,3-4,<1,<6.5,Overweight,Oral,1500-1800,Low,Fish,Sometimes,Medium,Yes,<50,Daily,Yes,Motivation,73,Med,Low,6.0,12,High,29,6,Health-Conscious Pro
+55-65,Male,Expat,Mid,Doha,3-4,5-10,6.5-7.5,Overweight,Both,1801-2200,High,Plant,Never,Small,Maybe,<50,Daily,No,Cost,50,Med,Low,7.0,26,Low,20,4,Traditional Family
+45-54,Female,Saudi,Mid,Abu Dhabi,1-2,<1,6.5-7.5,Overweight,Both,1801-2200,Med,Plant,Sometimes,Medium,Yes,<50,Weekly,Yes,Motivation,67,Med,Low,7.0,20,Med,27,6,Traditional Family
+45-54,Male,Expat,Mid,Abu Dhabi,3-4,1-5,>9,Overweight,Oral,1500-1800,Med,Fish,Sometimes,Small,Maybe,<50,Weekly,No,Time,68,Med,Low,9.5,32,Med,27,5,Traditional Family
+35-44,Female,Expat,Mid,Doha,3-4,5-10,6.5-7.5,Normal,Oral,1801-2200,Med,Red Meat,Sometimes,Medium,No,50-100,Daily,No,Cost,100,High,High,7.0,19,Low,75,3,Traditional Family
+45-54,Male,Expat,Low,Riyadh,3-4,5-10,7.5-9,Overweight,Insulin,1801-2200,Med,Chicken,Never,Large,Yes,50-100,Weekly,Yes,Time,40,Low,Low,8.2,29,Low,30,8,Traditional Family
+35-44,Male,Expat,Low,Abu Dhabi,5+,5-10,6.5-7.5,Overweight,Insulin,1801-2200,High,Red Meat,Sometimes,Medium,Yes,<50,Rarely,No,Taste,69,Med,High,7.0,26,Low,28,3,Traditional Family
+25-34,Male,Expat,Mid,Riyadh,1-2,1-5,7.5-9,Overweight,Insulin,1500-1800,Med,Chicken,Sometimes,Large,Maybe,<50,Weekly,No,Time,46,Low,Med,8.2,28,Med,18,7,Traditional Family
+45-54,Female,Expat,Mid,Dubai,3-4,1-5,7.5-9,Overweight,Both,1801-2200,Med,Chicken,Always,Medium,No,50-100,Weekly,Yes,Motivation,81,High,High,8.2,28,Med,61,8,Traditional Family
+35-44,Male,UAE,High,Dubai,1-2,5-10,>9,Obese,Insulin,1801-2200,Low,Red Meat,Sometimes,Medium,No,50-100,Rarely,Yes,Taste,83,High,High,9.5,34,Med,62,6,Traditional Family
+25-34,Female,Saudi,High,Abu Dhabi,3-4,10+,6.5-7.5,Overweight,Insulin,1801-2200,High,Chicken,Always,Large,No,50-100,Rarely,Yes,Motivation,36,Low,High,7.0,28,Med,27,7,Traditional Family
+45-54,Male,Expat,High,Doha,3-4,5-10,7.5-9,Normal,Oral,1801-2200,Med,Plant,Always,Large,Yes,50-100,Weekly,No,Taste,87,High,Low,8.2,25,High,65,2,Health-Conscious Pro
+25-34,Male,Saudi,Mid,Doha,3-4,10+,7.5-9,Overweight,Insulin,1500-1800,Low,Red Meat,Sometimes,Medium,No,>100,Weekly,No,Motivation,48,Low,High,8.2,28,Med,60,3,Traditional Family
+55-65,Female,Qatari,Mid,Dubai,3-4,5-10,6.5-7.5,Obese,Oral,1801-2200,Low,Red Meat,Sometimes,Small,Yes,50-100,Daily,Yes,Cost,88,High,Low,7.0,24,Low,66,6,Traditional Family
+55-65,Female,Qatari,Low,Abu Dhabi,3-4,5-10,<6.5,Obese,Insulin,1801-2200,Med,Red Meat,Always,Medium,Yes,50-100,Weekly,No,Motivation,85,High,Low,6.0,20,Med,64,5,Traditional Family
+55-65,Male,Qatari,High,Dubai,3-4,1-5,<6.5,Overweight,Insulin,1500-1800,High,Chicken,Sometimes,Small,No,>100,Daily,No,Time,46,Low,High,6.0,18,Low,58,5,Traditional Family
+35-44,Female,Expat,Mid,Doha,3-4,5-10,<6.5,Obese,Oral,1801-2200,Low,Plant,Always,Medium,No,>100,Daily,No,Time,67,Med,High,6.0,18,High,84,3,Traditional Family
+25-34,Female,Expat,Low,Doha,3-4,5-10,>9,Normal,Oral,1500-1800,Med,Chicken,Never,Medium,Yes,50-100,Weekly,No,Time,67,Med,Med,9.5,29,Low,50,4,Traditional Family
+55-65,Female,Saudi,Mid,Riyadh,5+,5-10,6.5-7.5,Overweight,Both,1801-2200,Low,Fish,Never,Large,Yes,50-100,Daily,Yes,Motivation,91,High,Low,7.0,21,High,68,4,Health-Conscious Pro
+35-44,Male,UAE,High,Riyadh,1-2,1-5,6.5-7.5,Obese,Oral,1500-1800,Med,Red Meat,Always,Large,Yes,<50,Weekly,No,Time,58,Med,Med,7.0,24,Med,23,7,Traditional Family
+55-65,Male,Saudi,Mid,Riyadh,1-2,5-10,7.5-9,Obese,Oral,1801-2200,Med,Fish,Always,Medium,Yes,50-100,Weekly,No,Motivation,43,Low,Med,8.2,32,High,32,5,Traditional Family
+55-65,Female,Expat,Mid,Abu Dhabi,3-4,1-5,6.5-7.5,Overweight,Both,>2200,High,Fish,Always,Small,Yes,>100,Weekly,No,Time,63,Med,Low,7.0,24,Med,79,7,Traditional Family
+55-65,Male,Expat,Mid,Dubai,5+,5-10,6.5-7.5,Obese,Insulin,1801-2200,Med,Fish,Sometimes,Large,No,50-100,Daily,Yes,Time,100,High,High,7.0,26,High,75,6,Health-Conscious Pro
+35-44,Female,Saudi,Low,Abu Dhabi,3-4,1-5,<6.5,Normal,Oral,>2200,High,Plant,Always,Small,Maybe,>100,Daily,Yes,Time,100,High,Med,6.0,15,Med,125,7,Traditional Family
+35-44,Female,Expat,Mid,Riyadh,1-2,10+,>9,Obese,Oral,>2200,Med,Red Meat,Always,Medium,No,50-100,Weekly,Yes,Motivation,57,Med,High,9.5,37,Med,43,5,Traditional Family
+55-65,Female,Expat,Mid,Riyadh,3-4,1-5,>9,Overweight,Oral,1500-1800,Low,Chicken,Always,Small,No,>100,Rarely,Yes,Cost,68,Med,High,9.5,30,Med,85,5,Traditional Family
+35-44,Female,Expat,Low,Dubai,3-4,<1,>9,Normal,Oral,1801-2200,Med,Fish,Sometimes,Medium,Maybe,50-100,Daily,No,Time,69,Med,Low,9.5,26,Med,52,4,Traditional Family
+25-34,Prefer not to say,Expat,High,Doha,1-2,1-5,6.5-7.5,Normal,Both,1801-2200,Med,Red Meat,Sometimes,Large,No,<50,Daily,Yes,Motivation,52,Med,High,7.0,18,Med,21,6,Tech-Savvy Young
+45-54,Male,Saudi,Mid,Dubai,3-4,5-10,7.5-9,Overweight,None,>2200,High,Fish,Always,Small,Maybe,50-100,Rarely,No,Time,60,Med,Low,8.2,32,Med,45,5,Traditional Family
+55-65,Female,Expat,High,Abu Dhabi,5+,1-5,<6.5,Normal,Oral,1500-1800,High,Chicken,Sometimes,Medium,Yes,<50,Daily,No,Cost,83,High,Low,6.0,15,Low,33,6,Traditional Family
+45-54,Male,Expat,High,Riyadh,3-4,1-5,<6.5,Overweight,Oral,>2200,Low,Fish,Sometimes,Medium,Maybe,<50,Rarely,No,Motivation,27,Low,High,6.0,14,High,11,5,Traditional Family
+45-54,Male,Expat,Low,Riyadh,3-4,5-10,<6.5,Normal,Insulin,1801-2200,Low,Chicken,Sometimes,Large,Maybe,>100,Weekly,Yes,Taste,68,Med,Med,6.0,11,Med,85,5,Traditional Family
+25-34,Female,Expat,Mid,Riyadh,3-4,1-5,7.5-9,Normal,Oral,1801-2200,Low,Chicken,Sometimes,Large,No,<50,Weekly,No,Time,59,Med,High,8.2,22,Med,24,5,Traditional Family
+45-54,Female,Expat,Mid,Dubai,1-2,10+,6.5-7.5,Overweight,Oral,1500-1800,High,Red Meat,Sometimes,Small,No,50-100,Weekly,No,Motivation,36,Low,High,7.0,28,Low,27,2,Traditional Family
+55-65,Prefer not to say,Expat,High,Dubai,5+,10+,6.5-7.5,Overweight,Oral,1500-1800,High,Fish,Never,Small,Maybe,<50,Daily,No,Taste,79,High,Med,7.0,28,Low,32,2,Traditional Family
+25-34,Female,Saudi,Low,Riyadh,3-4,5-10,<6.5,Overweight,None,1801-2200,High,Red Meat,Always,Medium,No,<50,Weekly,Yes,Time,89,High,High,6.0,20,Med,36,8,Traditional Family
+35-44,Male,Expat,Mid,Abu Dhabi,3-4,1-5,6.5-7.5,Obese,Oral,1500-1800,Med,Red Meat,Sometimes,Medium,Yes,>100,Rarely,Yes,Motivation,61,Med,High,7.0,24,Low,76,4,Traditional Family
+55-65,Male,Expat,Mid,Dubai,3-4,5-10,7.5-9,Obese,Oral,>2200,Med,Plant,Sometimes,Medium,No,50-100,Weekly,Yes,Taste,61,Med,High,8.2,32,Med,46,4,Traditional Family
+45-54,Female,Expat,Mid,Riyadh,3-4,<1,6.5-7.5,Obese,Oral,1500-1800,Med,Chicken,Never,Small,Yes,50-100,Weekly,Yes,Time,57,Med,High,7.0,22,Low,43,8,Traditional Family
+45-54,Male,UAE,Low,Abu Dhabi,3-4,1-5,7.5-9,Overweight,Both,1801-2200,Low,Fish,Never,Small,Yes,50-100,Rarely,Yes,Cost,71,Med,Low,8.2,26,Med,53,5,Traditional Family
+45-54,Male,Saudi,Mid,Riyadh,1-2,1-5,6.5-7.5,Obese,Both,1801-2200,Med,Chicken,Never,Medium,Yes,50-100,Daily,No,Time,39,Low,High,7.0,24,Low,29,7,Traditional Family
+35-44,Male,UAE,Mid,Riyadh,5+,10+,7.5-9,Normal,Oral,1801-2200,Low,Red Meat,Sometimes,Small,Maybe,>100,Weekly,No,Taste,92,High,Med,8.2,25,Low,115,5,Traditional Family
+35-44,Male,Expat,Mid,Dubai,5+,<1,7.5-9,Normal,Oral,1801-2200,Low,Chicken,Never,Large,Yes,50-100,Weekly,Yes,Taste,59,Med,Med,8.2,20,Med,44,6,Traditional Family
+45-54,Male,Expat,Mid,Dubai,3-4,5-10,6.5-7.5,Overweight,Both,1500-1800,High,Chicken,Always,Small,No,50-100,Rarely,Yes,Motivation,43,Low,High,7.0,26,Low,32,4,Traditional Family
+45-54,Male,Saudi,Mid,Riyadh,5+,5-10,6.5-7.5,Obese,Insulin,1500-1800,High,Fish,Never,Small,Yes,>100,Weekly,No,Taste,66,Med,High,7.0,28,Low,82,2,Traditional Family
+55-65,Male,Expat,Mid,Riyadh,1-2,1-5,7.5-9,Normal,Both,1500-1800,Med,Chicken,Never,Large,No,<50,Weekly,Yes,Time,74,Med,High,8.2,24,Low,30,6,Traditional Family
+55-65,Male,Expat,Low,Riyadh,3-4,<1,7.5-9,Normal,Oral,1801-2200,Med,Chicken,Never,Medium,Maybe,50-100,Rarely,No,Motivation,43,Low,Low,8.2,22,Low,32,2,Traditional Family
+35-44,Prefer not to say,Expat,High,Riyadh,3-4,10+,6.5-7.5,Normal,Oral,1801-2200,Med,Fish,Never,Medium,Yes,>100,Weekly,Yes,Time,66,Med,Med,7.0,21,Med,82,9,Traditional Family
+35-44,Male,Expat,Mid,Riyadh,3-4,5-10,6.5-7.5,Obese,Oral,1801-2200,Med,Chicken,Always,Small,Yes,50-100,Daily,Yes,Motivation,59,Med,Med,7.0,26,Low,44,4,Traditional Family
+45-54,Male,Expat,Mid,Doha,3-4,5-10,>9,Overweight,Both,1801-2200,High,Chicken,Always,Medium,Maybe,>100,Weekly,Yes,Taste,99,High,Low,9.5,36,Med,124,7,Traditional Family
+45-54,Female,Expat,Low,Abu Dhabi,3-4,1-5,7.5-9,Normal,Insulin,1801-2200,High,Fish,Sometimes,Medium,Maybe,50-100,Weekly,No,Time,58,Med,High,8.2,27,Med,44,7,Traditional Family
+45-54,Male,Saudi,Low,Abu Dhabi,1-2,1-5,6.5-7.5,Overweight,Both,1801-2200,Med,Plant,Never,Medium,Maybe,>100,Weekly,Yes,Cost,55,Med,High,7.0,22,Med,69,6,Traditional Family
+45-54,Female,Expat,Mid,Abu Dhabi,3-4,1-5,6.5-7.5,Overweight,Oral,1500-1800,Low,Fish,Sometimes,Large,Yes,>100,Rarely,No,Motivation,39,Low,High,7.0,20,High,49,5,Traditional Family
+55-65,Female,Expat,Mid,Dubai,1-2,<1,6.5-7.5,Overweight,Oral,1500-1800,Med,Fish,Sometimes,Medium,Maybe,<50,Weekly,Yes,Time,70,Med,Med,7.0,20,Med,28,7,Traditional Family
+35-44,Male,Expat,High,Abu Dhabi,3-4,<1,7.5-9,Normal,Insulin,>2200,Med,Fish,Always,Medium,No,<50,Weekly,Yes,Motivation,81,High,High,8.2,22,High,32,4,Health-Conscious Pro
+35-44,Male,Expat,Low,Dubai,1-2,10+,6.5-7.5,Obese,Oral,>2200,Med,Fish,Never,Medium,Yes,50-100,Weekly,No,Time,44,Low,Low,7.0,27,Med,33,7,Traditional Family
+25-34,Female,Expat,Mid,Doha,1-2,1-5,>9,Overweight,Oral,1500-1800,High,Red Meat,Sometimes,Medium,Maybe,50-100,Daily,Yes,Taste,63,Med,Med,9.5,34,Low,47,3,Traditional Family
+45-54,Female,Saudi,Mid,Abu Dhabi,3-4,1-5,6.5-7.5,Overweight,Oral,1801-2200,Med,Chicken,Sometimes,Small,Yes,<50,Daily,No,Taste,98,High,Low,7.0,22,Low,39,4,Traditional Family
+25-34,Male,Expat,Low,Abu Dhabi,3-4,5-10,6.5-7.5,Underweight,Both,>2200,Low,Plant,Sometimes,Medium,No,<50,Rarely,Yes,Taste,57,Med,High,7.0,16,High,23,6,Traditional Family
+35-44,Female,UAE,Low,Dubai,5+,5-10,7.5-9,Overweight,Oral,1801-2200,Med,Red Meat,Sometimes,Medium,No,<50,Weekly,Yes,Cost,81,High,High,8.2,29,Low,32,7,Traditional Family
+35-44,Male,Saudi,Mid,Dubai,3-4,<1,>9,Overweight,None,1500-1800,High,Red Meat,Never,Medium,Yes,>100,Daily,No,Motivation,40,Low,Low,9.5,33,Low,50,4,Traditional Family
+35-44,Prefer not to say,Expat,Mid,Dubai,3-4,5-10,7.5-9,Overweight,Oral,1500-1800,Low,Chicken,Always,Medium,Yes,50-100,Daily,No,Motivation,52,Med,Low,8.2,27,Med,39,6,Traditional Family
+45-54,Male,Expat,Mid,Abu Dhabi,5+,<1,6.5-7.5,Normal,Both,1801-2200,Med,Chicken,Never,Medium,Yes,50-100,Weekly,Yes,Taste,48,Low,Low,7.0,16,Low,36,5,Traditional Family
+25-34,Female,UAE,Mid,Dubai,3-4,<1,7.5-9,Obese,Insulin,>2200,Med,Plant,Sometimes,Large,Maybe,<50,Rarely,No,Time,68,Med,Med,8.2,28,High,27,7,Traditional Family
+25-34,Female,Qatari,Mid,Riyadh,1-2,<1,7.5-9,Normal,Oral,1801-2200,Low,Chicken,Never,Small,Maybe,50-100,Rarely,Yes,Motivation,70,Med,Low,8.2,20,Low,52,5,Traditional Family
+45-54,Female,Expat,Low,Doha,3-4,10+,6.5-7.5,Overweight,Oral,1500-1800,Med,Red Meat,Always,Medium,No,<50,Daily,No,Time,71,Med,High,7.0,24,Med,28,7,Traditional Family
+35-44,Female,Saudi,Mid,Doha,5+,<1,<6.5,Obese,Oral,1500-1800,Med,Plant,Never,Medium,Maybe,<50,Rarely,No,Time,72,Med,Med,6.0,16,Med,29,5,Traditional Family
+25-34,Male,Expat,High,Riyadh,3-4,<1,6.5-7.5,Overweight,Both,1801-2200,Med,Plant,Always,Medium,Yes,>100,Weekly,Yes,Time,49,Low,High,7.0,20,High,61,5,Traditional Family
+35-44,Male,Expat,Mid,Dubai,1-2,1-5,6.5-7.5,Obese,Insulin,>2200,High,Chicken,Always,Medium,No,>100,Weekly,Yes,Taste,58,Med,High,7.0,27,Med,72,5,Traditional Family
+45-54,Male,Expat,Mid,Doha,1-2,10+,>9,Overweight,Insulin,1801-2200,Low,Plant,Always,Small,Maybe,<50,Weekly,Yes,Time,47,Low,High,9.5,32,High,19,8,Traditional Family
+25-34,Male,Saudi,Mid,Doha,1-2,1-5,6.5-7.5,Overweight,Both,1801-2200,Low,Plant,Sometimes,Medium,Maybe,<50,Daily,Yes,Motivation,65,Med,Low,7.0,20,High,26,6,Traditional Family
+45-54,Female,Qatari,High,Dubai,3-4,1-5,>9,Obese,Insulin,1500-1800,High,Red Meat,Sometimes,Small,Yes,<50,Rarely,Yes,Motivation,59,Med,Low,9.5,37,Low,24,5,Traditional Family
+25-34,Male,Expat,High,Riyadh,3-4,<1,6.5-7.5,Normal,Both,>2200,Med,Chicken,Sometimes,Large,Yes,50-100,Daily,No,Cost,100,High,Low,7.0,16,Med,75,7,Tech-Savvy Young
+25-34,Male,Expat,Mid,Dubai,1-2,1-5,7.5-9,Overweight,Oral,1801-2200,Med,Chicken,Never,Medium,No,<50,Daily,No,Cost,69,Med,High,8.2,28,Low,28,6,Traditional Family
+35-44,Prefer not to say,UAE,High,Riyadh,5+,5-10,6.5-7.5,Obese,Both,1500-1800,High,Fish,Sometimes,Large,Maybe,<50,Rarely,Yes,Taste,85,High,Med,7.0,28,High,34,7,Health-Conscious Pro
+35-44,Female,Expat,Low,Doha,3-4,5-10,<6.5,Overweight,Insulin,1801-2200,Med,Chicken,Never,Medium,Yes,<50,Weekly,Yes,Time,40,Low,Low,6.0,17,Low,16,9,Traditional Family
+45-54,Female,UAE,Low,Dubai,3-4,1-5,6.5-7.5,Overweight,Insulin,1500-1800,Med,Fish,Always,Medium,Maybe,50-100,Rarely,No,Cost,89,High,Low,7.0,22,High,67,5,Health-Conscious Pro
+45-54,Prefer not to say,Expat,High,Doha,5+,1-5,<6.5,Overweight,Oral,1500-1800,Low,Red Meat,Never,Medium,No,50-100,Weekly,No,Taste,89,High,High,6.0,14,Low,67,1,Traditional Family
+55-65,Male,Saudi,High,Riyadh,1-2,<1,7.5-9,Obese,None,1500-1800,Low,Fish,Sometimes,Large,Yes,50-100,Weekly,Yes,Taste,76,High,Low,8.2,26,High,57,6,Health-Conscious Pro
+35-44,Male,Expat,Low,Doha,3-4,1-5,6.5-7.5,Obese,Oral,1500-1800,Low,Red Meat,Sometimes,Large,Maybe,50-100,Rarely,Yes,Taste,83,High,High,7.0,22,Med,62,4,Traditional Family
+35-44,Female,Qatari,Mid,Abu Dhabi,3-4,<1,7.5-9,Overweight,Oral,1500-1800,High,Chicken,Sometimes,Small,No,>100,Daily,Yes,Time,61,Med,High,8.2,29,Low,76,6,Traditional Family
+45-54,Female,Saudi,Low,Riyadh,5+,5-10,6.5-7.5,Overweight,Oral,1801-2200,Low,Chicken,Sometimes,Medium,Yes,>100,Rarely,Yes,Time,57,Med,Med,7.0,21,Med,71,5,Traditional Family
+35-44,Male,UAE,Mid,Dubai,3-4,10+,<6.5,Obese,None,1801-2200,Med,Chicken,Never,Medium,Maybe,<50,Daily,Yes,Motivation,84,High,High,6.0,21,Low,34,4,Traditional Family
+35-44,Female,Saudi,High,Dubai,1-2,10+,6.5-7.5,Normal,Both,1801-2200,High,Chicken,Sometimes,Small,Maybe,<50,Rarely,Yes,Motivation,38,Low,High,7.0,24,Low,15,6,Traditional Family
+25-34,Male,Expat,Mid,Dubai,5+,10+,>9,Normal,None,1500-1800,Med,Red Meat,Sometimes,Medium,Maybe,50-100,Daily,Yes,Taste,53,Med,Med,9.5,31,Low,40,4,Traditional Family
+25-34,Male,Expat,Mid,Doha,1-2,5-10,7.5-9,Obese,Insulin,1500-1800,Med,Chicken,Always,Large,Yes,<50,Weekly,No,Cost,53,Med,High,8.2,32,Med,21,6,Traditional Family
+55-65,Female,Qatari,Mid,Riyadh,5+,5-10,6.5-7.5,Obese,Insulin,1801-2200,Med,Plant,Always,Medium,Yes,50-100,Rarely,Yes,Taste,49,Low,High,7.0,26,High,37,3,Traditional Family
+45-54,Female,Qatari,Low,Doha,5+,1-5,6.5-7.5,Obese,Oral,1801-2200,Med,Fish,Always,Medium,Maybe,50-100,Weekly,Yes,Time,89,High,High,7.0,24,High,67,5,Health-Conscious Pro
+45-54,Female,Expat,Mid,Doha,1-2,5-10,<6.5,Overweight,Both,1500-1800,Med,Red Meat,Never,Medium,Yes,50-100,Weekly,Yes,Motivation,59,Med,Low,6.0,17,Low,44,4,Traditional Family
+35-44,Male,Expat,Mid,Dubai,3-4,1-5,>9,Normal,Oral,>2200,Med,Chicken,Sometimes,Medium,Maybe,<50,Rarely,No,Motivation,61,Med,Med,9.5,28,Low,24,5,Traditional Family
+25-34,Female,Expat,High,Dubai,1-2,1-5,7.5-9,Overweight,Insulin,1801-2200,High,Chicken,Never,Small,Yes,50-100,Weekly,No,Time,84,High,Low,8.2,30,Low,63,4,Traditional Family
+25-34,Male,Qatari,High,Dubai,3-4,5-10,6.5-7.5,Normal,Both,>2200,High,Chicken,Never,Medium,Yes,>100,Rarely,Yes,Time,57,Med,Low,7.0,22,Low,71,8,Traditional Family
+35-44,Male,Qatari,Low,Dubai,3-4,1-5,7.5-9,Normal,Insulin,1801-2200,High,Fish,Never,Large,No,<50,Weekly,Yes,Time,44,Low,High,8.2,27,Med,18,8,Traditional Family
+35-44,Female,Expat,High,Dubai,3-4,1-5,<6.5,Obese,Oral,1500-1800,High,Chicken,Sometimes,Medium,Maybe,50-100,Daily,No,Motivation,53,Med,Low,6.0,21,Low,40,4,Tech-Savvy Young
+45-54,Female,UAE,High,Abu Dhabi,5+,10+,>9,Normal,Oral,1801-2200,Med,Red Meat,Never,Small,No,<50,Daily,Yes,Cost,65,Med,High,9.5,31,Low,26,5,Traditional Family
+45-54,Female,Expat,High,Dubai,3-4,<1,<6.5,Obese,Oral,1500-1800,Med,Plant,Sometimes,Small,Yes,<50,Daily,Yes,Time,54,Med,Med,6.0,16,Med,22,6,Traditional Family
+35-44,Female,Qatari,Mid,Dubai,3-4,1-5,7.5-9,Overweight,Both,1801-2200,High,Plant,Always,Small,Maybe,50-100,Daily,Yes,Taste,63,Med,Low,8.2,30,Med,47,5,Traditional Family
+55-65,Female,Expat,Mid,Dubai,5+,10+,6.5-7.5,Overweight,Oral,1500-1800,Med,Fish,Sometimes,Medium,Yes,<50,Weekly,No,Time,64,Med,Med,7.0,24,Med,26,5,Traditional Family
+45-54,Female,UAE,Mid,Dubai,5+,5-10,7.5-9,Normal,Oral,>2200,High,Chicken,Sometimes,Medium,No,<50,Daily,No,Motivation,90,High,High,8.2,28,Low,36,6,Traditional Family
+45-54,Male,Expat,Low,Doha,1-2,5-10,7.5-9,Overweight,Oral,1500-1800,Med,Fish,Sometimes,Small,No,<50,Daily,No,Taste,57,Med,High,8.2,29,Med,23,1,Traditional Family
+45-54,Male,Expat,Low,Riyadh,5+,1-5,7.5-9,Normal,Oral,>2200,Med,Red Meat,Sometimes,Large,Yes,50-100,Daily,Yes,Taste,63,Med,Med,8.2,24,Med,47,4,Traditional Family
+35-44,Male,Expat,Low,Doha,1-2,1-5,7.5-9,Obese,Oral,>2200,Med,Red Meat,Never,Medium,No,50-100,Rarely,No,Time,49,Low,High,8.2,30,Low,37,4,Traditional Family
+25-34,Male,UAE,Mid,Abu Dhabi,5+,10+,>9,Obese,Oral,1801-2200,High,Red Meat,Sometimes,Medium,Yes,<50,Weekly,No,Time,22,Low,High,9.5,40,Low,9,4,Traditional Family
+35-44,Female,Expat,Mid,Dubai,1-2,5-10,<6.5,Overweight,Insulin,1801-2200,Low,Red Meat,Sometimes,Large,Maybe,50-100,Weekly,No,Motivation,69,Med,Med,6.0,15,Med,52,2,Traditional Family
+45-54,Female,Expat,Mid,Riyadh,1-2,5-10,6.5-7.5,Normal,Insulin,1801-2200,Med,Chicken,Always,Small,No,<50,Rarely,Yes,Taste,70,Med,High,7.0,19,Low,28,4,Traditional Family
+25-34,Male,Expat,Low,Dubai,3-4,<1,6.5-7.5,Obese,Insulin,>2200,Med,Chicken,Always,Large,No,50-100,Daily,Yes,Cost,100,High,High,7.0,22,Med,75,8,Traditional Family
+25-34,Male,Expat,High,Dubai,3-4,<1,>9,Overweight,Oral,1801-2200,Low,Chicken,Sometimes,Small,No,50-100,Rarely,No,Motivation,43,Low,High,9.5,28,Low,32,5,Traditional Family
+25-34,Female,Expat,High,Dubai,3-4,10+,6.5-7.5,Normal,Both,1801-2200,High,Chicken,Sometimes,Medium,Yes,50-100,Weekly,Yes,Motivation,92,High,Low,7.0,24,Low,69,4,Traditional Family
+25-34,Male,Expat,High,Dubai,1-2,1-5,7.5-9,Overweight,Both,1801-2200,Med,Chicken,Never,Large,Yes,>100,Daily,Yes,Cost,100,High,Low,8.2,28,Low,125,6,Tech-Savvy Young
+55-65,Female,Saudi,High,Dubai,3-4,5-10,7.5-9,Obese,Both,>2200,Med,Fish,Always,Large,Yes,>100,Weekly,Yes,Motivation,57,Med,Low,8.2,32,High,71,8,Traditional Family
+45-54,Female,Expat,Mid,Dubai,5+,<1,6.5-7.5,Underweight,Oral,1801-2200,Med,Plant,Sometimes,Medium,Maybe,<50,Rarely,No,Taste,38,Low,High,7.0,15,Med,15,5,Traditional Family
+35-44,Female,Expat,High,Riyadh,3-4,5-10,6.5-7.5,Normal,Oral,1801-2200,Med,Red Meat,Never,Medium,No,>100,Weekly,No,Time,38,Low,High,7.0,19,Low,48,7,Traditional Family
+25-34,Female,UAE,Low,Dubai,1-2,10+,6.5-7.5,Obese,Oral,1801-2200,Med,Plant,Never,Medium,Yes,<50,Rarely,Yes,Time,53,Med,High,7.0,27,Med,21,8,Traditional Family
+35-44,Female,UAE,Mid,Dubai,3-4,5-10,6.5-7.5,Normal,Insulin,>2200,Med,Red Meat,Never,Large,Maybe,>100,Daily,No,Time,87,High,Med,7.0,19,Low,109,7,Traditional Family
+35-44,Male,Saudi,Low,Riyadh,1-2,<1,6.5-7.5,Normal,Insulin,1801-2200,Low,Chicken,Always,Small,Yes,<50,Daily,No,Motivation,92,High,Low,7.0,14,Med,37,3,Traditional Family
+25-34,Female,Expat,Low,Dubai,5+,5-10,<6.5,Overweight,Oral,1500-1800,High,Chicken,Never,Large,Yes,50-100,Daily,No,Motivation,90,High,Low,6.0,20,Low,68,3,Traditional Family
+35-44,Female,Expat,Low,Dubai,5+,5-10,>9,Obese,None,1801-2200,Med,Plant,Sometimes,Medium,Maybe,<50,Daily,Yes,Taste,56,Med,Med,9.5,36,Med,22,7,Traditional Family
+35-44,Male,Expat,Mid,Doha,3-4,1-5,>9,Overweight,Insulin,>2200,Med,Chicken,Sometimes,Medium,Maybe,<50,Daily,Yes,Taste,98,High,Med,9.5,32,Low,39,5,Traditional Family
+45-54,Female,Expat,High,Dubai,3-4,10+,6.5-7.5,Obese,Insulin,1801-2200,Med,Chicken,Sometimes,Medium,No,50-100,Rarely,Yes,Taste,45,Low,High,7.0,27,Low,34,7,Traditional Family
+45-54,Female,Qatari,Mid,Dubai,3-4,5-10,6.5-7.5,Overweight,Both,>2200,Med,Chicken,Always,Medium,Yes,>100,Daily,Yes,Time,98,High,Low,7.0,23,Med,122,7,Traditional Family
+25-34,Female,UAE,Low,Abu Dhabi,3-4,10+,<6.5,Normal,Oral,1500-1800,Med,Chicken,Always,Large,No,50-100,Weekly,No,Motivation,39,Low,High,6.0,15,Med,29,2,Traditional Family
+35-44,Female,Saudi,High,Dubai,5+,5-10,7.5-9,Obese,Both,1801-2200,Med,Fish,Sometimes,Medium,Yes,50-100,Weekly,Yes,Motivation,84,High,Low,8.2,32,Med,63,4,Traditional Family
+45-54,Female,Qatari,Mid,Abu Dhabi,3-4,<1,7.5-9,Overweight,Both,1801-2200,Med,Fish,Never,Large,Yes,50-100,Rarely,No,Taste,66,Med,Med,8.2,26,Med,50,2,Traditional Family
+35-44,Female,UAE,Mid,Riyadh,3-4,1-5,<6.5,Normal,None,>2200,Med,Fish,Sometimes,Small,Maybe,<50,Rarely,Yes,Time,84,High,Low,6.0,12,Med,34,8,Traditional Family
+55-65,Female,Saudi,Mid,Dubai,3-4,1-5,<6.5,Overweight,Oral,1500-1800,Med,Plant,Sometimes,Medium,No,<50,Rarely,Yes,Motivation,30,Low,High,6.0,16,Med,12,5,Traditional Family
+45-54,Female,Expat,Mid,Abu Dhabi,3-4,10+,7.5-9,Overweight,Both,>2200,Low,Fish,Sometimes,Large,Yes,<50,Rarely,Yes,Motivation,61,Med,Med,8.2,28,High,24,5,Traditional Family
+25-34,Female,Expat,Mid,Abu Dhabi,5+,5-10,7.5-9,Normal,Oral,1801-2200,Med,Chicken,Sometimes,Medium,Yes,50-100,Rarely,Yes,Motivation,35,Low,High,8.2,25,Low,26,7,Traditional Family
+25-34,Female,Expat,High,Dubai,3-4,5-10,<6.5,Underweight,Oral,1500-1800,Low,Chicken,Never,Medium,Maybe,<50,Rarely,Yes,Motivation,37,Low,High,6.0,10,Low,15,5,Traditional Family
+45-54,Female,Expat,Mid,Riyadh,3-4,1-5,7.5-9,Overweight,Oral,1500-1800,Low,Chicken,Sometimes,Medium,Yes,<50,Weekly,No,Taste,81,High,Low,8.2,26,Med,32,4,Traditional Family
+25-34,Male,Expat,Mid,Dubai,1-2,1-5,6.5-7.5,Obese,Insulin,1500-1800,High,Plant,Never,Large,No,<50,Daily,Yes,Cost,95,High,High,7.0,27,Med,38,6,Traditional Family
+45-54,Female,Qatari,High,Abu Dhabi,3-4,5-10,6.5-7.5,Overweight,Oral,1801-2200,Med,Plant,Always,Large,No,<50,Weekly,No,Cost,84,High,High,7.0,23,High,34,3,Health-Conscious Pro
+55-65,Female,Expat,Mid,Dubai,3-4,1-5,7.5-9,Obese,Oral,1500-1800,Med,Plant,Sometimes,Small,Yes,>100,Weekly,No,Cost,77,High,Low,8.2,30,Med,96,5,Traditional Family
+45-54,Male,Expat,Low,Abu Dhabi,1-2,1-5,7.5-9,Normal,Both,1500-1800,Med,Chicken,Sometimes,Large,Maybe,<50,Weekly,Yes,Cost,53,Med,High,8.2,24,Med,21,6,Traditional Family
+35-44,Female,UAE,Low,Dubai,1-2,5-10,6.5-7.5,Normal,Both,>2200,High,Fish,Never,Medium,No,50-100,Daily,No,Time,50,Med,High,7.0,22,Med,38,5,Traditional Family
+45-54,Male,Qatari,Low,Riyadh,3-4,<1,>9,Normal,Both,1500-1800,Med,Fish,Sometimes,Small,Yes,50-100,Weekly,No,Motivation,49,Low,Med,9.5,26,Med,37,6,Traditional Family
+35-44,Male,Expat,Mid,Dubai,3-4,1-5,6.5-7.5,Normal,Insulin,1500-1800,High,Fish,Sometimes,Large,Maybe,50-100,Rarely,Yes,Taste,66,Med,Low,7.0,21,High,50,4,Traditional Family
+35-44,Female,Qatari,Mid,Abu Dhabi,3-4,1-5,7.5-9,Normal,Both,1801-2200,Med,Fish,Never,Medium,Yes,<50,Daily,Yes,Motivation,83,High,Low,8.2,24,Med,33,4,Traditional Family
+55-65,Male,Expat,Low,Abu Dhabi,1-2,<1,6.5-7.5,Obese,Oral,1801-2200,High,Fish,Always,Large,Maybe,<50,Rarely,No,Motivation,57,Med,Med,7.0,26,High,23,5,Traditional Family
+35-44,Female,Expat,High,Riyadh,3-4,10+,>9,Obese,Both,1801-2200,High,Fish,Sometimes,Small,Yes,<50,Weekly,Yes,Motivation,26,Low,High,9.5,40,Med,10,4,Traditional Family
+55-65,Female,Saudi,Mid,Abu Dhabi,1-2,1-5,>9,Obese,None,1801-2200,High,Plant,Sometimes,Small,No,50-100,Rarely,Yes,Time,23,Low,High,9.5,37,Med,17,7,Traditional Family
+55-65,Female,Qatari,Low,Riyadh,3-4,<1,<6.5,Normal,Insulin,1801-2200,Low,Chicken,Sometimes,Medium,Yes,<50,Rarely,No,Motivation,68,Med,Low,6.0,8,Med,27,5,Traditional Family
+25-34,Male,Saudi,Mid,Riyadh,1-2,1-5,>9,Obese,Both,1801-2200,Low,Plant,Sometimes,Small,Yes,50-100,Rarely,Yes,Motivation,50,Med,Low,9.5,32,Med,38,4,Traditional Family
+25-34,Male,UAE,Mid,Doha,1-2,5-10,7.5-9,Overweight,Insulin,1500-1800,Low,Chicken,Sometimes,Medium,No,50-100,Weekly,Yes,Time,57,Med,High,8.2,27,Med,43,5,Traditional Family
+25-34,Female,UAE,Low,Dubai,1-2,1-5,7.5-9,Normal,Oral,1500-1800,Low,Chicken,Sometimes,Small,Yes,50-100,Daily,No,Cost,45,Low,High,8.2,22,Low,34,3,Traditional Family
+25-34,Prefer not to say,Expat,Mid,Abu Dhabi,3-4,5-10,6.5-7.5,Obese,Oral,1801-2200,High,Red Meat,Sometimes,Medium,Yes,50-100,Weekly,No,Time,70,Med,Low,7.0,28,Low,52,6,Traditional Family
+25-34,Female,Saudi,High,Riyadh,1-2,<1,7.5-9,Overweight,Insulin,1801-2200,Low,Red Meat,Sometimes,Small,Yes,50-100,Rarely,Yes,Cost,50,Med,Med,8.2,24,Low,38,5,Traditional Family
+45-54,Male,Expat,Mid,Doha,3-4,<1,>9,Normal,Both,1801-2200,Low,Chicken,Never,Small,Yes,>100,Rarely,Yes,Motivation,18,Low,High,9.5,24,Low,22,4,Traditional Family
+25-34,Female,Saudi,Mid,Doha,3-4,1-5,6.5-7.5,Overweight,Insulin,1801-2200,Low,Fish,Never,Medium,No,<50,Rarely,No,Motivation,63,Med,High,7.0,20,Med,25,4,Traditional Family
+35-44,Female,Expat,Mid,Dubai,3-4,10+,>9,Normal,Insulin,1801-2200,Low,Chicken,Never,Small,No,50-100,Daily,No,Time,85,High,High,9.5,29,Low,64,3,Traditional Family
+45-54,Female,Saudi,Low,Dubai,3-4,10+,<6.5,Obese,Oral,1500-1800,Low,Fish,Sometimes,Medium,Yes,50-100,Weekly,Yes,Time,47,Low,High,6.0,19,High,35,5,Traditional Family
+25-34,Male,Qatari,Low,Abu Dhabi,5+,<1,<6.5,Overweight,Both,1500-1800,High,Red Meat,Sometimes,Large,Maybe,50-100,Weekly,Yes,Taste,51,Med,Med,6.0,17,Med,38,7,Traditional Family
+45-54,Female,Expat,Mid,Riyadh,1-2,5-10,6.5-7.5,Obese,None,1801-2200,Med,Red Meat,Always,Medium,Maybe,<50,Daily,Yes,Taste,64,Med,High,7.0,26,Med,26,6,Traditional Family
+35-44,Female,Expat,Low,Abu Dhabi,3-4,10+,7.5-9,Normal,Both,1801-2200,Low,Plant,Never,Large,No,50-100,Daily,No,Taste,59,Med,High,8.2,25,High,44,5,Traditional Family
+25-34,Prefer not to say,Saudi,Low,Abu Dhabi,1-2,1-5,7.5-9,Overweight,Both,1801-2200,Med,Fish,Always,Small,Yes,<50,Daily,No,Cost,60,Med,Low,8.2,28,Med,24,5,Traditional Family
+45-54,Male,Expat,High,Riyadh,1-2,10+,<6.5,Overweight,Oral,1500-1800,Med,Plant,Sometimes,Small,Maybe,<50,Rarely,No,Time,75,High,Med,6.0,18,Med,30,7,Traditional Family
+45-54,Female,Expat,High,Dubai,3-4,<1,>9,Overweight,Insulin,1801-2200,Low,Chicken,Always,Large,Maybe,<50,Daily,No,Motivation,82,High,Med,9.5,28,High,33,3,Health-Conscious Pro
+55-65,Female,Expat,High,Doha,3-4,10+,<6.5,Overweight,Insulin,>2200,Med,Red Meat,Sometimes,Medium,Maybe,<50,Daily,No,Time,93,High,High,6.0,18,Low,37,6,Traditional Family
+45-54,Male,UAE,High,Abu Dhabi,5+,5-10,<6.5,Obese,Oral,1500-1800,Med,Red Meat,Sometimes,Medium,Maybe,50-100,Rarely,Yes,Motivation,74,Med,Med,6.0,20,Low,56,4,Traditional Family
+45-54,Female,UAE,Low,Dubai,3-4,10+,<6.5,Obese,Both,1801-2200,Med,Fish,Never,Medium,Yes,>100,Weekly,No,Motivation,48,Low,Med,6.0,21,Med,60,6,Traditional Family
+35-44,Female,Expat,High,Abu Dhabi,5+,5-10,7.5-9,Obese,Oral,>2200,Med,Chicken,Never,Medium,No,<50,Daily,No,Motivation,72,Med,High,8.2,32,Low,29,6,Tech-Savvy Young
+25-34,Male,Expat,Low,Riyadh,1-2,1-5,>9,Obese,Both,1500-1800,Low,Chicken,Never,Small,Maybe,>100,Daily,Yes,Time,78,High,Low,9.5,32,Low,98,5,Traditional Family
+45-54,Male,Qatari,High,Dubai,1-2,10+,7.5-9,Obese,Oral,1801-2200,High,Chicken,Sometimes,Medium,No,>100,Daily,Yes,Motivation,93,High,High,8.2,36,Low,116,4,Traditional Family
+45-54,Female,Expat,High,Dubai,1-2,1-5,7.5-9,Overweight,Insulin,1500-1800,High,Red Meat,Sometimes,Medium,Yes,>100,Daily,No,Motivation,67,Med,Med,8.2,30,Low,84,4,Traditional Family
+55-65,Male,Expat,Mid,Doha,1-2,1-5,<6.5,Obese,Insulin,1801-2200,High,Fish,Always,Medium,Maybe,>100,Daily,Yes,Taste,100,High,High,6.0,21,High,125,7,Health-Conscious Pro
+35-44,Female,Saudi,High,Dubai,3-4,5-10,6.5-7.5,Overweight,Both,1500-1800,Low,Chicken,Sometimes,Large,No,50-100,Weekly,Yes,Time,82,High,High,7.0,21,Med,62,9,Traditional Family
+35-44,Male,Expat,Mid,Abu Dhabi,3-4,5-10,6.5-7.5,Overweight,Both,>2200,High,Fish,Always,Medium,Maybe,<50,Daily,No,Taste,93,High,Med,7.0,26,High,37,2,Health-Conscious Pro
+45-54,Female,UAE,Mid,Abu Dhabi,1-2,10+,6.5-7.5,Overweight,Both,1801-2200,High,Red Meat,Never,Small,No,50-100,Weekly,No,Taste,75,High,High,7.0,28,Low,56,2,Traditional Family
+35-44,Male,Expat,Mid,Abu Dhabi,5+,1-5,<6.5,Overweight,Insulin,1801-2200,High,Chicken,Never,Large,No,50-100,Rarely,Yes,Motivation,48,Low,High,6.0,18,Low,36,8,Traditional Family
+55-65,Female,Expat,Mid,Riyadh,5+,5-10,7.5-9,Normal,None,1801-2200,Low,Red Meat,Sometimes,Medium,Yes,>100,Weekly,No,Motivation,82,High,Low,8.2,23,Med,102,3,Traditional Family
+55-65,Prefer not to say,Expat,Low,Dubai,1-2,5-10,6.5-7.5,Obese,Insulin,1801-2200,Med,Red Meat,Sometimes,Medium,Maybe,>100,Rarely,Yes,Motivation,84,High,Low,7.0,26,Low,105,8,Traditional Family
+35-44,Prefer not to say,UAE,Mid,Abu Dhabi,1-2,<1,7.5-9,Overweight,Insulin,1801-2200,High,Red Meat,Sometimes,Small,Yes,50-100,Weekly,Yes,Taste,82,High,Low,8.2,29,Low,62,6,Traditional Family
+45-54,Female,UAE,High,Dubai,1-2,1-5,6.5-7.5,Normal,None,>2200,Med,Fish,Always,Small,Maybe,<50,Weekly,Yes,Taste,60,Med,Low,7.0,18,Med,24,5,Traditional Family
+45-54,Male,Saudi,Low,Riyadh,1-2,1-5,<6.5,Overweight,Oral,>2200,Med,Chicken,Never,Medium,Yes,<50,Rarely,No,Motivation,60,Med,Low,6.0,16,Low,24,3,Traditional Family
+25-34,Female,Saudi,High,Dubai,1-2,1-5,7.5-9,Normal,Both,1801-2200,High,Fish,Sometimes,Medium,Maybe,<50,Daily,No,Motivation,64,Med,Med,8.2,27,Med,26,6,Tech-Savvy Young
+55-65,Male,Saudi,High,Abu Dhabi,3-4,10+,<6.5,Normal,Insulin,>2200,Med,Chicken,Always,Large,Maybe,50-100,Daily,No,Cost,60,Med,Med,6.0,15,Med,45,4,Traditional Family
+35-44,Male,Expat,High,Dubai,1-2,5-10,>9,Normal,Oral,1801-2200,Med,Chicken,Never,Large,Maybe,50-100,Weekly,No,Time,60,Med,Low,9.5,29,Low,45,5,Traditional Family
+45-54,Male,Saudi,High,Dubai,3-4,5-10,7.5-9,Overweight,None,1801-2200,Med,Plant,Always,Large,Yes,>100,Weekly,Yes,Taste,62,Med,Med,8.2,29,High,78,6,Traditional Family
+35-44,Female,Saudi,Mid,Dubai,5+,10+,<6.5,Overweight,Oral,1801-2200,High,Fish,Always,Medium,No,50-100,Rarely,Yes,Motivation,58,Med,High,6.0,22,High,44,4,Traditional Family
+55-65,Female,Expat,High,Dubai,3-4,1-5,>9,Obese,Both,1500-1800,Low,Red Meat,Never,Medium,Yes,>100,Rarely,No,Motivation,11,Low,High,9.5,32,Low,14,2,Traditional Family
+35-44,Female,Qatari,High,Riyadh,5+,10+,6.5-7.5,Obese,Insulin,1500-1800,Med,Chicken,Sometimes,Medium,Yes,50-100,Weekly,Yes,Taste,92,High,Low,7.0,27,Low,69,4,Traditional Family
+25-34,Male,Expat,Low,Dubai,1-2,1-5,<6.5,Overweight,Oral,1500-1800,Med,Plant,Sometimes,Small,Yes,>100,Weekly,No,Taste,86,High,Low,6.0,16,Med,108,5,Traditional Family
+55-65,Male,UAE,Mid,Doha,3-4,10+,7.5-9,Overweight,Oral,1801-2200,High,Plant,Always,Small,No,<50,Weekly,No,Taste,80,High,High,8.2,34,Med,32,3,Traditional Family
+25-34,Prefer not to say,Expat,Mid,Doha,3-4,1-5,6.5-7.5,Overweight,Insulin,1801-2200,Med,Plant,Sometimes,Medium,No,>100,Rarely,No,Time,51,Med,High,7.0,22,Med,64,6,Traditional Family
+35-44,Male,UAE,Low,Abu Dhabi,1-2,10+,7.5-9,Obese,Oral,1801-2200,High,Red Meat,Sometimes,Large,Maybe,50-100,Rarely,Yes,Time,72,Med,High,8.2,36,Med,54,8,Traditional Family
+55-65,Male,UAE,Mid,Dubai,1-2,1-5,7.5-9,Normal,Insulin,>2200,High,Plant,Always,Small,No,<50,Rarely,Yes,Taste,70,Med,High,8.2,27,Med,28,6,Traditional Family
+55-65,Male,Expat,Mid,Dubai,3-4,1-5,>9,Underweight,None,1801-2200,Low,Red Meat,Never,Small,Yes,<50,Daily,Yes,Motivation,37,Low,High,9.5,24,Low,15,4,Traditional Family
+45-54,Female,UAE,Low,Riyadh,3-4,5-10,6.5-7.5,Obese,Oral,1801-2200,Med,Chicken,Always,Large,No,>100,Rarely,Yes,Time,60,Med,High,7.0,26,Med,75,7,Traditional Family
+45-54,Female,Expat,Mid,Dubai,3-4,1-5,6.5-7.5,Overweight,Insulin,1500-1800,Low,Fish,Sometimes,Small,Yes,<50,Daily,No,Cost,100,High,Low,7.0,20,Med,40,3,Traditional Family
+35-44,Male,Qatari,High,Dubai,3-4,5-10,7.5-9,Normal,Oral,1500-1800,Med,Chicken,Sometimes,Medium,Yes,50-100,Daily,Yes,Motivation,48,Low,Med,8.2,25,Low,36,5,Tech-Savvy Young
+35-44,Male,Saudi,Mid,Abu Dhabi,3-4,1-5,<6.5,Normal,Oral,1801-2200,Med,Chicken,Always,Medium,Yes,<50,Rarely,Yes,Time,88,High,Low,6.0,12,Med,35,8,Traditional Family
+35-44,Female,Expat,Low,Riyadh,1-2,5-10,6.5-7.5,Obese,Both,1801-2200,High,Chicken,Sometimes,Small,Maybe,50-100,Daily,Yes,Taste,71,Med,High,7.0,28,Low,53,5,Traditional Family
+45-54,Female,UAE,Low,Riyadh,3-4,1-5,6.5-7.5,Obese,None,1801-2200,High,Chicken,Never,Large,No,>100,Rarely,Yes,Cost,64,Med,High,7.0,27,Low,80,8,Traditional Family
+45-54,Male,Expat,Mid,Dubai,1-2,<1,<6.5,Obese,Oral,1500-1800,Low,Chicken,Sometimes,Small,Yes,50-100,Daily,Yes,Time,70,Med,Low,6.0,14,Low,52,5,Traditional Family
+45-54,Female,Expat,High,Riyadh,1-2,1-5,6.5-7.5,Overweight,Both,1801-2200,Low,Chicken,Sometimes,Medium,No,50-100,Rarely,Yes,Time,53,Med,High,7.0,20,Med,40,5,Traditional Family
+45-54,Male,Expat,Low,Dubai,5+,1-5,>9,Overweight,Oral,1500-1800,Med,Chicken,Never,Small,Maybe,>100,Daily,Yes,Taste,57,Med,High,9.5,32,Low,71,3,Traditional Family
+25-34,Male,Expat,Mid,Dubai,3-4,1-5,>9,Obese,Insulin,1500-1800,Med,Red Meat,Always,Small,Yes,50-100,Weekly,Yes,Taste,59,Med,Low,9.5,34,Low,44,6,Traditional Family
+35-44,Female,UAE,Low,Doha,3-4,1-5,<6.5,Obese,Both,1500-1800,Low,Chicken,Never,Small,Maybe,>100,Daily,Yes,Taste,68,Med,Med,6.0,16,Low,85,5,Traditional Family
+25-34,Male,Qatari,Mid,Dubai,3-4,1-5,<6.5,Normal,Oral,1500-1800,High,Plant,Sometimes,Small,Maybe,50-100,Weekly,Yes,Time,70,Med,High,6.0,15,Med,52,7,Traditional Family
+35-44,Female,Saudi,High,Dubai,3-4,<1,6.5-7.5,Obese,Both,1500-1800,High,Chicken,Sometimes,Small,No,<50,Weekly,Yes,Motivation,58,Med,High,7.0,26,Low,23,5,Traditional Family
+35-44,Male,Expat,Mid,Dubai,1-2,5-10,>9,Normal,Both,1500-1800,Med,Red Meat,Never,Medium,Maybe,50-100,Weekly,Yes,Time,45,Low,High,9.5,29,Low,34,8,Traditional Family
+55-65,Male,Expat,Low,Doha,1-2,10+,<6.5,Normal,Oral,>2200,High,Red Meat,Always,Medium,Maybe,50-100,Daily,No,Cost,78,High,Med,6.0,18,Med,58,4,Traditional Family
+35-44,Prefer not to say,Saudi,Mid,Riyadh,1-2,1-5,7.5-9,Overweight,None,1500-1800,Med,Plant,Always,Medium,Yes,<50,Daily,No,Cost,100,High,Low,8.2,28,High,40,4,Health-Conscious Pro
+25-34,Male,Expat,Low,Riyadh,3-4,5-10,<6.5,Overweight,Both,1500-1800,Med,Plant,Sometimes,Medium,Maybe,<50,Daily,No,Motivation,35,Low,High,6.0,17,Med,14,3,Traditional Family
+25-34,Female,Saudi,Mid,Riyadh,3-4,5-10,7.5-9,Obese,Oral,1500-1800,Med,Chicken,Never,Large,No,<50,Weekly,Yes,Time,38,Low,High,8.2,32,Low,15,6,Traditional Family
+45-54,Male,Expat,Mid,Dubai,3-4,1-5,6.5-7.5,Normal,Oral,1801-2200,Low,Red Meat,Never,Large,Yes,50-100,Rarely,Yes,Time,59,Med,Med,7.0,16,Med,44,5,Traditional Family
+45-54,Male,Expat,Low,Abu Dhabi,3-4,5-10,7.5-9,Overweight,Oral,1500-1800,High,Red Meat,Sometimes,Medium,No,>100,Rarely,No,Cost,31,Low,High,8.2,32,Low,39,4,Traditional Family
+25-34,Male,Expat,Mid,Dubai,5+,1-5,6.5-7.5,Obese,None,>2200,Med,Red Meat,Sometimes,Large,Maybe,<50,Daily,Yes,Taste,76,High,Low,7.0,24,Med,30,5,Traditional Family
+25-34,Female,Expat,Mid,Dubai,1-2,5-10,7.5-9,Obese,Both,>2200,Med,Plant,Sometimes,Medium,Yes,50-100,Weekly,No,Time,33,Low,High,8.2,32,Med,25,4,Traditional Family
+45-54,Male,Saudi,High,Abu Dhabi,1-2,<1,6.5-7.5,Normal,Insulin,1500-1800,Med,Chicken,Always,Medium,No,>100,Rarely,Yes,Motivation,39,Low,High,7.0,16,Med,49,4,Traditional Family
+25-34,Female,UAE,High,Doha,3-4,5-10,7.5-9,Overweight,Oral,1801-2200,Low,Red Meat,Sometimes,Medium,Maybe,<50,Daily,Yes,Time,95,High,Med,8.2,27,Med,38,9,Tech-Savvy Young
+45-54,Male,Saudi,Low,Dubai,3-4,5-10,>9,Overweight,Oral,1500-1800,Low,Chicken,Always,Medium,Yes,50-100,Weekly,No,Motivation,58,Med,High,9.5,31,Med,44,6,Traditional Family
+45-54,Prefer not to say,Saudi,High,Dubai,5+,<1,<6.5,Normal,Insulin,1801-2200,Med,Fish,Sometimes,Medium,Yes,>100,Weekly,Yes,Taste,83,High,Low,6.0,10,Med,104,7,Traditional Family
+25-34,Male,Saudi,Mid,Dubai,1-2,1-5,>9,Obese,Insulin,1801-2200,Med,Chicken,Sometimes,Medium,Yes,>100,Daily,Yes,Taste,64,Med,Low,9.5,34,Low,80,6,Traditional Family
+25-34,Female,Expat,Mid,Dubai,5+,10+,7.5-9,Obese,Oral,1500-1800,Med,Red Meat,Always,Large,No,<50,Daily,Yes,Time,60,Med,High,8.2,33,Med,24,7,Traditional Family
+55-65,Female,Expat,High,Doha,5+,1-5,<6.5,Normal,Oral,1500-1800,Med,Chicken,Sometimes,Large,Maybe,<50,Daily,Yes,Time,55,Med,Med,6.0,12,Med,22,5,Traditional Family
+35-44,Female,Expat,High,Abu Dhabi,1-2,5-10,6.5-7.5,Normal,Oral,1801-2200,Med,Chicken,Always,Medium,No,<50,Weekly,Yes,Cost,100,High,High,7.0,19,Med,40,9,Traditional Family
+35-44,Female,UAE,High,Abu Dhabi,3-4,10+,<6.5,Normal,Oral,1801-2200,Med,Fish,Sometimes,Medium,Yes,50-100,Daily,No,Motivation,92,High,Low,6.0,15,Med,69,2,Tech-Savvy Young
+45-54,Female,Expat,Mid,Riyadh,3-4,5-10,7.5-9,Obese,Insulin,1500-1800,Med,Plant,Never,Small,Yes,50-100,Daily,No,Motivation,63,Med,High,8.2,32,Low,47,2,Traditional Family
+55-65,Female,Expat,Mid,Dubai,5+,5-10,7.5-9,Normal,Both,1801-2200,High,Plant,Always,Small,Yes,50-100,Weekly,No,Cost,68,Med,Med,8.2,28,Med,51,6,Traditional Family
+55-65,Male,UAE,High,Abu Dhabi,1-2,5-10,<6.5,Overweight,Oral,1801-2200,Med,Chicken,Sometimes,Medium,Maybe,<50,Daily,Yes,Taste,90,High,Med,6.0,17,Low,36,7,Traditional Family
+45-54,Male,Expat,Mid,Abu Dhabi,3-4,10+,6.5-7.5,Overweight,Insulin,>2200,Med,Chicken,Always,Medium,No,<50,Daily,No,Taste,78,High,High,7.0,24,Med,31,2,Traditional Family
+35-44,Female,Expat,Mid,Abu Dhabi,3-4,1-5,7.5-9,Overweight,Oral,1500-1800,Low,Plant,Always,Small,Maybe,50-100,Rarely,No,Motivation,53,Med,Med,8.2,26,High,40,2,Traditional Family
+25-34,Female,UAE,Mid,Doha,3-4,1-5,>9,Normal,Oral,1801-2200,Med,Red Meat,Never,Large,Yes,50-100,Daily,Yes,Motivation,37,Low,High,9.5,28,Low,28,8,Traditional Family
+45-54,Female,Expat,Mid,Riyadh,3-4,1-5,6.5-7.5,Normal,Insulin,1801-2200,Low,Red Meat,Sometimes,Medium,No,50-100,Weekly,No,Motivation,73,Med,High,7.0,16,Med,55,2,Traditional Family
+45-54,Female,Expat,Low,Dubai,3-4,10+,>9,Obese,Insulin,1500-1800,Med,Fish,Sometimes,Medium,No,50-100,Weekly,No,Motivation,22,Low,High,9.5,37,Med,16,5,Traditional Family
+35-44,Male,Saudi,Low,Riyadh,5+,5-10,6.5-7.5,Obese,Insulin,1801-2200,Low,Red Meat,Sometimes,Small,Yes,<50,Weekly,No,Taste,52,Med,High,7.0,24,Low,21,4,Traditional Family
+55-65,Male,Expat,High,Dubai,5+,<1,6.5-7.5,Obese,Both,1801-2200,Med,Fish,Always,Small,No,<50,Weekly,Yes,Motivation,55,Med,High,7.0,22,Med,22,5,Traditional Family
+25-34,Female,Expat,Low,Dubai,5+,10+,7.5-9,Underweight,Both,>2200,High,Fish,Sometimes,Large,Yes,<50,Daily,Yes,Taste,100,High,Low,8.2,28,High,40,6,Health-Conscious Pro
+35-44,Male,Expat,Mid,Dubai,1-2,1-5,6.5-7.5,Overweight,Both,1500-1800,Med,Fish,Sometimes,Medium,Yes,<50,Rarely,No,Motivation,50,Med,Med,7.0,22,Med,20,6,Traditional Family
+25-34,Male,Expat,Low,Dubai,3-4,<1,6.5-7.5,Overweight,Both,1801-2200,Low,Fish,Sometimes,Large,Yes,<50,Weekly,Yes,Time,41,Low,Med,7.0,18,High,16,8,Traditional Family
+35-44,Female,Qatari,Low,Abu Dhabi,1-2,5-10,6.5-7.5,Normal,Both,1801-2200,Low,Plant,Never,Large,Maybe,<50,Rarely,No,Cost,66,Med,High,7.0,17,High,26,4,Traditional Family
+25-34,Male,Expat,Low,Riyadh,3-4,1-5,7.5-9,Obese,Oral,>2200,High,Fish,Always,Medium,Maybe,<50,Weekly,No,Motivation,70,Med,Med,8.2,33,High,28,4,Health-Conscious Pro
+25-34,Female,Expat,Low,Doha,3-4,10+,7.5-9,Overweight,Oral,1500-1800,Low,Chicken,Sometimes,Small,Yes,<50,Rarely,No,Time,43,Low,Low,8.2,28,Low,17,3,Traditional Family
+25-34,Male,UAE,High,Abu Dhabi,3-4,1-5,6.5-7.5,Normal,Insulin,>2200,Med,Chicken,Always,Large,Yes,50-100,Rarely,Yes,Motivation,57,Med,Low,7.0,18,Med,43,4,Traditional Family
+45-54,Female,Expat,Mid,Abu Dhabi,3-4,10+,6.5-7.5,Obese,Oral,>2200,Med,Chicken,Sometimes,Large,No,<50,Rarely,No,Motivation,39,Low,High,7.0,27,Med,16,6,Traditional Family
+45-54,Male,Expat,High,Dubai,5+,5-10,6.5-7.5,Obese,Both,1500-1800,Med,Fish,Never,Medium,No,50-100,Weekly,Yes,Time,88,High,High,7.0,26,Med,66,6,Traditional Family
+45-54,Male,Expat,Mid,Dubai,1-2,<1,7.5-9,Normal,Oral,>2200,Med,Chicken,Sometimes,Medium,No,50-100,Weekly,No,Time,41,Low,High,8.2,22,Low,31,4,Traditional Family
+55-65,Male,UAE,Mid,Abu Dhabi,3-4,10+,6.5-7.5,Overweight,Oral,>2200,High,Chicken,Never,Medium,Yes,50-100,Rarely,No,Taste,46,Low,High,7.0,28,Low,34,2,Traditional Family
+35-44,Male,Expat,Mid,Abu Dhabi,3-4,5-10,7.5-9,Overweight,Oral,1500-1800,Low,Plant,Always,Medium,Yes,>100,Rarely,Yes,Taste,98,High,Low,8.2,27,High,122,3,Health-Conscious Pro
+35-44,Male,Saudi,Mid,Riyadh,1-2,1-5,6.5-7.5,Overweight,Oral,1801-2200,Low,Plant,Never,Medium,Yes,<50,Rarely,No,Time,66,Med,Med,7.0,20,Med,26,6,Traditional Family
+55-65,Male,Saudi,High,Dubai,1-2,1-5,6.5-7.5,Normal,Both,1801-2200,Low,Plant,Always,Large,Yes,50-100,Weekly,Yes,Motivation,98,High,Low,7.0,16,High,74,4,Health-Conscious Pro
+25-34,Female,Saudi,Mid,Dubai,5+,10+,<6.5,Overweight,Both,1500-1800,Low,Fish,Sometimes,Medium,Maybe,>100,Rarely,Yes,Time,59,Med,Med,6.0,16,High,74,5,Traditional Family
+55-65,Male,Saudi,Mid,Abu Dhabi,5+,1-5,6.5-7.5,Obese,Oral,1500-1800,Low,Red Meat,Sometimes,Small,Maybe,>100,Daily,Yes,Motivation,100,High,High,7.0,22,Low,125,4,Traditional Family
+25-34,Female,Expat,High,Dubai,5+,1-5,>9,Overweight,Both,1500-1800,Med,Red Meat,Never,Medium,Maybe,<50,Weekly,Yes,Time,48,Low,High,9.5,32,Low,19,8,Traditional Family
+55-65,Female,Expat,High,Dubai,5+,<1,6.5-7.5,Normal,Oral,1500-1800,Med,Red Meat,Sometimes,Small,Maybe,<50,Daily,Yes,Taste,75,High,Low,7.0,16,Low,30,5,Traditional Family
+25-34,Female,Saudi,High,Riyadh,1-2,1-5,<6.5,Overweight,Both,1801-2200,Med,Plant,Sometimes,Small,Yes,<50,Weekly,Yes,Motivation,74,Med,Low,6.0,16,Med,30,8,Traditional Family
+55-65,Male,Expat,Mid,Dubai,3-4,5-10,6.5-7.5,Overweight,Oral,1500-1800,Med,Chicken,Sometimes,Large,Yes,50-100,Rarely,No,Taste,46,Low,Med,7.0,23,Med,34,3,Traditional Family
+35-44,Female,Expat,High,Riyadh,3-4,1-5,6.5-7.5,Obese,Oral,>2200,Med,Red Meat,Always,Small,Maybe,50-100,Daily,No,Cost,57,Med,Med,7.0,24,Low,43,5,Tech-Savvy Young
+55-65,Male,Expat,Mid,Dubai,3-4,1-5,<6.5,Overweight,Oral,1801-2200,Med,Chicken,Sometimes,Small,Yes,<50,Weekly,No,Taste,52,Med,Med,6.0,16,Low,21,1,Traditional Family
+25-34,Male,Saudi,Mid,Dubai,3-4,1-5,6.5-7.5,Normal,Both,1500-1800,Low,Chicken,Sometimes,Medium,Yes,50-100,Weekly,Yes,Motivation,49,Low,High,7.0,16,Med,37,6,Traditional Family
+45-54,Prefer not to say,Expat,Low,Dubai,3-4,1-5,6.5-7.5,Normal,None,1801-2200,Med,Fish,Sometimes,Medium,Yes,50-100,Daily,No,Time,40,Low,Med,7.0,18,Med,30,3,Traditional Family
+55-65,Male,Expat,Mid,Riyadh,3-4,10+,7.5-9,Obese,Insulin,1801-2200,Low,Chicken,Never,Medium,Yes,50-100,Weekly,No,Cost,88,High,Low,8.2,31,Low,66,3,Traditional Family
+35-44,Female,Expat,Low,Dubai,3-4,1-5,6.5-7.5,Normal,Insulin,>2200,Low,Red Meat,Always,Small,Yes,>100,Weekly,Yes,Motivation,47,Low,High,7.0,16,Med,59,8,Traditional Family
+45-54,Female,UAE,Mid,Riyadh,1-2,10+,6.5-7.5,Obese,None,1500-1800,Med,Fish,Sometimes,Small,No,50-100,Daily,No,Taste,69,Med,High,7.0,27,Med,52,2,Traditional Family
+45-54,Female,UAE,High,Dubai,3-4,1-5,>9,Normal,Oral,1500-1800,High,Fish,Never,Small,No,<50,Rarely,Yes,Motivation,54,Med,High,9.5,31,Low,22,4,Traditional Family
+35-44,Female,Expat,Low,Riyadh,3-4,1-5,6.5-7.5,Overweight,Oral,>2200,Med,Plant,Sometimes,Medium,Yes,50-100,Rarely,No,Motivation,57,Med,Med,7.0,22,Med,43,4,Traditional Family
+45-54,Male,Expat,Low,Dubai,3-4,10+,6.5-7.5,Overweight,Oral,>2200,Low,Fish,Sometimes,Small,Yes,<50,Daily,Yes,Taste,94,High,Low,7.0,22,Med,38,7,Traditional Family
+45-54,Male,Expat,Low,Riyadh,1-2,1-5,6.5-7.5,Obese,Insulin,1801-2200,High,Chicken,Sometimes,Large,Maybe,50-100,Daily,Yes,Taste,97,High,Low,7.0,27,Med,73,5,Traditional Family
+55-65,Female,Expat,High,Abu Dhabi,3-4,5-10,6.5-7.5,Obese,Both,1801-2200,Med,Plant,Sometimes,Medium,Yes,>100,Weekly,No,Taste,43,Low,Low,7.0,26,Med,54,2,Traditional Family
+25-34,Male,UAE,Mid,Doha,1-2,10+,7.5-9,Normal,Both,1500-1800,Med,Plant,Never,Small,Yes,>100,Weekly,Yes,Cost,63,Med,Med,8.2,27,Low,79,8,Traditional Family
+35-44,Male,Expat,Mid,Dubai,3-4,<1,6.5-7.5,Overweight,Oral,1801-2200,High,Fish,Sometimes,Medium,Yes,50-100,Daily,Yes,Motivation,93,High,Low,7.0,23,Med,70,5,Traditional Family
+55-65,Male,Expat,High,Dubai,3-4,<1,7.5-9,Normal,Oral,1500-1800,Med,Plant,Always,Medium,Yes,<50,Daily,No,Motivation,49,Low,Low,8.2,22,High,20,6,Traditional Family
+55-65,Male,Qatari,High,Dubai,3-4,5-10,<6.5,Overweight,Both,1500-1800,Low,Chicken,Never,Medium,No,<50,Weekly,No,Cost,57,Med,High,6.0,15,Low,23,4,Traditional Family
+35-44,Male,Expat,Mid,Riyadh,1-2,1-5,6.5-7.5,Overweight,Insulin,>2200,Med,Chicken,Always,Small,No,50-100,Rarely,No,Motivation,56,Med,High,7.0,22,Low,42,3,Traditional Family
+45-54,Male,Expat,Mid,Abu Dhabi,3-4,1-5,7.5-9,Obese,Both,1500-1800,Med,Chicken,Never,Medium,Yes,<50,Weekly,Yes,Taste,76,High,Low,8.2,30,Low,30,7,Traditional Family
+35-44,Female,Saudi,High,Riyadh,3-4,<1,6.5-7.5,Obese,Oral,1801-2200,Med,Fish,Always,Medium,Yes,50-100,Weekly,Yes,Time,96,High,Low,7.0,22,High,72,9,Health-Conscious Pro
+25-34,Female,Expat,Mid,Dubai,3-4,<1,7.5-9,Overweight,Oral,>2200,Med,Red Meat,Sometimes,Large,Yes,<50,Rarely,No,Motivation,48,Low,Med,8.2,26,Med,19,4,Traditional Family
+35-44,Female,Saudi,Low,Dubai,3-4,5-10,6.5-7.5,Overweight,None,1500-1800,High,Red Meat,Sometimes,Small,Yes,<50,Weekly,Yes,Motivation,49,Low,Med,7.0,26,Low,20,4,Traditional Family
+35-44,Male,Expat,High,Dubai,3-4,<1,7.5-9,Obese,Both,>2200,High,Fish,Never,Medium,No,<50,Weekly,Yes,Time,84,High,High,8.2,32,Med,34,8,Traditional Family
+45-54,Male,Expat,Mid,Doha,3-4,1-5,<6.5,Obese,Oral,>2200,High,Fish,Never,Medium,Maybe,>100,Weekly,Yes,Cost,83,High,High,6.0,21,Med,104,8,Traditional Family
+25-34,Male,Expat,Mid,Riyadh,1-2,5-10,>9,Underweight,Both,1801-2200,High,Plant,Never,Large,Maybe,50-100,Rarely,Yes,Taste,87,High,Low,9.5,31,Med,65,6,Traditional Family
+55-65,Female,Expat,Mid,Doha,1-2,1-5,<6.5,Overweight,Oral,1500-1800,High,Chicken,Never,Large,No,<50,Weekly,Yes,Time,58,Med,High,6.0,18,Low,23,6,Traditional Family
+55-65,Female,Qatari,Low,Dubai,3-4,<1,>9,Overweight,Oral,1500-1800,Low,Chicken,Sometimes,Small,No,<50,Rarely,Yes,Time,56,Med,High,9.5,28,Low,22,9,Traditional Family
+45-54,Male,Expat,Low,Riyadh,3-4,5-10,6.5-7.5,Normal,None,1801-2200,Low,Red Meat,Sometimes,Small,No,50-100,Weekly,Yes,Motivation,62,Med,High,7.0,17,Low,46,8,Traditional Family
+35-44,Female,Expat,High,Riyadh,3-4,<1,7.5-9,Normal,Both,1500-1800,Med,Plant,Sometimes,Medium,Yes,<50,Weekly,Yes,Motivation,85,High,Low,8.2,22,Med,34,8,Traditional Family
+35-44,Male,Saudi,Low,Dubai,1-2,5-10,6.5-7.5,Underweight,Oral,1500-1800,High,Red Meat,Always,Small,Yes,50-100,Daily,Yes,Time,100,High,Low,7.0,21,Low,75,5,Traditional Family
+45-54,Female,Expat,Mid,Riyadh,1-2,10+,>9,Overweight,Oral,>2200,Med,Chicken,Sometimes,Medium,Maybe,>100,Weekly,Yes,Motivation,62,Med,Low,9.5,34,Low,78,8,Traditional Family
+45-54,Female,Expat,Mid,Doha,3-4,1-5,<6.5,Normal,Insulin,1500-1800,Med,Plant,Sometimes,Small,Yes,50-100,Rarely,No,Motivation,54,Med,Low,6.0,12,Med,40,6,Traditional Family
+25-34,Female,Saudi,Low,Doha,1-2,5-10,<6.5,Normal,Insulin,1801-2200,Low,Chicken,Sometimes,Medium,No,50-100,Daily,No,Time,62,Med,High,6.0,11,Med,46,4,Traditional Family
+55-65,Female,Expat,High,Riyadh,3-4,1-5,6.5-7.5,Normal,Oral,1500-1800,Low,Chicken,Sometimes,Large,Maybe,50-100,Weekly,Yes,Time,94,High,Med,7.0,16,Med,70,7,Traditional Family
+45-54,Female,Expat,Low,Dubai,1-2,1-5,<6.5,Obese,Both,1801-2200,Med,Fish,Sometimes,Large,No,>100,Daily,Yes,Motivation,48,Low,High,6.0,18,High,60,7,Traditional Family
+55-65,Male,Saudi,Mid,Dubai,3-4,10+,<6.5,Obese,Oral,>2200,Low,Chicken,Always,Medium,Yes,>100,Rarely,Yes,Time,73,Med,Low,6.0,19,Med,91,6,Traditional Family
+45-54,Female,Expat,Mid,Doha,5+,10+,>9,Overweight,Both,1500-1800,Med,Chicken,Never,Medium,No,50-100,Daily,Yes,Time,92,High,High,9.5,34,Low,69,6,Traditional Family
+45-54,Male,UAE,Low,Dubai,1-2,1-5,>9,Overweight,Insulin,1500-1800,Low,Chicken,Never,Large,Yes,<50,Rarely,Yes,Motivation,49,Low,Med,9.5,30,Med,20,5,Traditional Family
+35-44,Female,Saudi,Low,Riyadh,3-4,5-10,6.5-7.5,Obese,Oral,1801-2200,Med,Chicken,Sometimes,Small,No,50-100,Weekly,Yes,Cost,69,Med,High,7.0,26,Low,52,8,Traditional Family
+55-65,Female,Saudi,Mid,Riyadh,1-2,10+,>9,Normal,Insulin,1801-2200,Med,Plant,Never,Medium,Yes,<50,Daily,No,Motivation,73,Med,Low,9.5,31,Med,29,3,Traditional Family
+55-65,Female,Expat,High,Riyadh,3-4,10+,6.5-7.5,Normal,Oral,1801-2200,Med,Fish,Always,Medium,Maybe,50-100,Weekly,No,Cost,55,Med,Med,7.0,21,High,41,5,Traditional Family
+25-34,Male,Expat,Low,Doha,3-4,5-10,6.5-7.5,Normal,Insulin,1500-1800,Med,Chicken,Always,Small,No,50-100,Daily,Yes,Motivation,88,High,High,7.0,19,Low,66,8,Traditional Family
+25-34,Female,Saudi,Mid,Dubai,3-4,1-5,7.5-9,Normal,None,1500-1800,Low,Chicken,Never,Medium,Maybe,<50,Weekly,Yes,Cost,82,High,Low,8.2,22,Low,33,7,Traditional Family
+35-44,Female,Qatari,Mid,Dubai,3-4,1-5,7.5-9,Overweight,Insulin,>2200,High,Chicken,Never,Small,Maybe,<50,Weekly,No,Motivation,24,Low,High,8.2,30,Low,10,6,Traditional Family
+45-54,Female,Expat,High,Dubai,5+,10+,>9,Obese,None,>2200,Med,Plant,Sometimes,Medium,No,50-100,Daily,Yes,Taste,100,High,High,9.5,37,Med,75,7,Traditional Family
+55-65,Male,UAE,Mid,Abu Dhabi,1-2,<1,6.5-7.5,Overweight,Oral,1801-2200,Med,Chicken,Sometimes,Small,Maybe,>100,Rarely,No,Time,77,High,High,7.0,20,Low,96,4,Traditional Family
+25-34,Male,Expat,Mid,Dubai,1-2,5-10,7.5-9,Overweight,None,>2200,Med,Plant,Sometimes,Medium,Maybe,50-100,Daily,Yes,Taste,59,Med,Low,8.2,29,Med,44,4,Traditional Family
+45-54,Male,Expat,Mid,Dubai,5+,1-5,<6.5,Obese,Oral,1801-2200,Low,Chicken,Sometimes,Small,Yes,50-100,Weekly,No,Time,37,Low,High,6.0,16,Low,28,6,Traditional Family
+35-44,Male,Expat,Mid,Riyadh,3-4,1-5,<6.5,Underweight,None,1801-2200,High,Chicken,Sometimes,Large,No,<50,Weekly,No,Motivation,33,Low,High,6.0,14,Med,13,2,Traditional Family
+55-65,Female,Expat,High,Doha,5+,1-5,<6.5,Normal,Insulin,1500-1800,Med,Red Meat,Sometimes,Medium,Maybe,50-100,Weekly,No,Taste,58,Med,Low,6.0,12,Low,44,3,Traditional Family
+45-54,Male,Qatari,Low,Dubai,3-4,10+,>9,Overweight,Both,1801-2200,Med,Plant,Never,Medium,Maybe,50-100,Weekly,Yes,Motivation,36,Low,High,9.5,34,Med,27,7,Traditional Family
+45-54,Prefer not to say,Expat,Mid,Dubai,5+,<1,7.5-9,Overweight,None,1801-2200,Low,Chicken,Always,Medium,Yes,50-100,Weekly,Yes,Cost,97,High,Low,8.2,24,Med,73,8,Traditional Family
+35-44,Male,Expat,High,Doha,3-4,5-10,7.5-9,Underweight,Insulin,1500-1800,High,Red Meat,Never,Medium,Maybe,<50,Weekly,Yes,Motivation,62,Med,High,8.2,27,Low,25,6,Traditional Family
+35-44,Male,Expat,High,Dubai,3-4,<1,6.5-7.5,Overweight,Insulin,1801-2200,High,Fish,Always,Small,Yes,50-100,Weekly,No,Time,74,Med,Low,7.0,23,Med,56,5,Traditional Family
+35-44,Female,Saudi,High,Dubai,5+,1-5,6.5-7.5,Overweight,Oral,1801-2200,Low,Red Meat,Sometimes,Medium,Yes,<50,Daily,Yes,Taste,100,High,Low,7.0,20,Med,40,7,Tech-Savvy Young
+25-34,Female,Expat,High,Dubai,3-4,1-5,<6.5,Overweight,None,1801-2200,Med,Plant,Sometimes,Small,Maybe,<50,Weekly,Yes,Time,80,High,Low,6.0,16,Med,32,5,Traditional Family
+55-65,Female,Qatari,Mid,Abu Dhabi,1-2,5-10,6.5-7.5,Overweight,Oral,1801-2200,High,Plant,Always,Small,Yes,>100,Daily,Yes,Motivation,85,High,Low,7.0,26,Med,106,5,Traditional Family
+45-54,Female,Saudi,Mid,Dubai,1-2,1-5,6.5-7.5,Overweight,Oral,>2200,Med,Red Meat,Always,Medium,Yes,<50,Daily,Yes,Taste,83,High,Low,7.0,22,Med,33,3,Traditional Family
+55-65,Female,UAE,Mid,Doha,1-2,1-5,7.5-9,Normal,Insulin,1500-1800,High,Chicken,Sometimes,Small,Maybe,<50,Weekly,Yes,Taste,99,High,Med,8.2,27,Low,40,3,Traditional Family
+55-65,Male,Expat,Low,Abu Dhabi,1-2,<1,6.5-7.5,Overweight,Insulin,1801-2200,Med,Plant,Never,Medium,Yes,50-100,Weekly,No,Cost,39,Low,High,7.0,20,Med,29,4,Traditional Family
+45-54,Prefer not to say,Expat,Mid,Abu Dhabi,3-4,1-5,<6.5,Normal,Both,1801-2200,Med,Fish,Always,Medium,Yes,>100,Weekly,Yes,Time,82,High,Low,6.0,12,High,102,5,Health-Conscious Pro
+45-54,Prefer not to say,Expat,Mid,Dubai,3-4,10+,<6.5,Obese,Insulin,1801-2200,Med,Chicken,Sometimes,Medium,Yes,50-100,Weekly,Yes,Time,38,Low,High,6.0,21,Low,28,8,Traditional Family
+55-65,Female,Expat,Low,Abu Dhabi,3-4,10+,<6.5,Overweight,Oral,1500-1800,Low,Chicken,Never,Medium,Maybe,50-100,Weekly,No,Time,66,Med,High,6.0,16,Low,50,6,Traditional Family
+45-54,Male,UAE,High,Riyadh,3-4,1-5,6.5-7.5,Overweight,None,1500-1800,Med,Chicken,Always,Medium,Maybe,>100,Weekly,No,Motivation,67,Med,Med,7.0,22,Med,84,3,Traditional Family
+25-34,Female,Expat,Mid,Riyadh,3-4,5-10,>9,Obese,Insulin,>2200,High,Plant,Never,Medium,Maybe,<50,Daily,No,Taste,88,High,Med,9.5,38,Med,35,2,Traditional Family
+35-44,Male,Saudi,High,Riyadh,1-2,10+,7.5-9,Overweight,Both,1801-2200,Med,Fish,Never,Medium,Yes,50-100,Weekly,Yes,Motivation,81,High,Low,8.2,30,Med,61,6,Traditional Family
+25-34,Male,Expat,Low,Abu Dhabi,1-2,<1,7.5-9,Overweight,Insulin,>2200,Med,Fish,Never,Small,Yes,50-100,Weekly,No,Time,84,High,Low,8.2,26,Low,63,5,Traditional Family
+55-65,Male,Expat,Mid,Doha,1-2,10+,6.5-7.5,Obese,Oral,1801-2200,Med,Chicken,Sometimes,Medium,Yes,>100,Weekly,Yes,Time,70,Med,Low,7.0,27,Low,88,5,Traditional Family
+45-54,Male,Expat,Mid,Riyadh,3-4,10+,6.5-7.5,Obese,Insulin,1801-2200,Med,Fish,Sometimes,Medium,Maybe,<50,Weekly,Yes,Taste,55,Med,Low,7.0,27,Med,22,3,Traditional Family
+25-34,Female,Expat,Mid,Riyadh,1-2,<1,<6.5,Overweight,Both,>2200,High,Red Meat,Sometimes,Medium,No,<50,Weekly,Yes,Cost,80,High,High,6.0,17,Low,32,6,Traditional Family
+45-54,Female,Saudi,Mid,Dubai,1-2,1-5,>9,Underweight,Oral,1801-2200,High,Fish,Sometimes,Large,Yes,50-100,Weekly,Yes,Taste,45,Low,Med,9.5,30,High,34,3,Traditional Family
+45-54,Female,Expat,High,Dubai,3-4,10+,7.5-9,Overweight,Oral,1801-2200,Low,Plant,Sometimes,Large,Yes,50-100,Weekly,Yes,Time,45,Low,High,8.2,28,High,34,9,Traditional Family
+35-44,Male,Expat,Low,Dubai,5+,5-10,<6.5,Obese,Oral,1801-2200,High,Plant,Sometimes,Small,Yes,50-100,Weekly,No,Taste,40,Low,Low,6.0,22,Med,30,4,Traditional Family
+25-34,Male,Expat,Mid,Riyadh,1-2,<1,6.5-7.5,Normal,Insulin,>2200,High,Plant,Never,Small,Maybe,50-100,Weekly,Yes,Time,92,High,Med,7.0,19,Low,69,5,Traditional Family
+45-54,Male,Qatari,Mid,Abu Dhabi,3-4,1-5,6.5-7.5,Normal,Both,1801-2200,High,Fish,Always,Small,Maybe,<50,Daily,Yes,Motivation,84,High,Low,7.0,21,Med,34,4,Traditional Family
+35-44,Prefer not to say,Expat,Mid,Abu Dhabi,3-4,1-5,7.5-9,Obese,Oral,1801-2200,Med,Red Meat,Never,Small,Maybe,50-100,Daily,Yes,Motivation,100,High,High,8.2,30,Low,75,6,Traditional Family
+45-54,Male,Expat,High,Doha,3-4,5-10,>9,Underweight,Both,1500-1800,High,Fish,Always,Small,No,50-100,Daily,Yes,Motivation,87,High,High,9.5,31,Med,65,8,Traditional Family
+35-44,Female,Saudi,High,Doha,5+,5-10,7.5-9,Obese,Insulin,>2200,Low,Red Meat,Never,Medium,Maybe,>100,Weekly,No,Time,63,Med,Med,8.2,30,Low,79,3,Traditional Family
+55-65,Female,Saudi,Mid,Doha,1-2,10+,6.5-7.5,Overweight,Both,1500-1800,Med,Chicken,Always,Large,Yes,<50,Rarely,Yes,Taste,79,High,Low,7.0,24,Med,32,6,Traditional Family
+45-54,Male,Expat,Mid,Dubai,1-2,1-5,<6.5,Overweight,Insulin,1801-2200,High,Chicken,Never,Medium,Yes,>100,Weekly,No,Motivation,82,High,Low,6.0,18,Low,102,2,Traditional Family
+45-54,Female,Expat,Mid,Riyadh,5+,5-10,<6.5,Underweight,Oral,1801-2200,Low,Chicken,Never,Small,Maybe,50-100,Daily,Yes,Time,58,Med,High,6.0,10,Low,44,6,Traditional Family
+55-65,Female,UAE,High,Dubai,3-4,5-10,<6.5,Obese,Insulin,1801-2200,Low,Plant,Always,Medium,Maybe,<50,Rarely,No,Cost,82,High,High,6.0,18,High,33,7,Health-Conscious Pro
+35-44,Female,Saudi,Mid,Dubai,3-4,1-5,<6.5,Overweight,Both,1801-2200,High,Fish,Always,Medium,Maybe,50-100,Rarely,No,Taste,69,Med,Low,6.0,18,High,52,1,Traditional Family
+25-34,Female,UAE,Mid,Dubai,3-4,1-5,7.5-9,Overweight,Oral,1500-1800,High,Chicken,Sometimes,Large,Maybe,<50,Rarely,No,Taste,46,Low,Low,8.2,30,Med,18,5,Traditional Family
+25-34,Male,Saudi,High,Dubai,3-4,10+,7.5-9,Overweight,Both,1801-2200,Low,Chicken,Sometimes,Large,Maybe,>100,Weekly,No,Motivation,26,Low,High,8.2,28,Med,32,2,Traditional Family
+45-54,Male,Expat,Mid,Abu Dhabi,5+,10+,<6.5,Obese,Both,1801-2200,High,Red Meat,Sometimes,Large,No,>100,Rarely,No,Motivation,59,Med,High,6.0,24,Med,74,5,Traditional Family
+45-54,Female,Expat,High,Riyadh,5+,1-5,7.5-9,Obese,Insulin,>2200,Med,Red Meat,Always,Medium,Maybe,<50,Daily,Yes,Motivation,83,High,High,8.2,30,Med,33,7,Traditional Family
+45-54,Female,Expat,Low,Dubai,3-4,5-10,<6.5,Overweight,Oral,1500-1800,Med,Fish,Sometimes,Medium,No,<50,Daily,Yes,Motivation,85,High,High,6.0,17,Med,34,8,Traditional Family
+25-34,Male,Expat,Mid,Riyadh,1-2,1-5,6.5-7.5,Overweight,Insulin,>2200,High,Plant,Sometimes,Small,Yes,50-100,Daily,No,Motivation,80,High,Low,7.0,24,Med,60,4,Traditional Family
+25-34,Female,Qatari,Mid,Abu Dhabi,5+,5-10,6.5-7.5,Obese,Oral,1801-2200,Med,Fish,Sometimes,Medium,Maybe,50-100,Weekly,No,Time,69,Med,Med,7.0,26,Med,52,5,Traditional Family
+25-34,Female,Expat,High,Dubai,1-2,5-10,6.5-7.5,Overweight,Both,>2200,Low,Fish,Sometimes,Small,No,50-100,Daily,Yes,Motivation,51,Med,High,7.0,21,Med,38,5,Tech-Savvy Young
+35-44,Female,Expat,High,Abu Dhabi,1-2,5-10,6.5-7.5,Normal,Both,1801-2200,Low,Red Meat,Always,Medium,Yes,<50,Weekly,Yes,Motivation,74,Med,Low,7.0,17,Med,30,6,Traditional Family
+45-54,Male,Expat,Mid,Dubai,5+,10+,6.5-7.5,Normal,Oral,1801-2200,Med,Chicken,Never,Medium,No,50-100,Weekly,No,Motivation,61,Med,High,7.0,21,Low,46,6,Traditional Family
+35-44,Female,Expat,Mid,Abu Dhabi,1-2,5-10,6.5-7.5,Obese,Oral,>2200,Med,Fish,Never,Small,Maybe,<50,Weekly,Yes,Time,87,High,Low,7.0,26,Low,35,7,Traditional Family
+35-44,Female,UAE,Mid,Abu Dhabi,1-2,1-5,>9,Overweight,Oral,>2200,High,Chicken,Sometimes,Small,Yes,>100,Rarely,Yes,Time,51,Med,Med,9.5,34,Low,64,6,Traditional Family
+55-65,Male,Expat,High,Dubai,1-2,5-10,<6.5,Overweight,Insulin,1801-2200,High,Fish,Sometimes,Small,Maybe,>100,Daily,Yes,Time,96,High,Med,6.0,20,Med,120,5,Traditional Family
+35-44,Male,Saudi,Mid,Dubai,5+,1-5,<6.5,Overweight,Both,1500-1800,Med,Fish,Never,Small,Yes,50-100,Weekly,No,Motivation,42,Low,Med,6.0,16,Low,32,4,Traditional Family
+35-44,Prefer not to say,Expat,Mid,Abu Dhabi,3-4,1-5,<6.5,Normal,Oral,1801-2200,High,Fish,Sometimes,Small,No,>100,Rarely,No,Time,60,Med,High,6.0,15,Med,75,7,Traditional Family
+45-54,Male,UAE,Low,Doha,3-4,1-5,7.5-9,Overweight,Both,1801-2200,Low,Chicken,Always,Small,No,<50,Daily,Yes,Motivation,73,Med,High,8.2,26,Med,29,8,Traditional Family
+35-44,Female,Saudi,High,Dubai,1-2,1-5,<6.5,Normal,Insulin,1500-1800,Low,Fish,Never,Small,Yes,<50,Weekly,Yes,Motivation,73,Med,Low,6.0,10,Med,29,5,Traditional Family
+45-54,Female,Expat,Mid,Riyadh,3-4,5-10,7.5-9,Overweight,Oral,1500-1800,High,Chicken,Sometimes,Small,Yes,50-100,Rarely,Yes,Cost,83,High,Low,8.2,32,Low,62,6,Traditional Family
+55-65,Male,Saudi,Mid,Riyadh,3-4,1-5,6.5-7.5,Overweight,Oral,>2200,Low,Chicken,Sometimes,Large,Maybe,50-100,Rarely,Yes,Cost,74,Med,Med,7.0,20,Med,56,8,Traditional Family
+55-65,Female,Expat,Low,Doha,3-4,5-10,6.5-7.5,Overweight,Insulin,1500-1800,Low,Chicken,Sometimes,Medium,Yes,50-100,Rarely,No,Time,44,Low,High,7.0,21,Med,33,6,Traditional Family
+25-34,Male,Saudi,High,Riyadh,3-4,5-10,7.5-9,Obese,Oral,1801-2200,Med,Plant,Always,Small,Yes,>100,Weekly,Yes,Cost,100,High,Low,8.2,32,Med,125,8,Traditional Family
+55-65,Female,Expat,Low,Abu Dhabi,1-2,1-5,<6.5,Obese,Both,1500-1800,Med,Fish,Sometimes,Medium,Maybe,>100,Weekly,Yes,Time,94,High,Med,6.0,18,Med,118,5,Traditional Family
+35-44,Male,Expat,Mid,Riyadh,5+,10+,<6.5,Obese,Both,1500-1800,High,Plant,Sometimes,Large,Yes,50-100,Daily,No,Motivation,80,High,Low,6.0,24,High,60,6,Health-Conscious Pro
+35-44,Female,Expat,High,Doha,3-4,1-5,6.5-7.5,Underweight,Oral,1500-1800,Low,Plant,Sometimes,Medium,Yes,50-100,Daily,No,Cost,83,High,Low,7.0,14,High,62,6,Health-Conscious Pro
+35-44,Male,Saudi,Mid,Dubai,5+,1-5,7.5-9,Normal,Oral,1500-1800,Low,Plant,Sometimes,Small,No,<50,Daily,Yes,Motivation,65,Med,High,8.2,22,Med,26,8,Traditional Family
+55-65,Male,Saudi,Low,Dubai,3-4,5-10,6.5-7.5,Overweight,Insulin,1801-2200,Med,Fish,Sometimes,Medium,No,<50,Weekly,Yes,Taste,100,High,High,7.0,23,Med,40,4,Traditional Family
+35-44,Prefer not to say,UAE,Mid,Dubai,3-4,1-5,<6.5,Obese,Both,>2200,Med,Fish,Always,Medium,No,50-100,Rarely,No,Motivation,62,Med,High,6.0,18,High,46,2,Traditional Family
+35-44,Male,Saudi,High,Riyadh,3-4,<1,>9,Obese,Insulin,1500-1800,Med,Fish,Sometimes,Medium,No,50-100,Weekly,Yes,Time,83,High,High,9.5,32,Med,62,6,Traditional Family
+45-54,Female,Expat,Mid,Riyadh,3-4,5-10,<6.5,Obese,None,1801-2200,Med,Plant,Sometimes,Medium,Yes,50-100,Weekly,No,Time,49,Low,Low,6.0,20,Med,37,7,Traditional Family
+25-34,Male,Expat,High,Dubai,5+,5-10,7.5-9,Overweight,Oral,1801-2200,High,Fish,Never,Large,Yes,<50,Weekly,Yes,Time,75,High,Low,8.2,32,Med,30,8,Traditional Family
+25-34,Female,Expat,Low,Abu Dhabi,3-4,1-5,7.5-9,Overweight,Oral,>2200,High,Red Meat,Never,Large,Yes,50-100,Weekly,No,Motivation,50,Med,High,8.2,30,Low,38,3,Traditional Family
+25-34,Male,Expat,Mid,Abu Dhabi,1-2,10+,6.5-7.5,Overweight,None,1801-2200,Low,Red Meat,Never,Medium,No,<50,Rarely,No,Motivation,36,Low,High,7.0,22,Low,14,4,Traditional Family
+25-34,Prefer not to say,Expat,Mid,Dubai,3-4,5-10,<6.5,Normal,Insulin,1801-2200,Med,Chicken,Always,Medium,No,50-100,Daily,No,Motivation,89,High,High,6.0,13,Med,67,2,Traditional Family
+25-34,Male,Expat,High,Doha,3-4,10+,<6.5,Underweight,Oral,1801-2200,Med,Chicken,Sometimes,Medium,Maybe,<50,Weekly,No,Cost,82,High,Med,6.0,14,Low,33,7,Traditional Family
+25-34,Male,Saudi,Low,Dubai,3-4,<1,7.5-9,Obese,Oral,>2200,High,Plant,Sometimes,Large,No,<50,Weekly,No,Taste,64,Med,High,8.2,32,High,26,4,Traditional Family
+45-54,Male,Expat,High,Dubai,1-2,5-10,7.5-9,Normal,Insulin,1500-1800,High,Chicken,Sometimes,Small,Maybe,<50,Daily,No,Time,57,Med,Low,8.2,28,Low,23,4,Traditional Family
+25-34,Male,Expat,Mid,Abu Dhabi,3-4,10+,7.5-9,Normal,Oral,1801-2200,Low,Chicken,Always,Large,Yes,<50,Weekly,Yes,Motivation,64,Med,Low,8.2,25,High,26,4,Traditional Family
+35-44,Female,Expat,Mid,Riyadh,3-4,5-10,>9,Normal,Both,>2200,Med,Red Meat,Sometimes,Small,Maybe,>100,Rarely,Yes,Taste,50,Med,Med,9.5,29,Low,62,6,Traditional Family
+55-65,Male,UAE,Low,Dubai,3-4,5-10,7.5-9,Obese,Both,1801-2200,Med,Chicken,Always,Medium,Yes,<50,Daily,No,Motivation,66,Med,Low,8.2,32,Med,26,3,Traditional Family
+35-44,Female,Qatari,High,Riyadh,3-4,1-5,<6.5,Overweight,Insulin,1801-2200,Low,Red Meat,Sometimes,Large,Yes,<50,Daily,No,Motivation,83,High,Low,6.0,14,Med,33,6,Tech-Savvy Young
+45-54,Male,Expat,Low,Abu Dhabi,3-4,<1,6.5-7.5,Overweight,None,1801-2200,Low,Plant,Always,Small,Maybe,50-100,Daily,Yes,Time,100,High,Low,7.0,18,High,75,7,Health-Conscious Pro
+25-34,Male,Expat,Mid,Dubai,1-2,1-5,7.5-9,Obese,Insulin,1500-1800,Med,Plant,Sometimes,Medium,Maybe,50-100,Rarely,Yes,Cost,89,High,High,8.2,30,Med,67,7,Traditional Family
+25-34,Female,Expat,Mid,Dubai,3-4,1-5,6.5-7.5,Overweight,Insulin,1801-2200,Med,Chicken,Sometimes,Small,Maybe,<50,Weekly,No,Motivation,73,Med,High,7.0,22,Low,29,6,Traditional Family
+25-34,Female,Qatari,High,Abu Dhabi,1-2,10+,<6.5,Overweight,Oral,1801-2200,Low,Chicken,Sometimes,Medium,Maybe,<50,Weekly,Yes,Motivation,92,High,Med,6.0,16,Med,37,4,Traditional Family
+25-34,Male,Expat,Mid,Dubai,1-2,1-5,7.5-9,Underweight,Insulin,1801-2200,Med,Fish,Sometimes,Small,Yes,>100,Weekly,Yes,Time,72,Med,Low,8.2,22,Med,90,9,Traditional Family
+35-44,Male,UAE,High,Doha,3-4,10+,6.5-7.5,Normal,Insulin,1801-2200,Low,Chicken,Never,Medium,Maybe,50-100,Rarely,No,Motivation,43,Low,Med,7.0,19,Low,32,3,Traditional Family
+25-34,Male,Qatari,Mid,Riyadh,5+,10+,>9,Obese,None,>2200,Med,Chicken,Sometimes,Medium,Maybe,50-100,Rarely,No,Time,44,Low,Med,9.5,37,Low,33,3,Traditional Family
+25-34,Female,UAE,Mid,Doha,3-4,1-5,7.5-9,Obese,Oral,1500-1800,Med,Chicken,Sometimes,Large,Yes,50-100,Rarely,Yes,Time,90,High,Low,8.2,30,Med,68,7,Traditional Family
+25-34,Female,Expat,Mid,Dubai,3-4,1-5,<6.5,Overweight,Insulin,1801-2200,Low,Chicken,Never,Large,No,<50,Rarely,Yes,Time,67,Med,High,6.0,14,Med,27,6,Traditional Family
+35-44,Male,Expat,High,Doha,5+,10+,>9,Overweight,Insulin,1801-2200,Med,Chicken,Always,Small,Maybe,<50,Weekly,Yes,Motivation,34,Low,High,9.5,34,Low,14,7,Traditional Family
+25-34,Female,Saudi,High,Abu Dhabi,5+,10+,6.5-7.5,Overweight,Both,1801-2200,Low,Plant,Sometimes,Medium,Maybe,50-100,Weekly,Yes,Motivation,41,Low,High,7.0,22,High,31,7,Traditional Family
+35-44,Female,Expat,Low,Dubai,1-2,1-5,6.5-7.5,Underweight,Both,1500-1800,Med,Chicken,Always,Small,No,>100,Rarely,No,Taste,45,Low,High,7.0,16,Low,56,4,Traditional Family
+35-44,Female,Saudi,Mid,Dubai,5+,1-5,6.5-7.5,Normal,Oral,1801-2200,Low,Chicken,Sometimes,Small,No,<50,Rarely,Yes,Cost,41,Low,High,7.0,16,Low,16,7,Traditional Family
+45-54,Female,Expat,Low,Dubai,3-4,5-10,<6.5,Normal,Insulin,>2200,Med,Plant,Sometimes,Small,No,>100,Daily,Yes,Motivation,71,Med,High,6.0,13,Med,89,8,Traditional Family
+25-34,Male,Expat,Mid,Riyadh,3-4,5-10,6.5-7.5,Normal,Insulin,1801-2200,Low,Red Meat,Sometimes,Large,Yes,<50,Daily,Yes,Motivation,65,Med,Med,7.0,17,Med,26,4,Traditional Family
+45-54,Male,Expat,Mid,Abu Dhabi,1-2,1-5,<6.5,Obese,Insulin,>2200,Med,Chicken,Sometimes,Large,Yes,<50,Rarely,Yes,Motivation,33,Low,High,6.0,18,Med,13,6,Traditional Family
+45-54,Male,UAE,Mid,Dubai,3-4,5-10,6.5-7.5,Normal,Insulin,>2200,High,Chicken,Always,Small,Yes,<50,Daily,No,Time,99,High,Low,7.0,22,Low,40,4,Traditional Family
+25-34,Male,Expat,Mid,Riyadh,1-2,<1,6.5-7.5,Normal,Oral,1500-1800,Low,Fish,Sometimes,Small,Yes,<50,Rarely,Yes,Taste,82,High,Low,7.0,14,Med,33,4,Traditional Family
+55-65,Female,Expat,Mid,Dubai,1-2,<1,7.5-9,Overweight,Insulin,1500-1800,Med,Red Meat,Always,Small,No,>100,Weekly,No,Time,70,Med,High,8.2,26,Low,88,6,Traditional Family
+55-65,Female,Saudi,Mid,Abu Dhabi,3-4,1-5,7.5-9,Obese,Oral,>2200,Low,Plant,Always,Medium,Maybe,50-100,Daily,No,Taste,98,High,Low,8.2,28,High,74,1,Health-Conscious Pro
+25-34,Male,Expat,Mid,Dubai,5+,1-5,<6.5,Normal,Oral,>2200,Med,Plant,Sometimes,Medium,Yes,<50,Daily,Yes,Taste,75,High,Low,6.0,12,Med,30,6,Traditional Family
+35-44,Male,Saudi,Mid,Riyadh,5+,1-5,6.5-7.5,Normal,None,1500-1800,Low,Chicken,Always,Small,Yes,>100,Daily,No,Cost,74,Med,Low,7.0,16,Med,92,4,Traditional Family
+45-54,Male,Expat,Low,Riyadh,3-4,1-5,6.5-7.5,Overweight,None,1500-1800,Med,Fish,Sometimes,Medium,Yes,>100,Daily,Yes,Motivation,51,Med,High,7.0,22,Med,64,5,Traditional Family
+45-54,Female,UAE,High,Abu Dhabi,5+,1-5,<6.5,Obese,Oral,1500-1800,Med,Chicken,Always,Medium,Maybe,50-100,Weekly,No,Motivation,64,Med,Med,6.0,18,Med,48,6,Traditional Family
+25-34,Male,Expat,Mid,Dubai,5+,1-5,7.5-9,Overweight,Oral,>2200,High,Plant,Sometimes,Large,Maybe,>100,Weekly,Yes,Motivation,91,High,Low,8.2,30,High,114,8,Health-Conscious Pro
+25-34,Female,Expat,Mid,Dubai,3-4,1-5,7.5-9,Obese,Oral,1500-1800,Med,Plant,Never,Medium,No,<50,Rarely,No,Cost,86,High,High,8.2,30,Med,34,7,Traditional Family
+35-44,Male,UAE,Mid,Riyadh,1-2,10+,<6.5,Obese,Oral,1801-2200,Med,Red Meat,Always,Medium,No,>100,Weekly,Yes,Taste,78,High,High,6.0,21,Med,98,6,Traditional Family
+35-44,Male,Saudi,Mid,Dubai,3-4,1-5,6.5-7.5,Obese,Both,>2200,Med,Chicken,Sometimes,Medium,Yes,50-100,Weekly,No,Time,27,Low,High,7.0,24,Low,20,3,Traditional Family
+45-54,Prefer not to say,UAE,Low,Dubai,5+,1-5,<6.5,Overweight,Oral,1500-1800,High,Chicken,Sometimes,Large,Yes,>100,Weekly,Yes,Motivation,68,Med,Low,6.0,18,Med,85,8,Traditional Family
+35-44,Prefer not to say,Expat,Mid,Dubai,3-4,5-10,7.5-9,Overweight,Both,1801-2200,High,Fish,Sometimes,Small,Yes,50-100,Weekly,No,Motivation,66,Med,Med,8.2,32,Med,50,4,Traditional Family
+35-44,Male,Saudi,High,Abu Dhabi,3-4,10+,<6.5,Underweight,None,1500-1800,Low,Plant,Never,Medium,Yes,<50,Weekly,Yes,Motivation,37,Low,High,6.0,12,Med,15,8,Traditional Family
+45-54,Female,Expat,Mid,Abu Dhabi,3-4,1-5,>9,Obese,Oral,>2200,High,Plant,Sometimes,Large,No,50-100,Daily,No,Time,67,Med,High,9.5,37,High,50,6,Traditional Family
+25-34,Female,Saudi,Mid,Riyadh,3-4,5-10,7.5-9,Overweight,Oral,1500-1800,Med,Chicken,Always,Small,Maybe,<50,Daily,Yes,Motivation,72,Med,High,8.2,29,Low,29,4,Traditional Family
+35-44,Female,Saudi,Mid,Dubai,3-4,5-10,6.5-7.5,Normal,Insulin,1801-2200,High,Chicken,Never,Small,Maybe,<50,Daily,Yes,Motivation,46,Low,Med,7.0,22,Low,18,8,Traditional Family
+45-54,Male,Expat,Low,Dubai,1-2,5-10,7.5-9,Overweight,Insulin,1801-2200,High,Fish,Sometimes,Medium,Maybe,<50,Daily,No,Taste,92,High,Low,8.2,32,Med,37,1,Traditional Family
+55-65,Female,UAE,Mid,Riyadh,3-4,<1,>9,Normal,Oral,1500-1800,Low,Chicken,Never,Large,Yes,>100,Weekly,No,Motivation,14,Low,High,9.5,24,Med,18,4,Traditional Family
+35-44,Female,Expat,High,Riyadh,5+,5-10,7.5-9,Overweight,Insulin,1500-1800,Med,Red Meat,Sometimes,Medium,Yes,<50,Daily,Yes,Time,62,Med,Med,8.2,29,Low,25,6,Tech-Savvy Young
+35-44,Female,Expat,Low,Dubai,5+,<1,<6.5,Overweight,Both,1801-2200,Low,Fish,Sometimes,Large,Maybe,50-100,Rarely,No,Motivation,33,Low,High,6.0,12,High,25,2,Traditional Family
+25-34,Male,Expat,Mid,Abu Dhabi,1-2,5-10,6.5-7.5,Overweight,Insulin,1500-1800,Low,Plant,Always,Medium,Maybe,50-100,Rarely,No,Taste,90,High,Low,7.0,21,High,68,5,Health-Conscious Pro
+35-44,Male,Expat,Mid,Dubai,5+,5-10,7.5-9,Obese,Oral,>2200,Low,Fish,Always,Small,Yes,>100,Rarely,No,Time,85,High,Low,8.2,30,High,106,6,Health-Conscious Pro
+35-44,Male,Expat,Mid,Doha,3-4,1-5,7.5-9,Normal,Oral,>2200,Med,Plant,Sometimes,Medium,Maybe,<50,Rarely,Yes,Cost,95,High,Med,8.2,24,Med,38,8,Traditional Family
+25-34,Female,Saudi,High,Dubai,3-4,10+,7.5-9,Overweight,Both,1801-2200,Low,Chicken,Sometimes,Medium,No,50-100,Daily,Yes,Time,68,Med,High,8.2,28,Med,51,8,Tech-Savvy Young
+35-44,Male,UAE,Low,Doha,3-4,<1,>9,Overweight,Oral,1801-2200,Low,Red Meat,Always,Small,Maybe,>100,Weekly,No,Cost,75,High,High,9.5,28,Med,94,6,Traditional Family
+35-44,Female,Saudi,Mid,Riyadh,5+,10+,>9,Overweight,Both,1801-2200,Med,Chicken,Always,Small,Maybe,50-100,Daily,Yes,Cost,53,Med,Med,9.5,34,Low,40,5,Traditional Family
+25-34,Prefer not to say,Expat,Low,Abu Dhabi,5+,1-5,>9,Obese,Oral,>2200,Low,Fish,Sometimes,Small,Maybe,50-100,Rarely,Yes,Time,36,Low,High,9.5,32,Med,27,8,Traditional Family
+35-44,Male,UAE,High,Dubai,3-4,1-5,<6.5,Overweight,Oral,1801-2200,Low,Chicken,Sometimes,Medium,Maybe,50-100,Rarely,Yes,Cost,63,Med,Med,6.0,14,Med,47,6,Traditional Family
+25-34,Female,Expat,Low,Abu Dhabi,5+,<1,6.5-7.5,Overweight,Insulin,1500-1800,Low,Fish,Always,Large,No,>100,Rarely,Yes,Motivation,39,Low,High,7.0,18,High,49,6,Traditional Family
+35-44,Male,Expat,Mid,Abu Dhabi,1-2,10+,7.5-9,Normal,Oral,1500-1800,Med,Chicken,Sometimes,Medium,No,50-100,Weekly,No,Time,44,Low,High,8.2,27,Low,33,3,Traditional Family
+25-34,Female,Expat,Mid,Dubai,3-4,<1,7.5-9,Obese,Both,1801-2200,Med,Chicken,Sometimes,Large,Yes,<50,Rarely,No,Motivation,34,Low,High,8.2,28,Med,14,2,Traditional Family
+55-65,Male,Expat,Mid,Riyadh,3-4,1-5,7.5-9,Overweight,Oral,1801-2200,Low,Red Meat,Sometimes,Small,Maybe,>100,Daily,No,Time,43,Low,Med,8.2,26,Low,54,6,Traditional Family
+45-54,Female,UAE,Mid,Doha,3-4,1-5,<6.5,Obese,Both,1801-2200,High,Chicken,Never,Large,Yes,50-100,Daily,Yes,Taste,100,High,Low,6.0,21,Low,75,6,Traditional Family
+45-54,Female,Expat,Mid,Abu Dhabi,1-2,5-10,7.5-9,Underweight,Oral,1500-1800,Med,Plant,Sometimes,Large,Yes,50-100,Rarely,Yes,Taste,84,High,Low,8.2,24,High,63,3,Health-Conscious Pro
+45-54,Female,Expat,Mid,Riyadh,5+,5-10,7.5-9,Normal,Insulin,1801-2200,Med,Red Meat,Sometimes,Medium,Maybe,>100,Weekly,Yes,Motivation,84,High,Med,8.2,25,Low,105,7,Traditional Family
+35-44,Female,UAE,Mid,Dubai,1-2,<1,<6.5,Overweight,Insulin,1500-1800,Med,Chicken,Never,Large,No,<50,Rarely,Yes,Time,83,High,High,6.0,14,Low,33,8,Traditional Family
+25-34,Female,UAE,Low,Abu Dhabi,1-2,1-5,6.5-7.5,Obese,Oral,1500-1800,Med,Plant,Never,Small,Yes,50-100,Daily,No,Motivation,42,Low,High,7.0,24,Low,32,5,Traditional Family
+35-44,Female,Expat,Mid,Dubai,3-4,1-5,<6.5,Overweight,Both,1801-2200,Med,Chicken,Never,Large,Yes,50-100,Rarely,No,Taste,30,Low,High,6.0,16,Low,22,4,Traditional Family
+45-54,Female,Expat,Mid,Riyadh,3-4,1-5,6.5-7.5,Obese,Both,1500-1800,Low,Chicken,Sometimes,Large,Yes,>100,Weekly,Yes,Motivation,34,Low,High,7.0,22,Med,42,7,Traditional Family
+45-54,Female,Expat,Mid,Doha,5+,1-5,<6.5,Overweight,Oral,1801-2200,Low,Fish,Always,Medium,Maybe,<50,Rarely,No,Cost,86,High,Low,6.0,14,High,34,7,Health-Conscious Pro
+35-44,Male,Expat,Mid,Riyadh,3-4,5-10,6.5-7.5,Overweight,Oral,1801-2200,High,Red Meat,Always,Medium,Yes,50-100,Rarely,Yes,Motivation,57,Med,High,7.0,26,Med,43,8,Traditional Family
+25-34,Female,Expat,High,Dubai,1-2,1-5,6.5-7.5,Normal,Oral,1801-2200,Low,Chicken,Sometimes,Small,Yes,>100,Rarely,No,Motivation,49,Low,Med,7.0,16,Low,61,6,Traditional Family
+35-44,Female,Expat,Mid,Dubai,5+,1-5,7.5-9,Obese,Oral,1801-2200,Med,Fish,Sometimes,Medium,Maybe,<50,Daily,Yes,Cost,83,High,High,8.2,30,Med,33,5,Traditional Family
+35-44,Female,Qatari,Low,Abu Dhabi,3-4,1-5,7.5-9,Normal,Insulin,1500-1800,High,Fish,Always,Medium,Yes,<50,Rarely,No,Time,64,Med,High,8.2,27,High,26,5,Traditional Family
+45-54,Male,Saudi,Low,Abu Dhabi,1-2,10+,7.5-9,Obese,Insulin,1500-1800,Med,Red Meat,Never,Medium,Maybe,>100,Daily,Yes,Motivation,59,Med,Low,8.2,33,Low,74,4,Traditional Family
+45-54,Female,Qatari,High,Riyadh,3-4,10+,6.5-7.5,Obese,Insulin,>2200,Med,Chicken,Sometimes,Medium,No,<50,Daily,Yes,Time,58,Med,High,7.0,27,Low,23,9,Traditional Family
+35-44,Male,Expat,Mid,Riyadh,3-4,10+,<6.5,Obese,Insulin,1801-2200,Med,Plant,Always,Large,Yes,>100,Weekly,Yes,Motivation,64,Med,High,6.0,21,High,80,4,Traditional Family
+55-65,Female,Expat,Low,Riyadh,3-4,1-5,>9,Overweight,Insulin,1801-2200,Low,Plant,Never,Small,Maybe,<50,Rarely,Yes,Cost,59,Med,Low,9.5,30,Med,24,7,Traditional Family
+45-54,Male,Expat,Mid,Dubai,3-4,<1,<6.5,Overweight,Insulin,1500-1800,Med,Plant,Always,Large,Maybe,50-100,Weekly,Yes,Time,88,High,Med,6.0,14,High,66,8,Health-Conscious Pro
+25-34,Female,Qatari,Mid,Dubai,5+,1-5,>9,Obese,Oral,1801-2200,Med,Red Meat,Always,Large,Maybe,50-100,Rarely,Yes,Motivation,55,Med,High,9.5,34,Med,41,5,Traditional Family
+25-34,Prefer not to say,Expat,Mid,Dubai,5+,1-5,7.5-9,Normal,Oral,1801-2200,High,Red Meat,Never,Medium,Maybe,50-100,Weekly,Yes,Time,56,Med,Low,8.2,27,Low,42,9,Traditional Family
+25-34,Male,Expat,Mid,Dubai,3-4,5-10,6.5-7.5,Overweight,None,1801-2200,High,Chicken,Never,Small,Yes,50-100,Daily,No,Motivation,74,Med,Low,7.0,26,Low,56,6,Traditional Family
+25-34,Prefer not to say,Expat,Low,Abu Dhabi,1-2,5-10,>9,Underweight,Insulin,1801-2200,High,Fish,Never,Small,No,50-100,Rarely,Yes,Taste,36,Low,High,9.5,31,Low,27,5,Traditional Family
+25-34,Male,Expat,High,Riyadh,5+,10+,<6.5,Overweight,Oral,1500-1800,High,Fish,Sometimes,Small,No,>100,Daily,No,Cost,86,High,High,6.0,22,Med,108,6,Tech-Savvy Young
+25-34,Female,Saudi,Mid,Riyadh,3-4,10+,6.5-7.5,Normal,Oral,1500-1800,Med,Chicken,Sometimes,Medium,Yes,<50,Rarely,Yes,Cost,89,High,Low,7.0,21,Low,36,8,Traditional Family
+35-44,Female,Expat,Mid,Dubai,3-4,1-5,7.5-9,Normal,Insulin,>2200,Med,Fish,Sometimes,Medium,Yes,50-100,Weekly,No,Motivation,76,High,Low,8.2,24,Med,57,3,Traditional Family
+25-34,Female,UAE,Mid,Dubai,3-4,5-10,6.5-7.5,Overweight,Both,>2200,Med,Fish,Sometimes,Large,Yes,<50,Weekly,No,Motivation,60,Med,Low,7.0,23,High,24,5,Traditional Family
+55-65,Female,Qatari,Mid,Dubai,5+,1-5,>9,Overweight,Insulin,1500-1800,Med,Fish,Always,Medium,Yes,50-100,Weekly,Yes,Motivation,37,Low,High,9.5,32,High,28,6,Traditional Family
+25-34,Female,Expat,Mid,Dubai,3-4,<1,<6.5,Overweight,None,1801-2200,High,Red Meat,Sometimes,Medium,Maybe,<50,Daily,No,Taste,100,High,High,6.0,17,Low,40,4,Traditional Family
+35-44,Male,Expat,Mid,Riyadh,1-2,5-10,6.5-7.5,Normal,Both,1500-1800,Low,Chicken,Never,Medium,Yes,<50,Weekly,Yes,Time,85,High,Low,7.0,17,Low,34,7,Traditional Family
+35-44,Male,Expat,Mid,Dubai,3-4,<1,7.5-9,Overweight,Oral,1500-1800,High,Red Meat,Sometimes,Large,Yes,50-100,Daily,No,Time,66,Med,Med,8.2,29,Med,50,7,Traditional Family
+55-65,Female,Expat,High,Abu Dhabi,5+,1-5,7.5-9,Normal,Oral,1500-1800,High,Fish,Sometimes,Large,No,<50,Daily,Yes,Cost,66,Med,High,8.2,27,High,26,9,Traditional Family
+25-34,Female,Expat,High,Dubai,1-2,1-5,6.5-7.5,Overweight,Both,1500-1800,High,Plant,Sometimes,Large,Yes,<50,Daily,Yes,Motivation,91,High,Low,7.0,24,High,36,8,Health-Conscious Pro
+35-44,Female,Expat,Low,Doha,5+,5-10,6.5-7.5,Overweight,Oral,1801-2200,High,Red Meat,Sometimes,Medium,No,50-100,Weekly,Yes,Motivation,63,Med,High,7.0,26,Low,47,4,Traditional Family
+55-65,Female,Expat,Low,Abu Dhabi,3-4,5-10,7.5-9,Overweight,Oral,1801-2200,Low,Fish,Never,Medium,Maybe,50-100,Rarely,Yes,Motivation,45,Low,High,8.2,27,Med,34,8,Traditional Family
+55-65,Male,UAE,High,Dubai,3-4,1-5,<6.5,Obese,Insulin,1500-1800,Low,Fish,Always,Large,Yes,>100,Weekly,Yes,Motivation,86,High,Low,6.0,16,High,108,6,Health-Conscious Pro
+45-54,Female,Saudi,Mid,Abu Dhabi,1-2,10+,7.5-9,Overweight,Insulin,1500-1800,Low,Fish,Always,Medium,Maybe,50-100,Rarely,No,Motivation,68,Med,High,8.2,28,High,51,3,Traditional Family
+35-44,Male,Qatari,High,Riyadh,1-2,1-5,7.5-9,Obese,Oral,>2200,Low,Fish,Sometimes,Small,Maybe,<50,Weekly,Yes,Time,38,Low,High,8.2,28,Med,15,8,Traditional Family
+25-34,Female,Expat,Low,Doha,5+,1-5,7.5-9,Overweight,Oral,1500-1800,Med,Red Meat,Sometimes,Small,Yes,50-100,Weekly,Yes,Motivation,85,High,Low,8.2,28,Low,64,8,Traditional Family
+45-54,Male,UAE,Mid,Dubai,1-2,5-10,7.5-9,Overweight,Both,1801-2200,High,Red Meat,Sometimes,Small,Yes,<50,Weekly,Yes,Motivation,65,Med,Med,8.2,32,Low,26,4,Traditional Family
+55-65,Male,UAE,Mid,Doha,3-4,5-10,6.5-7.5,Overweight,Insulin,1500-1800,High,Chicken,Sometimes,Medium,Maybe,50-100,Weekly,Yes,Taste,55,Med,High,7.0,26,Low,41,3,Traditional Family
+45-54,Male,Saudi,Mid,Doha,3-4,10+,7.5-9,Underweight,Both,1801-2200,Med,Chicken,Sometimes,Small,No,>100,Weekly,Yes,Motivation,66,Med,High,8.2,26,Low,82,6,Traditional Family
+45-54,Male,Expat,Mid,Doha,1-2,1-5,>9,Overweight,Insulin,1500-1800,Low,Fish,Always,Small,Maybe,50-100,Daily,No,Taste,58,Med,Med,9.5,30,High,44,2,Traditional Family
+35-44,Female,Saudi,Low,Riyadh,1-2,5-10,6.5-7.5,Overweight,Oral,1500-1800,Low,Chicken,Sometimes,Small,Yes,50-100,Rarely,Yes,Motivation,81,High,Low,7.0,21,Low,61,8,Traditional Family
+45-54,Male,Expat,Mid,Riyadh,3-4,5-10,>9,Overweight,Oral,1500-1800,Low,Plant,Sometimes,Medium,Maybe,<50,Rarely,No,Time,46,Low,Low,9.5,31,High,18,7,Traditional Family
+25-34,Male,Saudi,Mid,Abu Dhabi,5+,10+,6.5-7.5,Normal,Oral,1500-1800,Med,Chicken,Sometimes,Medium,Maybe,50-100,Daily,Yes,Cost,100,High,Med,7.0,21,Low,75,5,Traditional Family
+35-44,Male,Expat,Mid,Riyadh,3-4,1-5,<6.5,Normal,Insulin,1801-2200,Med,Fish,Always,Medium,Maybe,>100,Rarely,Yes,Motivation,68,Med,Low,6.0,12,High,85,6,Traditional Family
+35-44,Male,Saudi,High,Abu Dhabi,3-4,5-10,6.5-7.5,Obese,Oral,1801-2200,Low,Chicken,Always,Small,Maybe,<50,Daily,No,Time,65,Med,Low,7.0,24,Med,26,3,Tech-Savvy Young
+35-44,Male,Saudi,Mid,Riyadh,3-4,5-10,>9,Overweight,Both,1500-1800,Med,Chicken,Never,Small,Maybe,<50,Daily,Yes,Cost,64,Med,Med,9.5,33,Low,26,5,Traditional Family
+25-34,Male,Expat,High,Abu Dhabi,3-4,1-5,6.5-7.5,Normal,Oral,1500-1800,Low,Plant,Sometimes,Medium,No,50-100,Daily,Yes,Time,54,Med,High,7.0,16,High,40,6,Tech-Savvy Young
+25-34,Female,UAE,Low,Riyadh,3-4,1-5,>9,Overweight,Oral,1801-2200,Med,Fish,Sometimes,Medium,Maybe,50-100,Rarely,No,Motivation,58,Med,High,9.5,32,Med,44,4,Traditional Family
+45-54,Female,UAE,Mid,Riyadh,5+,1-5,>9,Overweight,Both,1801-2200,Med,Red Meat,Sometimes,Small,Maybe,50-100,Rarely,Yes,Time,47,Low,Med,9.5,32,Low,35,6,Traditional Family
+35-44,Female,Saudi,High,Dubai,3-4,5-10,6.5-7.5,Obese,Both,>2200,Med,Red Meat,Sometimes,Small,Yes,>100,Rarely,Yes,Taste,72,Med,Low,7.0,26,Low,90,5,Traditional Family
+45-54,Male,UAE,Low,Riyadh,3-4,10+,<6.5,Underweight,Oral,1801-2200,Med,Fish,Always,Large,No,<50,Daily,No,Cost,78,High,High,6.0,14,High,31,7,Health-Conscious Pro
+25-34,Male,UAE,Low,Abu Dhabi,1-2,5-10,7.5-9,Normal,Oral,1801-2200,High,Chicken,Sometimes,Medium,No,50-100,Weekly,No,Motivation,59,Med,High,8.2,28,Low,44,5,Traditional Family
+35-44,Female,Saudi,Mid,Riyadh,5+,5-10,6.5-7.5,Obese,Both,1801-2200,Low,Red Meat,Always,Small,Yes,50-100,Weekly,Yes,Motivation,70,Med,Low,7.0,24,Med,52,7,Traditional Family
+35-44,Female,Expat,Low,Abu Dhabi,1-2,5-10,7.5-9,Underweight,Oral,>2200,Med,Red Meat,Sometimes,Small,Maybe,<50,Daily,Yes,Motivation,73,Med,High,8.2,24,Low,29,6,Traditional Family
+25-34,Male,Expat,Mid,Dubai,1-2,<1,6.5-7.5,Normal,Insulin,>2200,Med,Red Meat,Always,Large,Yes,50-100,Weekly,Yes,Motivation,73,Med,Low,7.0,16,Med,55,7,Traditional Family
+35-44,Male,Expat,High,Doha,3-4,1-5,6.5-7.5,Obese,Oral,1500-1800,Med,Chicken,Always,Medium,No,<50,Daily,Yes,Motivation,61,Med,High,7.0,24,Med,24,4,Tech-Savvy Young
+25-34,Male,Saudi,Mid,Dubai,3-4,1-5,7.5-9,Overweight,Both,1500-1800,High,Red Meat,Sometimes,Medium,Maybe,<50,Daily,No,Motivation,85,High,Med,8.2,30,Low,34,6,Traditional Family
+25-34,Male,Expat,Mid,Riyadh,3-4,1-5,6.5-7.5,Normal,Insulin,1500-1800,Med,Chicken,Sometimes,Medium,Yes,<50,Weekly,No,Motivation,63,Med,Low,7.0,18,Low,25,6,Traditional Family
+55-65,Male,Qatari,Mid,Abu Dhabi,3-4,1-5,6.5-7.5,Normal,None,1801-2200,Med,Plant,Never,Medium,No,>100,Weekly,No,Motivation,27,Low,High,7.0,18,Med,34,5,Traditional Family
+35-44,Female,UAE,Mid,Abu Dhabi,3-4,5-10,6.5-7.5,Underweight,Insulin,1801-2200,Low,Red Meat,Always,Medium,Yes,50-100,Daily,Yes,Cost,64,Med,High,7.0,16,Med,48,7,Traditional Family
+45-54,Female,Expat,Low,Dubai,1-2,1-5,6.5-7.5,Normal,Both,1801-2200,Med,Chicken,Sometimes,Medium,No,50-100,Daily,Yes,Motivation,55,Med,High,7.0,18,Low,41,4,Traditional Family
+35-44,Female,UAE,Mid,Abu Dhabi,5+,1-5,6.5-7.5,Obese,Oral,1500-1800,Low,Red Meat,Sometimes,Medium,Maybe,<50,Daily,No,Motivation,50,Med,Med,7.0,22,Med,20,4,Traditional Family
+45-54,Female,Saudi,Mid,Dubai,3-4,1-5,7.5-9,Overweight,Oral,1801-2200,Low,Chicken,Sometimes,Small,Yes,50-100,Daily,Yes,Motivation,68,Med,High,8.2,26,Low,51,7,Traditional Family
+45-54,Female,Expat,Mid,Dubai,3-4,<1,6.5-7.5,Obese,Both,>2200,Med,Red Meat,Sometimes,Large,Yes,50-100,Daily,No,Cost,69,Med,Med,7.0,22,Med,52,7,Traditional Family
+45-54,Female,Expat,Low,Dubai,3-4,10+,6.5-7.5,Obese,Oral,1500-1800,Med,Chicken,Never,Medium,Yes,>100,Weekly,No,Taste,78,High,Low,7.0,27,Low,98,5,Traditional Family
+35-44,Female,Expat,Mid,Dubai,1-2,10+,7.5-9,Overweight,Oral,1801-2200,Low,Red Meat,Never,Small,Maybe,50-100,Weekly,No,Taste,48,Low,High,8.2,28,Low,36,3,Traditional Family
+35-44,Male,Expat,Low,Doha,3-4,5-10,6.5-7.5,Normal,Insulin,1801-2200,Med,Chicken,Sometimes,Large,Maybe,50-100,Weekly,Yes,Motivation,37,Low,High,7.0,19,Med,28,5,Traditional Family
+35-44,Male,Expat,Low,Doha,3-4,<1,6.5-7.5,Overweight,Insulin,>2200,Med,Plant,Sometimes,Large,Yes,<50,Rarely,Yes,Taste,98,High,Low,7.0,20,High,39,5,Health-Conscious Pro
+55-65,Male,UAE,High,Dubai,3-4,5-10,>9,Obese,Insulin,>2200,Low,Fish,Always,Large,Yes,50-100,Weekly,No,Time,80,High,Low,9.5,34,High,60,4,Health-Conscious Pro
+45-54,Female,Saudi,Mid,Riyadh,3-4,10+,7.5-9,Obese,Both,1801-2200,Med,Fish,Always,Large,Yes,50-100,Daily,No,Motivation,82,High,Low,8.2,33,High,62,4,Health-Conscious Pro
+55-65,Female,Qatari,Low,Dubai,5+,5-10,7.5-9,Normal,Insulin,1801-2200,Med,Chicken,Sometimes,Large,Maybe,>100,Daily,No,Time,88,High,Med,8.2,25,Med,110,4,Traditional Family
+25-34,Male,Qatari,Low,Riyadh,3-4,<1,7.5-9,Overweight,Insulin,>2200,Med,Plant,Always,Small,Maybe,<50,Rarely,Yes,Taste,49,Low,Low,8.2,26,Med,20,4,Traditional Family
+45-54,Female,Qatari,Low,Riyadh,5+,5-10,<6.5,Overweight,Oral,1801-2200,Med,Chicken,Sometimes,Large,Yes,<50,Daily,No,Taste,48,Low,Med,6.0,17,Med,19,2,Traditional Family
+55-65,Male,Expat,Mid,Doha,3-4,10+,7.5-9,Obese,Oral,1500-1800,Med,Fish,Sometimes,Large,Maybe,50-100,Daily,No,Cost,56,Med,Low,8.2,33,High,42,4,Traditional Family
+25-34,Female,Expat,Low,Abu Dhabi,1-2,5-10,6.5-7.5,Normal,Both,1801-2200,Med,Chicken,Never,Small,Yes,<50,Daily,Yes,Cost,65,Med,Med,7.0,19,Low,26,5,Traditional Family
+25-34,Male,Expat,Low,Riyadh,1-2,5-10,6.5-7.5,Overweight,Insulin,1500-1800,High,Red Meat,Sometimes,Small,No,<50,Weekly,Yes,Motivation,36,Low,High,7.0,26,Low,14,5,Traditional Family
+45-54,Male,Saudi,Mid,Dubai,3-4,1-5,6.5-7.5,Obese,Insulin,1801-2200,Med,Chicken,Sometimes,Large,No,>100,Weekly,No,Time,69,Med,High,7.0,24,Med,86,4,Traditional Family
+45-54,Female,Expat,Mid,Doha,1-2,5-10,<6.5,Overweight,None,>2200,Low,Chicken,Never,Small,Maybe,50-100,Rarely,Yes,Motivation,36,Low,High,6.0,15,Low,27,8,Traditional Family
+45-54,Male,Expat,Mid,Dubai,1-2,<1,<6.5,Overweight,Oral,1801-2200,Med,Chicken,Sometimes,Large,No,>100,Rarely,Yes,Cost,49,Low,High,6.0,14,Med,61,5,Traditional Family
+25-34,Male,Expat,Mid,Riyadh,5+,5-10,>9,Normal,Both,1801-2200,High,Fish,Always,Small,No,>100,Weekly,No,Motivation,47,Low,High,9.5,32,Med,59,3,Traditional Family
+45-54,Male,UAE,Low,Riyadh,5+,<1,6.5-7.5,Normal,Both,1500-1800,Low,Chicken,Sometimes,Small,No,<50,Weekly,Yes,Cost,50,Med,High,7.0,14,Low,20,8,Traditional Family
+25-34,Female,Expat,High,Riyadh,3-4,1-5,6.5-7.5,Overweight,Both,1801-2200,High,Fish,Sometimes,Medium,Maybe,50-100,Daily,No,Motivation,47,Low,Med,7.0,24,Med,35,2,Tech-Savvy Young
+25-34,Female,UAE,High,Dubai,1-2,1-5,<6.5,Obese,Insulin,1500-1800,High,Red Meat,Always,Small,Yes,<50,Daily,Yes,Time,96,High,Low,6.0,21,Low,38,9,Tech-Savvy Young
+25-34,Male,Saudi,High,Doha,1-2,5-10,<6.5,Normal,Both,1500-1800,Low,Plant,Always,Medium,Yes,>100,Daily,Yes,Motivation,81,High,Low,6.0,11,High,101,6,Health-Conscious Pro
+45-54,Female,UAE,High,Dubai,1-2,<1,7.5-9,Overweight,Both,1801-2200,High,Fish,Sometimes,Medium,Yes,50-100,Daily,No,Motivation,54,Med,Med,8.2,29,Med,40,6,Traditional Family
+45-54,Female,Expat,High,Riyadh,3-4,5-10,6.5-7.5,Overweight,Oral,1500-1800,Med,Chicken,Sometimes,Small,Maybe,50-100,Daily,No,Cost,97,High,Med,7.0,23,Low,73,7,Traditional Family
+35-44,Male,Expat,Mid,Dubai,5+,5-10,6.5-7.5,Normal,Oral,1801-2200,High,Plant,Sometimes,Small,Yes,<50,Daily,Yes,Motivation,48,Low,Med,7.0,22,Med,19,4,Traditional Family
+35-44,Male,UAE,Low,Dubai,3-4,1-5,6.5-7.5,Overweight,Oral,1801-2200,Med,Chicken,Sometimes,Medium,Yes,50-100,Weekly,No,Time,59,Med,High,7.0,22,Low,44,3,Traditional Family
+55-65,Male,Qatari,Mid,Abu Dhabi,1-2,<1,7.5-9,Obese,Insulin,>2200,Med,Plant,Never,Small,Maybe,<50,Rarely,Yes,Motivation,56,Med,High,8.2,28,Low,22,7,Traditional Family
+35-44,Male,Expat,Mid,Abu Dhabi,3-4,<1,<6.5,Obese,Oral,1801-2200,Med,Chicken,Sometimes,Medium,Yes,50-100,Weekly,Yes,Time,57,Med,High,6.0,16,Low,43,8,Traditional Family
+45-54,Female,Qatari,Mid,Dubai,3-4,10+,<6.5,Overweight,Oral,1500-1800,High,Fish,Always,Medium,Maybe,50-100,Rarely,Yes,Motivation,95,High,Med,6.0,22,High,71,4,Health-Conscious Pro
+35-44,Male,UAE,Mid,Dubai,3-4,5-10,6.5-7.5,Overweight,Oral,1500-1800,Low,Fish,Sometimes,Small,No,>100,Weekly,Yes,Motivation,86,High,High,7.0,21,Med,108,4,Traditional Family
+35-44,Female,Qatari,Low,Abu Dhabi,3-4,1-5,6.5-7.5,Normal,Oral,1801-2200,Med,Red Meat,Always,Medium,Maybe,<50,Weekly,No,Cost,98,High,High,7.0,18,Med,39,3,Traditional Family
+35-44,Female,Expat,Mid,Riyadh,3-4,<1,6.5-7.5,Obese,Oral,1801-2200,Low,Chicken,Always,Small,Maybe,50-100,Weekly,No,Time,86,High,Low,7.0,20,Med,64,5,Traditional Family
+35-44,Male,UAE,High,Doha,1-2,5-10,7.5-9,Normal,Oral,1801-2200,Med,Fish,Always,Small,Maybe,>100,Daily,No,Motivation,70,Med,Med,8.2,25,Med,88,6,Tech-Savvy Young
+45-54,Female,UAE,Mid,Dubai,1-2,10+,7.5-9,Obese,None,1801-2200,Med,Chicken,Never,Small,Maybe,<50,Daily,No,Time,57,Med,Low,8.2,33,Low,23,6,Traditional Family
+35-44,Male,Qatari,Mid,Dubai,5+,10+,7.5-9,Normal,Insulin,1500-1800,Med,Plant,Always,Large,Yes,>100,Rarely,Yes,Motivation,71,Med,Low,8.2,27,High,89,7,Health-Conscious Pro
+25-34,Prefer not to say,Expat,Mid,Dubai,1-2,5-10,6.5-7.5,Obese,Oral,1801-2200,Med,Red Meat,Never,Large,No,<50,Rarely,No,Motivation,72,Med,High,7.0,26,Low,29,3,Traditional Family
+55-65,Female,Expat,Mid,Dubai,1-2,<1,<6.5,Obese,Insulin,1801-2200,Low,Fish,Sometimes,Large,Yes,50-100,Daily,No,Time,94,High,Low,6.0,14,High,70,5,Health-Conscious Pro
+35-44,Female,Expat,High,Riyadh,1-2,<1,6.5-7.5,Obese,Oral,1500-1800,Low,Fish,Sometimes,Medium,Yes,50-100,Daily,No,Motivation,54,Med,Med,7.0,20,High,40,2,Tech-Savvy Young
+35-44,Female,Qatari,Mid,Riyadh,1-2,<1,>9,Normal,Both,1500-1800,Low,Red Meat,Sometimes,Small,No,50-100,Weekly,No,Taste,70,Med,High,9.5,24,Low,52,1,Traditional Family
+55-65,Male,Expat,High,Dubai,3-4,1-5,7.5-9,Overweight,None,1500-1800,Med,Fish,Always,Medium,Yes,>100,Daily,No,Time,64,Med,Low,8.2,28,High,80,5,Traditional Family
+45-54,Female,UAE,Mid,Dubai,5+,<1,7.5-9,Overweight,Oral,1500-1800,High,Fish,Always,Medium,Yes,<50,Weekly,Yes,Taste,74,Med,Low,8.2,29,High,30,6,Health-Conscious Pro
+25-34,Female,Expat,Mid,Dubai,3-4,1-5,<6.5,Obese,None,1801-2200,Low,Fish,Never,Large,Yes,<50,Daily,No,Cost,96,High,Low,6.0,16,High,38,3,Health-Conscious Pro
+55-65,Female,Expat,Low,Riyadh,3-4,1-5,6.5-7.5,Normal,Insulin,1500-1800,High,Plant,Sometimes,Small,Yes,50-100,Weekly,No,Motivation,82,High,Low,7.0,21,Med,62,3,Traditional Family
+45-54,Female,Expat,Mid,Doha,3-4,10+,<6.5,Obese,Oral,1500-1800,Med,Chicken,Sometimes,Small,Yes,>100,Daily,No,Motivation,72,Med,Low,6.0,21,Low,90,5,Traditional Family
+35-44,Female,Expat,Mid,Dubai,3-4,5-10,7.5-9,Obese,Insulin,1500-1800,Med,Red Meat,Sometimes,Medium,Yes,<50,Weekly,Yes,Motivation,43,Low,Med,8.2,32,Low,17,8,Traditional Family
+25-34,Male,Expat,Mid,Dubai,5+,10+,>9,Normal,Both,>2200,Med,Fish,Always,Large,Maybe,>100,Daily,Yes,Motivation,87,High,Low,9.5,31,High,109,6,Health-Conscious Pro
+45-54,Male,UAE,Mid,Doha,5+,5-10,>9,Obese,Oral,>2200,High,Chicken,Sometimes,Large,No,50-100,Weekly,No,Taste,55,Med,High,9.5,38,Med,41,4,Traditional Family
+45-54,Female,Expat,High,Doha,1-2,<1,6.5-7.5,Overweight,Both,1500-1800,Low,Plant,Always,Medium,Yes,<50,Rarely,Yes,Taste,98,High,Low,7.0,18,High,39,7,Health-Conscious Pro
+35-44,Male,UAE,Low,Abu Dhabi,3-4,5-10,6.5-7.5,Overweight,Both,1500-1800,Med,Fish,Never,Large,No,50-100,Weekly,No,Time,66,Med,High,7.0,23,Med,50,4,Traditional Family
+55-65,Female,Expat,High,Dubai,3-4,1-5,>9,Overweight,Insulin,1500-1800,Med,Chicken,Sometimes,Medium,Yes,<50,Rarely,Yes,Time,34,Low,High,9.5,32,Low,14,7,Traditional Family
+45-54,Female,UAE,Mid,Dubai,5+,5-10,7.5-9,Overweight,Insulin,1801-2200,Med,Plant,Sometimes,Large,Yes,50-100,Rarely,Yes,Motivation,45,Low,Low,8.2,29,High,34,4,Traditional Family
+25-34,Male,UAE,Mid,Abu Dhabi,3-4,1-5,<6.5,Obese,Both,1500-1800,High,Red Meat,Sometimes,Large,Yes,<50,Rarely,Yes,Time,53,Med,Low,6.0,21,Med,21,5,Traditional Family
+35-44,Male,Qatari,Low,Dubai,5+,10+,6.5-7.5,Overweight,Oral,1801-2200,Low,Red Meat,Sometimes,Large,Maybe,50-100,Rarely,Yes,Taste,95,High,Low,7.0,22,Med,71,7,Traditional Family
+25-34,Female,Saudi,Mid,Dubai,3-4,1-5,6.5-7.5,Overweight,Insulin,1801-2200,Med,Red Meat,Always,Medium,Maybe,50-100,Weekly,Yes,Time,61,Med,Med,7.0,22,Med,46,8,Traditional Family
+45-54,Male,Expat,Mid,Abu Dhabi,1-2,1-5,6.5-7.5,Overweight,Oral,>2200,Med,Red Meat,Always,Small,Maybe,50-100,Rarely,Yes,Motivation,73,Med,Med,7.0,22,Low,55,5,Traditional Family
+25-34,Female,Expat,Low,Dubai,3-4,10+,6.5-7.5,Obese,Oral,1500-1800,Med,Chicken,Sometimes,Medium,No,50-100,Daily,Yes,Taste,79,High,High,7.0,27,Low,59,7,Traditional Family
+45-54,Male,UAE,Mid,Riyadh,5+,<1,7.5-9,Normal,Insulin,>2200,Med,Fish,Sometimes,Medium,Maybe,50-100,Weekly,Yes,Time,68,Med,Low,8.2,22,Med,51,6,Traditional Family
+45-54,Female,UAE,High,Dubai,5+,5-10,6.5-7.5,Obese,Oral,1801-2200,Med,Red Meat,Never,Large,Maybe,<50,Rarely,Yes,Time,46,Low,Med,7.0,26,Low,18,6,Traditional Family
+55-65,Male,Expat,Low,Dubai,1-2,5-10,<6.5,Overweight,Insulin,1500-1800,High,Fish,Never,Small,No,50-100,Rarely,Yes,Time,44,Low,High,6.0,20,Low,33,6,Traditional Family
+35-44,Female,Saudi,High,Abu Dhabi,3-4,10+,6.5-7.5,Normal,Oral,1801-2200,Med,Plant,Sometimes,Small,Yes,>100,Rarely,No,Time,79,High,Low,7.0,21,Med,99,5,Traditional Family
+45-54,Male,Expat,Mid,Dubai,3-4,10+,7.5-9,Normal,Both,1500-1800,High,Plant,Never,Medium,Yes,>100,Rarely,No,Taste,55,Med,Low,8.2,30,Med,69,5,Traditional Family
+25-34,Female,Expat,Mid,Doha,1-2,10+,7.5-9,Overweight,None,1500-1800,Med,Fish,Always,Small,Maybe,<50,Rarely,Yes,Cost,97,High,High,8.2,30,Med,39,7,Traditional Family
+45-54,Male,Expat,Mid,Abu Dhabi,3-4,<1,6.5-7.5,Obese,Oral,1500-1800,Low,Red Meat,Sometimes,Medium,Maybe,<50,Weekly,Yes,Motivation,43,Low,Med,7.0,20,Med,17,7,Traditional Family
+25-34,Female,Expat,Low,Dubai,1-2,10+,>9,Overweight,Insulin,1801-2200,Low,Fish,Always,Medium,Yes,>100,Rarely,No,Cost,40,Low,Med,9.5,32,High,50,6,Traditional Family
+35-44,Female,Qatari,Low,Riyadh,5+,5-10,>9,Obese,None,1801-2200,Low,Fish,Sometimes,Medium,Yes,50-100,Weekly,Yes,Time,59,Med,Med,9.5,34,High,44,5,Traditional Family
+45-54,Male,Expat,Low,Dubai,3-4,5-10,6.5-7.5,Normal,Oral,>2200,Med,Red Meat,Always,Small,Maybe,50-100,Rarely,No,Taste,87,High,Med,7.0,19,Low,65,1,Traditional Family
+25-34,Male,Saudi,Low,Doha,5+,<1,<6.5,Overweight,Insulin,1500-1800,Med,Fish,Sometimes,Large,Maybe,50-100,Rarely,No,Cost,66,Med,Low,6.0,14,High,50,3,Traditional Family
+25-34,Male,Saudi,Mid,Dubai,1-2,5-10,7.5-9,Obese,None,>2200,Med,Chicken,Sometimes,Medium,Yes,<50,Rarely,Yes,Time,69,Med,Med,8.2,32,Low,28,8,Traditional Family
+45-54,Female,Expat,High,Abu Dhabi,3-4,10+,7.5-9,Obese,Both,1500-1800,Med,Fish,Always,Large,No,50-100,Weekly,Yes,Taste,53,Med,High,8.2,33,High,40,4,Traditional Family
+45-54,Female,Qatari,High,Dubai,1-2,10+,>9,Normal,Both,1801-2200,Low,Red Meat,Sometimes,Medium,No,>100,Weekly,Yes,Motivation,61,Med,High,9.5,29,Med,76,5,Traditional Family
+45-54,Female,Expat,Mid,Abu Dhabi,1-2,1-5,>9,Overweight,Both,1500-1800,Low,Plant,Never,Small,Maybe,50-100,Daily,Yes,Motivation,59,Med,Med,9.5,30,Med,44,8,Traditional Family
+45-54,Male,Expat,Low,Riyadh,1-2,<1,7.5-9,Normal,Insulin,1500-1800,Low,Plant,Sometimes,Small,Maybe,<50,Rarely,Yes,Taste,75,High,High,8.2,20,Med,30,6,Traditional Family
+35-44,Male,Expat,Mid,Riyadh,1-2,1-5,6.5-7.5,Overweight,Insulin,>2200,Med,Plant,Always,Small,No,<50,Weekly,Yes,Cost,84,High,High,7.0,22,Med,34,5,Traditional Family
+35-44,Female,Expat,Mid,Dubai,3-4,10+,<6.5,Obese,Both,1500-1800,Low,Chicken,Always,Medium,Yes,<50,Daily,No,Cost,93,High,Low,6.0,19,Med,37,6,Traditional Family
+35-44,Female,Qatari,Low,Dubai,1-2,5-10,6.5-7.5,Obese,Insulin,1801-2200,Low,Red Meat,Sometimes,Small,Yes,50-100,Daily,Yes,Time,61,Med,Med,7.0,24,Low,46,6,Traditional Family
+25-34,Prefer not to say,Saudi,Mid,Riyadh,3-4,1-5,6.5-7.5,Normal,Oral,1801-2200,High,Red Meat,Sometimes,Medium,Maybe,<50,Rarely,Yes,Time,62,Med,Low,7.0,21,Low,25,6,Traditional Family
+55-65,Male,Expat,Mid,Doha,3-4,<1,7.5-9,Obese,Both,1801-2200,High,Chicken,Always,Medium,No,<50,Rarely,No,Motivation,31,Low,High,8.2,32,Med,12,4,Traditional Family
+45-54,Female,Qatari,Mid,Dubai,5+,1-5,7.5-9,Overweight,Both,1801-2200,Low,Chicken,Never,Small,Yes,>100,Rarely,Yes,Cost,64,Med,Med,8.2,26,Low,80,7,Traditional Family
+35-44,Male,Expat,Mid,Abu Dhabi,5+,1-5,7.5-9,Overweight,Oral,1801-2200,Med,Red Meat,Sometimes,Small,No,<50,Weekly,Yes,Motivation,81,High,High,8.2,28,Low,32,8,Traditional Family
+35-44,Male,Expat,High,Dubai,3-4,10+,6.5-7.5,Overweight,Both,1500-1800,Med,Red Meat,Sometimes,Medium,Maybe,<50,Weekly,Yes,Taste,96,High,High,7.0,24,Low,38,6,Traditional Family
+55-65,Female,Expat,High,Doha,3-4,5-10,7.5-9,Overweight,Both,1801-2200,High,Red Meat,Sometimes,Large,Yes,<50,Weekly,No,Time,44,Low,Med,8.2,32,Med,18,5,Traditional Family
+25-34,Female,Qatari,Mid,Dubai,1-2,1-5,<6.5,Overweight,Both,>2200,Med,Red Meat,Sometimes,Small,Yes,<50,Daily,No,Time,58,Med,Med,6.0,16,Low,23,5,Traditional Family
+45-54,Prefer not to say,Saudi,High,Dubai,5+,5-10,6.5-7.5,Overweight,Insulin,1500-1800,Low,Fish,Never,Small,Yes,50-100,Rarely,Yes,Time,62,Med,Low,7.0,21,Med,46,8,Traditional Family
+35-44,Male,Qatari,High,Riyadh,1-2,<1,7.5-9,Overweight,Oral,1500-1800,Med,Plant,Never,Large,No,>100,Daily,Yes,Cost,90,High,High,8.2,26,Med,112,6,Tech-Savvy Young
+45-54,Male,UAE,Mid,Dubai,1-2,10+,7.5-9,Normal,Oral,1801-2200,Med,Fish,Sometimes,Small,No,>100,Weekly,Yes,Time,45,Low,High,8.2,27,Med,56,9,Traditional Family
+25-34,Female,Expat,Mid,Abu Dhabi,1-2,1-5,>9,Obese,Insulin,1801-2200,Low,Chicken,Never,Large,Maybe,50-100,Weekly,Yes,Cost,80,High,Med,9.5,32,Med,60,9,Traditional Family
+55-65,Female,Saudi,Mid,Abu Dhabi,3-4,1-5,6.5-7.5,Overweight,Oral,1801-2200,Med,Plant,Sometimes,Small,No,50-100,Weekly,Yes,Motivation,35,Low,High,7.0,22,Med,26,8,Traditional Family
+55-65,Male,Saudi,High,Dubai,1-2,1-5,6.5-7.5,Normal,Insulin,1500-1800,Med,Fish,Always,Large,No,50-100,Rarely,No,Time,62,Med,High,7.0,18,High,46,5,Traditional Family
+45-54,Male,UAE,High,Dubai,3-4,5-10,6.5-7.5,Obese,Oral,1801-2200,Med,Plant,Sometimes,Medium,Maybe,<50,Daily,No,Taste,71,Med,Med,7.0,26,Med,28,2,Traditional Family
+45-54,Male,Expat,Low,Abu Dhabi,1-2,5-10,6.5-7.5,Obese,None,1500-1800,Low,Fish,Sometimes,Large,Maybe,<50,Rarely,Yes,Taste,82,High,High,7.0,24,High,33,7,Health-Conscious Pro
+55-65,Female,Expat,Mid,Dubai,3-4,5-10,>9,Obese,Insulin,1801-2200,Med,Fish,Always,Medium,Maybe,>100,Daily,Yes,Cost,53,Med,Med,9.5,36,High,66,8,Traditional Family
